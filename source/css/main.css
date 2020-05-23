@@ -10,7 +10,7 @@
 
 @font-face {
 	font-family: font-regular;
-	src: url('../../static/font/sans-regular.woff');
+	src: url('../../source/font/sans-regular.woff');
 }
 
 .button,
@@ -30,11 +30,11 @@ button.b2-loading:after {
 
 .site {
 	background-color: #f6f7f8;
-	background-image: url(../../static/image/site-bg.png)
+	background-image: url(../../source/image/site-bg.png)
 }
 
 .header-banner {
-	background-image: url(../../static/image/bg-top.png)
+	background-image: url(../../source/image/bg-top.png)
 }
 
 .b2-radius {
