@@ -46,6 +46,10 @@
 				<#nested />
 			</div>
 		</div>
+		
+		<#include "common/footer.ftl">
+		<#include "common/navbar_tool.ftl">
+		<#include "common/scripts.ftl">
 	</body>
 </html>
 </#macro>
