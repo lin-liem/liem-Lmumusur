@@ -41,7 +41,7 @@
 						<ul class="links-widget">
 							<li>
 								<a class="link-block" href="#"></a>
-								<div class="links-icon"><img src="static/picture/youhui.png"></div>
+								<div class="links-icon"><img src="${theme_base!}/source/picture/youhui.png"></div>
 								<div>
 									<h2>优惠活动</h2>
 									<p>查看本站的最新优惠</p>
@@ -50,7 +50,7 @@
 
 							<li>
 								<a class="link-block" href="#"></a>
-								<div class="links-icon"><img src="static/picture/kuozhan.png"></div>
+								<div class="links-icon"><img src="${theme_base!}/source/picture/kuozhan.png"></div>
 								<div>
 									<h2>配件商城</h2>
 									<p>在线购买XX配件</p>
@@ -59,7 +59,7 @@
 
 							<li>
 								<a class="link-block" href="#"></a>
-								<div class="links-icon"><img src="static/picture/wendang.png"></div>
+								<div class="links-icon"><img src="${theme_base!}/source/picture/wendang.png"></div>
 								<div>
 									<h2>法律声明</h2>
 									<p>本站的法律声明</p>
@@ -68,7 +68,7 @@
 
 							<li>
 								<a target="__blank" class="link-block" href="requests.html"></a>
-								<div class="links-icon"><img src="static/picture/gongdan.png"></div>
+								<div class="links-icon"><img src="${theme_base!}/source/picture/gongdan.png"></div>
 								<div>
 									<h2>在线工单</h2>
 									<p>提交在线工单</p>
@@ -77,7 +77,7 @@
 
 							<li>
 								<a class="link-block" href="#"></a>
-								<div class="links-icon"><img src="static/picture/jianyi.png"></div>
+								<div class="links-icon"><img src="${theme_base!}/source/picture/jianyi.png"></div>
 								<div>
 									<h2>建议提交</h2>
 									<p>查看本主题的文档</p>
@@ -135,61 +135,61 @@
 						<ul class="team-widget">
 							<li>
 								<a href="auuAwtzuk.html">
-									<img src="static/picture/119ba8f8ed6d95_1_avatar-imageres2.jpg" class="avatar b2-radius" title="春哥" alt="春哥">
+									<img src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres2.jpg" class="avatar b2-radius" title="春哥" alt="春哥">
 								</a>
 							</li>
 
 							<li>
 								<a href="avwxzuvvl.html">
-									<img src="static/picture/27c0b852de3a49-imageresizem_fill.jpg" class="avatar b2-radius" title="chunge" alt="chunge">
+									<img src="${theme_base!}/source/picture/27c0b852de3a49-imageresizem_fill.jpg" class="avatar b2-radius" title="chunge" alt="chunge">
 								</a>
 							</li>
 
 							<li>
 								<a href="axxzCvvxn.html">
-									<img src="static/picture/17bdf95cea5b2d-imageresizem_fill.jpg" class="avatar b2-radius" title="春哥2号" alt="春哥2号">
+									<img src="${theme_base!}/source/picture/17bdf95cea5b2d-imageresizem_fill.jpg" class="avatar b2-radius" title="春哥2号" alt="春哥2号">
 								</a>
 							</li>
 
 							<li>
 								<a href="awtyBzywo.html">
-									<img src="static/picture/5506ffe00b4f0b_avatar-imageresiz.jpg" class="avatar b2-radius" title="武汉极点出版" alt="武汉极点出版">
+									<img src="${theme_base!}/source/picture/5506ffe00b4f0b_avatar-imageresiz.jpg" class="avatar b2-radius" title="武汉极点出版" alt="武汉极点出版">
 								</a>
 							</li>
 
 							<li>
 								<a href="azAtwBwzp.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="xinxin" alt="xinxin">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xinxin" alt="xinxin">
 								</a>
 							</li>
 
 							<li>
 								<a href="avBvuuxwq.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="xiaoai" alt="xiaoai">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xiaoai" alt="xiaoai">
 								</a>
 							</li>
 
 							<li>
 								<a href="aBCwBxxCr.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="laohu" alt="laohu">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="laohu" alt="laohu">
 								</a>
 							</li>
 
 							<li>
 								<a href="aytyyAyys.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="chun520" alt="chun520">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="chun520" alt="chun520">
 								</a>
 							</li>
 
 							<li>
 								<a href="buAwtzukj.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="xiaoyu" alt="xiaoyu">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xiaoyu" alt="xiaoyu">
 								</a>
 							</li>
 
 							<li>
 								<a href="bvCtwzAkk.html">
-									<img src="static/picture/default-avatar.png" class="avatar b2-radius" title="dreamin" alt="dreamin">
+									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="dreamin" alt="dreamin">
 								</a>
 							</li>
 						</ul>
