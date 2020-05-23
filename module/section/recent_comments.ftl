@@ -20,7 +20,7 @@
 									<p>${comment.content!}</p>
 								</div>
 								<div class="widget-comment-post">
-									<span><b class="b2-color">「文章」s</b>来自：</span>
+									<span><b class="b2-color">「文章」</b>来自：</span>
 									<a href="${comment.post.fullPath!}#comment-wrapper">${comment.post.title!}</a>
 								</div>
 							</li>

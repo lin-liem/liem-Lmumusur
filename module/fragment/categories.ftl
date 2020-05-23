@@ -2,10 +2,13 @@
 	<div class="post-carts-list-row" data-flickity='{"pageDots": false,"groupCells": true,"cellAlign": "left" ,"selectedAttraction": 0.2,"friction": 0.8}'>
 		
 		<#assign slugName>
-			[<#list  categories as category>"${category.slug}",</#list>]
+          	<@categoryTag method="list">
+          	<#list categories as category>
+            	'${category.slug}'
+          	</#list>
+            </@categoryTag>
 		</#assign>
-			
-		<a class="cat-list picked post-load-button" data-cats='${slugName}' href="javascript:void(0)" data-type="cat" data-i="6">
+		<a class="cat-list picked post-load-button" data-cats="${slugName}" href="javascript:void(0)" data-type="cat" data-i="6">
 			<span data-type="cat">全部</span>
 		</a>
 		<@categoryTag method="list">

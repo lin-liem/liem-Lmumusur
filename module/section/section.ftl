@@ -5,4 +5,4 @@
 <!-- 导入最新文章 -->
 <#include "./recent_posts.ftl">
 <!-- 导入最新评论 -->
-<#include "./recent_comments">
+<#include "./recent_comments.ftl">

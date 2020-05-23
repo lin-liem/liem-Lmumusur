@@ -35,42 +35,32 @@
 					</div>
 					<div id="top-menu" class="top-menu">
 						<ul id="top-menu-ul" class="top-menu-ul">
-							<li class="depth-0"><a href="collection.html"><span class="hob" style="background-color:#81d742"></span><span>专题中心</span></a></li>
-							<li class="depth-0"><a href="newsflashes.html"><span class="hob" style="background-color:#fc3c2d"></span><span>快讯</span></a></li>
-							<li class="depth-0"><a href="document.html"><span class="hob" style="background-color:#1e73be"></span><span>帮助中心</span></a></li>
-							<li class="depth-0  has_children b2-menu-3"><a href="ertae.html"><span class="hob" style="background-color:#43d480"></span>下拉菜单<i
-									 class="b2font b2-jt-down "></i></a>
-								<ul class="sub-menu-0 sub-menu box b2-radius">
-									<li><a href="fenlei8.html">测试分类<i class="b2font b2-jiantou "></i></a>
-										<ul>
-											<li><a href="fenlei6.html"><span>未分类</span></a></li>
-											<li><a href="wp-jq.html"><span>WP技巧</span></a></li>
+							<@menuTag method="tree">
+								<#if menus?? && menus?size gt 0>
+								<#list menus?sort_by('priority') as menu>
+								<#if !menu.children??>
+									<li class="depth-0">
+										<a href="${menu.url}" target="${menu.target!}">
+											<span class="hob" style="background-color:#fc3c2d"></span>
+											<span>${menu.name}</span>
+										</a>
+									</li>
+								</#if>
+								<#if menu.children?? && menu.children?size gt 0>
+									<li class="depth-0  has_children b2-menu-3">
+										<a href="ertae.html">
+											<span class="hob" style="background-color:#fc3c2d"></span>下拉菜单<i class="b2font b2-jt-down "></i>
+										</a>
+										<ul class="sub-menu-0 sub-menu box b2-radius">
+											<#list menu.children?sort_by('priority') as child>
+											<li><a href="${child.url!}" target="${child.target!}">${child.name!}</a></li>
+											</#list>
 										</ul>
 									</li>
-									<li><a href="ertae.html">主题更新<i class="b2font b2-jiantou "></i></a>
-										<ul>
-											<li><a href="fenlei8.html"><span>测试分类</span></a></li>
-											<li><a href="fenlei6.html"><span>未分类</span></a></li>
-											<li><a href="wp-jq.html"><span>WP技巧</span></a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="depth-0  has_children b2-menu-1"><a href="wuhanyiqing.html"><span class="hob" style="background-color:#fc3c2d"></span>图片菜单<i
-									 class="b2font b2-jt-down "></i></a>
-								<ul class="sub-menu-0 sub-menu box b2-radius">
-									<li><a href="fenlei8.html"><img class="menu-1-img b2-radius lazy" width="100" height="100" src="static/picture/default-img.jpg"
-											 data-src="static/picture/27c0b852de3a49-imageresizem_fill.jpg"><span>测试分类</span></a></li>
-									<li><a href="fenlei6.html"><img class="menu-1-img b2-radius lazy" width="100" height="100" src="static/picture/default-img.jpg"
-											 data-src="static/picture/11dc23ccbcd548-imageresizem_fill.jpg"><span>未分类</span></a></li>
-									<li><a href="wp-jq.html"><img class="menu-1-img b2-radius lazy" width="100" height="100" src="static/picture/default-img.jpg"
-											 data-src="static/picture/15acd300750cba-imageresizem_fill.jpg"><span>WP技巧</span></a></li>
-									<li><a href="fenlei1.html"><img class="menu-1-img b2-radius lazy" width="100" height="100" src="static/picture/default-img.jpg"
-											 data-src="static/picture/1eecf157c9b9e3-imageresizem_fill.jpg"><span>分类3</span></a></li>
-									<li><a href="jiqiao.html"><img class="menu-1-img b2-radius lazy" width="100" height="100" src="static/picture/default-img.jpg"
-											 data-src="static/picture/1bb5dc9d57b7b9-imageresizem_fill.jpg"><span>柒比贰主题技巧</span></a></li>
-								</ul>
-							</li>
+								</#if>
+								</#list>
+								</#if>
+							</@menuTag>
 						</ul>
 					</div>
 				</div>

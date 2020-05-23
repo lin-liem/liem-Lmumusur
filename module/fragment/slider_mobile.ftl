@@ -30,7 +30,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>Seven主题 2.7.4 版本更新公告</h2>
+							<h2>测试模板更新公告</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-11-22</span>
@@ -49,7 +49,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>柒比贰主题，2.7.0更新了。主要增加了小黑屋、一些设置项和修改了外观</h2>
+							<h2>测试模板更新公告修改了外观</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-9-8</span>
@@ -68,7 +68,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>2.2.0版本发布，还有一些优化说明</h2>
+							<h2>测试模板更新公告还有一些优化说明</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-3-31</span>
@@ -106,7 +106,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>Seven主题 2.7.4 版本更新公告</h2>
+							<h2>测试模板更新公告</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-11-22</span>
@@ -125,7 +125,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>柒比贰主题，2.7.0更新了。主要增加了小黑屋、一些设置项和修改了外观</h2>
+							<h2>测试模板更新公告外观</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-9-8</span>
@@ -144,7 +144,7 @@
 								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
 							</div>
 
-							<h2>2.2.0版本发布，还有一些优化说明</h2>
+							<h2>测试模板更新公告优化说明</h2>
 
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-3-31</span>
