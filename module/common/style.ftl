@@ -11,6 +11,3 @@
 <link rel="stylesheet" id="b2-tooltip-css" href="${theme_base!}/source/css/vueDirectiveTooltip.min-2.3.8.css" type="text/css" media="all">
 <link rel="stylesheet" id="b2-mobile-css" href="${theme_base!}/source/css/mobile-2.3.8.css" type="text/css" media="all">
 <link rel="stylesheet" id="b2-index-css" href="${theme_base!}/source/css/index-2.3.8.css" type="text/css" media="all">
-<link rel="https://api.w.org/" href="https://www.dachaoka.com/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.dachaoka.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.dachaoka.com/wp-includes/wlwmanifest.xml">
