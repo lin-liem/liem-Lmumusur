@@ -30,11 +30,11 @@ button.b2-loading:after {
 
 .site {
 	background-color: #f6f7f8;
-	background-image: url(../../source/image/site-bg.png)
+	background-image: url(../../source/images/site-bg.png)
 }
 
 .header-banner {
-	background-image: url(../../source/image/bg-top.png)
+	background-image: url(../../source/images/bg-top.png)
 }
 
 .b2-radius {
