@@ -1,5 +1,5 @@
 <#macro navbar layout>
-s	<div class="header logo-left">
+	<div class="header logo-left">
 		<div class="top-style">
 			<div class="top-style-blur"></div>
 			<div class="wrapper">
@@ -10,7 +10,7 @@ s	<div class="header logo-left">
 				</div>
 				<div class="header-logo">
 					<div class="logo">
-						<h1><a rel="home" href=""><img itemprop="logo" src="static/picture/125f3523397d3e.svg"></a></h1>
+						<h1><a rel="home" href=""><img itemprop="logo" src="${blog_logo!}" alt="${blog_title!}"></a></h1>
 					</div>
 				</div>
 				<div class="header-user">

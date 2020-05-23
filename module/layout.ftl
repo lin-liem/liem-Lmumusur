@@ -1,5 +1,6 @@
 <#macro layout type,title,keywords,description,canonical>
 <#include "common/navbar.ftl">
+<#include "common/header.ftl">
 <!doctype html>
 <html lang="zh-CN" class="avgrund-ready">
 	<head>

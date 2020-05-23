@@ -1,2 +1,2 @@
-<#include "./module/fragment/slider_pc.ftl">
-<#include "./module/fragment/slider_mobile.ftl">
+<#include "./slider_pc.ftl">
+<#include "./slider_mobile.ftl">
