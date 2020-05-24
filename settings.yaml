@@ -84,6 +84,64 @@ slider_config:
        type: text
        placeholder: '默认为liebiao'
        description: '自定义显示内容，对应文章标签别名,建议是英文字母'
+enable_config:
+  lable: 启停配置
+  items: 
+    hello_info_enable:
+       name: hello_info_enable
+       label: 问候模块
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    hot_post_enable:
+       name: hot_post_enable
+       label: 热门文章
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    recent_post_enable:
+       name: recent_post_enable
+       label: 最新文章
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    tag_cloud_enable:
+       name: tag_cloud_enable
+       label: 热门标签
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    recent_comment_enable:
+       name: recent_comment_enable
+       label: 最新留言
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
 view_set:
   label: 界面配置
   items:
