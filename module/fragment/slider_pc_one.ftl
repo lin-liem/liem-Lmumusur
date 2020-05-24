@@ -30,15 +30,16 @@
 		<#assign sideJson=text?eval />
 		<div class="slider-in b2-radius box" style="">
 			<div class="slider-info b2-radius">
-				<a class="link-block" href="${sideJson[0].url}"></a>
-				<img class="slider-img b2-radius lazy" data-src="${sideJson[0].thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
+				<a class="link-block" href="${sideJson.url}"></a>
+				<img class="slider-img b2-radius lazy" data-src="${sideJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
 				<div class="slider-info-box">
 					<div class="slider-cat">
-						<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sideJson[0].cate}</span>
+						<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sideJson.cate}</span>
 					</div>
-					<h2>${sideJson[0].title}</h2>
+					<h2>${sideJson.title}</h2>
 					<div class="slider-user">
-						<img class="avatar b2-radius lazy" data-src="${sideJson[0].authorUrl}" src="${theme_base!}/source/picture/default-img.jpg"><span>${sideJson[0].author}</span><span>${sideJson[0].createTime}</span>
+						<img class="avatar b2-radius lazy" data-src="${sideJson.authorUrl}" src="${theme_base!}/source/picture/default-img.jpg">
+						<span>${sideJson.author}</span><span>${sideJson.createTime}</span>
 					</div>
 				</div>
 			</div>
