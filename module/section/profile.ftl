@@ -22,14 +22,16 @@
 				</div>
 				<div>
 					<div class="user-widget-cover">
-						<img src="${settings.profile_banner_img!}">
+						<img src="${settings.profile_banner_img!}!'https://static.mumusur.com/static/mumusur/images/ce26bc977b77cdfc0973aca15e0ec6f8.png?image'">
 					</div>
 					<div class="user-widget-info">
 						<div class="user-w-avatar">
 							<img  src="${user.avatar!}" alt="${user.nickname!}" class="avatar"> 
 						</div>
 						<div class="user-w-name">
-							<h2>${user.nickname!}</h2>
+							<a href="${blog_url!}">
+								<h2>${user.nickname!}</h2>
+							</a>
 							<div class="user-w-lv">
 								<div>
 									<span class="lv-icon user-lv b2-lv0">${user.email!}</span>
