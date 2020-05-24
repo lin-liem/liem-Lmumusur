@@ -64,8 +64,8 @@
 						-->
 					</div>
 					<div class="user-w-gold">
-						<div class="user-money"><a href="https://www.dachaoka.com/gold">￥0.00</a></div>
-						<div class="user-credit"><a href="https://www.dachaoka.com/gold"><i class="b2font b2-jifen "></i>260</a></div>
+						<div class="user-money"><a href="${rss_url!}">订阅</a></div>
+						<div class="user-credit"><a href="${sitemap_html_url!}" target="_blank">网站地图</a></div>
 					</div>
 				</div>
 			</div>
