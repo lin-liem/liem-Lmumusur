@@ -28,7 +28,7 @@
 					<div class="header-tools">
 						<div class="mobile-show">
 							<div class="header-logo">
-								<div class="logo"><a rel="home" href=""><img itemprop="logo" src="static/picture/125f3523397d3e.svg"></a></div>
+								<div class="logo"><a rel="home" href=""><img itemprop="logo" src="${blog_logo!}" alt="${blog_title!}"></a></div>
 							</div>
 							<span class="close-button" @click="mobileMenu.showAc(false)">×</span>
 						</div>

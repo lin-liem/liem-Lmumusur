@@ -62,7 +62,7 @@
 			</span>
 			<b>菜单</b>
 		</a>
-		<a href="javascript:void(0)"  @click="goTop">
+		<a href="javascript:void(0)">
 			<span>
 				<i class="b2font b2-ictotop"></i>
 			</span>
