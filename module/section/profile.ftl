@@ -32,8 +32,7 @@
 							<h2>${user.nickname!}</h2>
 							<div class="user-w-lv">
 								<div>
-									<span class="lv-icon user-lv b2-lv0"><b>学前班</b>
-								<i>${user.email!}</i></span>
+									<span class="lv-icon user-lv b2-lv0">${user.email!}</span>
 								</div>
 							</div>
 						</div>
@@ -53,9 +52,12 @@
 						</div>
 					</div>
 					<div class="user-w-rw">
+						${user.description!}
+						<!--
 						<marquee  direction="left" behavior="scroll"  scrollamount="5" >
 						${user.description!}
 						</marquee>
+						-->
 					</div>
 					<div class="user-w-gold">
 						<div class="user-money"><a href="https://www.dachaoka.com/gold">￥0.00</a></div>
