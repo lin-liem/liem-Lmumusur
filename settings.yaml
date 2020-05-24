@@ -85,8 +85,24 @@ slider_config:
        placeholder: '默认为liebiao'
        description: '自定义显示内容，对应文章标签别名,建议是英文字母'
 enable_config:
-  lable: 启停配置
+  label: 启停配置
   items: 
+    profile_enable:
+       name: profile_enable
+       label: 博主信息
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    profile_banner_img:
+       name: profile_banner_img
+       label: 博主封面
+       type: attachment
+       placeholder: '博主封面图'
     hello_info_enable:
        name: hello_info_enable
        label: 问候模块
@@ -134,6 +150,17 @@ enable_config:
     recent_comment_enable:
        name: recent_comment_enable
        label: 最新留言
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    footer_links_enable:
+       name: footer_links_enable
+       label: 底部友链
        type: radio
        data-type: bool
        default: true

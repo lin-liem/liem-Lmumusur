@@ -7,7 +7,7 @@
 		<@tagTag method="list">
 		<#if tags?? && tags?size gt 0>
 			<#list tags as tag>
-			<a href="${tag.fullPath!}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size:${tag.postCount+tag.name?length+tag.slug?length}px" aria-label="${tag.slug!}">${tag.name!}</a>
+			<a href="${tag.fullPath!}" target="_blank" aria-label="${tag.slug!}">${tag.name!}</a>
 			</#list>
 		</#if>
 		</@tagTag>

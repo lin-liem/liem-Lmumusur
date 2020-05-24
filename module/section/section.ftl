@@ -1,3 +1,8 @@
+<!-- 博主信息 -->
+<#if settings.profile_enable!true>
+	<#include "./profile.ftl">
+</#if>
+
 <!-- 问候模块 -->
 <#if settings.hello_info_enable!true>
 	<#include "./hello_info.ftl">
