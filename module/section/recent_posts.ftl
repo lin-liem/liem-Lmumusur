@@ -4,7 +4,7 @@
 	</div>
 	<div class="b2-widget-box">
 		<ul class="b2-widget-list-ul">
-			 <@postTag method="latest" top="5">
+			 <@postTag method="latest" top="${settings.recent_post_count!5}">
 				<#list posts as post>
 					<li class="b2-widget-box widget-post">
 						<div class="b2-widget-post-thumb">

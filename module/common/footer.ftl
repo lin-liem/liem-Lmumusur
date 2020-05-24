@@ -206,8 +206,9 @@
 				<div class="footer-bottom-left">
 					<div class="copyright">Copyright &copy; ${.now?string('yyyy')}<a href="" rel="home">&nbsp;${options.blog_title!}</a></div>
 					<div class="beian">
-						<span class="b2-dot">・</span><a rel="nofollow" target="__blank" href="javascript:;">渝ICP备20002228号</a> <span
-						 class="b2-dot">・</span>${user.nickname!}
+						<span class="b2-dot">・</span>${user.nickname!}
+						<span class="b2-dot">・</span>
+						<a rel="nofollow" target="__blank" href="javascript:;">渝ICP备20002228号</a> 
 					</div>
 				</div>
 				<div class="footer-bottom-right">自定义链接</div>

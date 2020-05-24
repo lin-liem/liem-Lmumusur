@@ -5,7 +5,7 @@
 	<div class="b2-widget-box">
 		<div id="comment-widget" data-count="5" data-hidden="1" class="comment-widget">
 			<ul>
-				<@commentTag method="latest" top="5">
+				<@commentTag method="latest" top="${settings.recent_comment_count!5}">
 					<#if comments?? && comments.getTotalElements() gt 0>
 						<#list comments.content as comment>
 							<li>

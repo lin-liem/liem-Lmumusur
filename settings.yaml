@@ -114,6 +114,16 @@ enable_config:
            label: 开启
          - value: false
            label: 关闭
+    hello_title:
+       name: hello_title
+       label: 欢迎抬头
+       type: text
+       default: '嗨，朋友！'
+    hello_content:
+       name: hello_content
+       label: 欢迎内容
+       type: text
+       default: '所有的伟大，都源于一个勇敢的开始'
     hot_post_enable:
        name: hot_post_enable
        label: 热门文章
@@ -136,6 +146,12 @@ enable_config:
            label: 开启
          - value: false
            label: 关闭
+    recent_post_count:
+       name: recent_post_count
+       label: 展示条数
+       type: text
+       default: '5'
+       description: '只能填数字，默认为5'
     tag_cloud_enable:
        name: tag_cloud_enable
        label: 热门标签
@@ -158,6 +174,12 @@ enable_config:
            label: 开启
          - value: false
            label: 关闭
+    recent_comment_count:
+       name: recent_comment_count
+       label: 展示条数
+       type: text
+       default: '5'
+       description: '只能填数字，默认为5'
     footer_links_enable:
        name: footer_links_enable
        label: 底部友链
