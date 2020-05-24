@@ -4,154 +4,64 @@
 		<div class="home-row-left content-area  " style="width:1100px">
 			<div class="slider-1 carousel slider-height box b2-radius  slider-show-title" data-flickity='{"wrapAround":true,"fullscreen":true,"autoPlay":4000,"fade":false,"imagesLoaded":true,"freeScroll":false,"prevNextButtons":false,"pageDots":true}'
 			 style="width:1100px;max-width:100%">
+			 
+				<#assign text>${settings.slider_main_json_content!}</#assign>
+				<#assign json=text?eval />
+				<#list json as sliderMainJson>
 				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
 					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/41475962a1e20195a_1_cover-imager3.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="35223.html"></a>
+						<img class="slider-img b2-radius lazy" data-src="${sliderMainJson.thumbnail!}" src="${theme_base!}/source/picture/default-img.jpg">
+						<a class="link-block" href="${sliderMainJson.url!}"></a>
 						<div class="slider-info-box">
 							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>未分类</span>
+								<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>${sliderMainJson.cate!}</span>
 							</div>
-							<h2>大公司头条：阿里宣布 20 亿美元收购网易考拉</h2>
+							<h2>${sliderMainJson.title!}</h2>
 							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/1ad546e142a048-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>明艺神疯</span><span>2019-9-6</span>
+								<img class="avatar b2-radius lazy" data-src="${sliderMainJson.authorUrl!}" src="${theme_base!}/source/picture/default-img.jpg"><span>${sliderMainJson.author!}</span><span>${sliderMainJson.createTime!}</span>
 							</div>
 						</div>
 					</div>
 				</div>
+				</#list>
+				
+				<#assign text>${settings.slider_side_json_content!}</#assign>
+				<#assign sideJson=text?eval />
 				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
 					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/140bd62c252b83-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="33307.html"></a>
+						<img class="slider-img b2-radius lazy" data-src="${sideJson.thumbnail!}" src="${theme_base!}/source/picture/default-img.jpg">
+						<a class="link-block" href="${sideJson.url!}"></a>
 						<div class="slider-info-box">
-
 							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
+								<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>${sideJson.cate!}</span>
 							</div>
-
-							<h2>测试模板更新公告</h2>
-
+							<h2>${sideJson.title!}</h2>
 							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-11-22</span>
+								<img class="avatar b2-radius lazy" data-src="${sideJson.authorUrl!}" src="${theme_base!}/source/picture/default-img.jpg"><span>${sideJson.author!}</span><span>${sideJson.createTime!}</span>
 							</div>
-
 						</div>
 					</div>
 				</div>
+				
+				<#assign text>${settings.slider_list_json_content!}</#assign>
+				<#assign json=text?eval />
+				<#list json as listJson>
 				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
 					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/130cd5cd602253-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="32693.html"></a>
+						<img class="slider-img b2-radius lazy" data-src="${listJson.thumbnail!}" src="${theme_base!}/source/picture/default-img.jpg">
+						<a class="link-block" href="${listJson.url!}"></a>
 						<div class="slider-info-box">
-
 							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
+								<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>${listJson.cate!}</span>
 							</div>
-
-							<h2>测试模板更新公告修改了外观</h2>
-
+							<h2>${listJson.title!}</h2>
 							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-9-8</span>
+								<img class="avatar b2-radius lazy" data-src="${listJson.authorUrl!}" src="${theme_base!}/source/picture/default-img.jpg"><span>${listJson.author!}</span><span>${listJson.createTime!}</span>
 							</div>
-
 						</div>
 					</div>
 				</div>
-				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
-					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/159aa39ad7fbd7-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="30489.html"></a>
-						<div class="slider-info-box">
-
-							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
-							</div>
-
-							<h2>测试模板更新公告还有一些优化说明</h2>
-
-							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-3-31</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
-					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/41475962a1e20195a_1_cover-imager3.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="35223.html"></a>
-						<div class="slider-info-box">
-
-							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>未分类</span>
-							</div>
-
-							<h2>大公司头条：阿里宣布 20 亿美元收购网易考拉</h2>
-
-							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/1ad546e142a048-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>明艺神疯</span><span>2019-9-6</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
-					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/140bd62c252b83-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="33307.html"></a>
-						<div class="slider-info-box">
-
-							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
-							</div>
-
-							<h2>测试模板更新公告</h2>
-
-							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-11-22</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
-					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/130cd5cd602253-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="32693.html"></a>
-						<div class="slider-info-box">
-
-							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
-							</div>
-
-							<h2>测试模板更新公告外观</h2>
-
-							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-9-8</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="slider-1-carousel slider-height" style="width:1100px;max-width:100%;">
-					<div class="slider-in slider-info b2-radius" style="height:0;padding-top:56.363636%;max-width:100%">
-						<img class="slider-img b2-radius lazy" data-src="${theme_base!}/source/picture/159aa39ad7fbd7-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg">
-						<a class="link-block" href="30489.html"></a>
-						<div class="slider-info-box">
-
-							<div class="slider-cat">
-								<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>主题更新</span>
-							</div>
-
-							<h2>测试模板更新公告优化说明</h2>
-
-							<div class="slider-user">
-								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres3.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>春哥</span><span>2018-3-31</span>
-							</div>
-
-						</div>
-					</div>
-				</div>
+				</#list>
 			</div>
 		</div>
 	</div>
