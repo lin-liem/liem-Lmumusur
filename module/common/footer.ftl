@@ -168,7 +168,6 @@
 									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xiaoai" alt="xiaoai">
 								</a>
 							</li>
-
 							<li>
 								<a href="aBCwBxxCr.html">
 									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="laohu" alt="laohu">
@@ -200,41 +199,9 @@
 	</div>
 	<div class="site-footer-nav">
 		<div class="wrapper">
-
-			<div class="footer-links mobile-hidden">
-				<ul>
-					<li><a target="_blank" href="javascript:;">阿里云博客</a></li>
-					<li><a target="_blank" href="javascript:;">最美网站</a></li>
-					<li><a target="_blank" href="javascript:;">喵在欧洲</a></li>
-					<li><a target="_blank" href="javascript:;">文学宫</a></li>
-					<li><a target="_blank" href="javascript:;">南城旧少年</a></li>
-					<li><a target="_blank" href="javascript:;">西瓜CG</a></li>
-					<li><a target="_blank" href="javascript:;">6服务区</a></li>
-					<li><a target="_blank" href="javascript:;">PS样机网</a></li>
-					<li><a target="_blank" href="javascript:;">阿里云活动</a></li>
-					<li><a target="_blank" href="javascript:;">宅客</a></li>
-					<li><a target="_blank" href="javascript:;">一只铅笔</a></li>
-					<li><a target="_blank" href="javascript:;">无剪记</a></li>
-					<li><a target="_blank" href="javascript:;">纸工场 Paper.TV</a></li>
-					<li><a target="_blank" href="javascript:;">投资那点事</a></li>
-					<li><a target="_blank" href="javascript:;">HIFI音乐下载</a></li>
-					<li><a target="_blank" href="javascript:;">CodePen</a></li>
-					<li><a target="_blank" href="javascript:;">王牌网络</a></li>
-					<li><a target="_blank" href="javascript:;">1s播</a></li>
-					<li><a target="_blank" href="javascript:;">酷社</a></li>
-					<li><a target="_blank" href="javascript:;">鹿时间</a></li>
-					<li><a target="_blank" href="javascript:;">趣讨教</a></li>
-					<li><a target="_blank" href="javascript:;">xfolio</a></li>
-					<li><a target="_blank" href="javascript:;">口耳相传</a></li>
-					<li><a target="_blank" href="javascript:;">PMU产品经理大学</a></li>
-					<li><a target="_blank" href="javascript:;">学美文网</a></li>
-					<li><a target="_blank" href="javascript:;">FaiMeilei</a></li>
-					<li><a target="_blank" href="javascript:;">五号云</a></li>
-					<li><a target="_blank" href="javascript:;">致美化</a></li>
-					<li><a target="_blank" href="javascript:;">VPS评审</a></li>
-					<li><a target="_blank" href="javascript:;">蓝板报</a></li>
-				</ul>
-			</div>
+			<#if settings.footer_links_enable!true>
+				<#include "./footer_links.ftl">
+			</#if>
 			<div class="footer-bottom">
 				<div class="footer-bottom-left">
 					<div class="copyright">Copyright &copy; ${.now?string('yyyy')}<a href="" rel="home">&nbsp;${options.blog_title!}</a></div>

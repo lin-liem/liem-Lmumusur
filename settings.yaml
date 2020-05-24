@@ -169,6 +169,11 @@ enable_config:
            label: 开启
          - value: false
            label: 关闭
+    footer_links_alias:
+       name: footer_links_alias
+       label: 友链别名
+       type: text
+       placeholder: '规则为匹配分组名，默认：友情链接'
 view_set:
   label: 界面配置
   items:
