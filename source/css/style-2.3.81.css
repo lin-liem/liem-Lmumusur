@@ -4544,6 +4544,7 @@ a.collection-button:hover{
 .user-w-name a{
     display: flex;
     align-items: center;
+	line-height: 1;
 }
 .user-w-name a svg{
     display: block;
