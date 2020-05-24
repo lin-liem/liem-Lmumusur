@@ -16,7 +16,6 @@
 							<div class="slider-user">
 								<img class="avatar b2-radius lazy" data-src="${theme_base!}/source/picture/1ad546e142a048-imageresizem_fill1.jpg" src="${theme_base!}/source/picture/default-img.jpg"><span>明艺神疯</span><span>2019-9-6</span>
 							</div>
-
 						</div>
 					</div>
 				</div>

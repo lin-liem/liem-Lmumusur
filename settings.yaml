@@ -1,8 +1,8 @@
-slider_01_set:
-  label: 首页一屏
+slider_config:
+  label: 轮播配置
   items:
-    slider_enable:
-       name: notice_enable
+    slider_main_enable:
+       name: slider_main_enable
        label: 轮播开关
        type: radio
        data-type: bool
@@ -12,8 +12,8 @@ slider_01_set:
            label: 开启
          - value: false
            label: 关闭
-    slider_json_enable:
-       name: slider_json_enable
+    slider_main_model:
+       name: slider_main_model
        label: 轮播模式
        type: select
        default: json
@@ -22,36 +22,35 @@ slider_01_set:
            label: JSON模式
          - value: tag
            label: 标签模式
-       description: '请使用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
-    slider_list_json_content:
-       name: slider_json_content
+       description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
+    slider_main_json_content:
+       name: slider_main_json_content
        label: 轮播列表JSON内容
        type: textarea
-       placeholder: '填入json格式[{id:int,title:string,thumbnail:String,url:string}]'
-       description: '格式：[{"id":0,"title":"标题","thumbnail":"图片链接","url":"跳转连接"}]'
+       placeholder: '请参考下方JSON格式'
+       description: '格式：[{"id":0,"cate":"类型","title":"标题","thumbnail":"图片链接","url":"跳转连接","author":"作者","authorUrl":"作者头像","createTime":"日期"}]'
+       default: '[{"id":0,"cate":"测试轮播","title":"JSON测试轮播效果0","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/140bd62c252b83-imageresizem_fill1.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"},{"id":1,"cate":"测试轮播","title":"JSON测试轮播效果1","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/130cd5cd602253-imageresizem_fill1.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"}]'
     slider_side_json_content:
-       name: slider_json_content
+       name: slider_side_json_content
        label: 轮播附图JSON内容
        type: textarea
-       placeholder: '填入json格式[{id:int,title:string,thumbnail:String,url:string}]'
-       description: '格式：[{"id":0,"title":"标题","thumbnail":"图片链接","url":"跳转连接"}]'
-    slider_main_tag:
-       name: slider_main_tag
+       placeholder: '请参考下方JSON格式'
+       description: '格式：{"id":0,"cate":"类型","title":"标题","thumbnail":"图片链接","url":"跳转连接","author":"作者","authorUrl":"作者头像","createTime":"日期"}'
+       default: '{"id":0,"cate":"测试轮播","title":"JSON测试轮播附图效果","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/159aa39ad7fbd7-imageresizem_fill1.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"}'
+    slider_main_tag_content:
+       name: slider_main_tag_content
        label: 轮播列表标签别名
        type: text
        placeholder: '默认为lunboliebiao'
        description: '自定义轮播图显示内容，对应文章标签别名,建议是英文字母'
-    slider_right_tag:
-       name: slider_right_tag
+    slider_side_tag_content:
+       name: slider_side_tag_content
        label: 轮播附图标签别名
        type: text
        placeholder: '默认为lunbofutu'
        description: '自定义右侧图显示内容，对应文章标签别名,建议是英文字母'
-slider_02_set:
-  label: 首页二屏
-  items:
-    slider_enable:
-       name: notice_enable
+    slider_list_enable:
+       name: slider_list_enable
        label: 列表开关
        type: radio
        data-type: bool
@@ -61,8 +60,8 @@ slider_02_set:
            label: 开启
          - value: false
            label: 关闭
-    slider_json_enable:
-       name: slider_json_enable
+    slider_list_model:
+       name: slider_list_model
        label: 显示模式
        type: select
        default: json
@@ -71,15 +70,16 @@ slider_02_set:
            label: JSON模式
          - value: tag
            label: 标签模式
-       description: '请使用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
+       description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
     slider_list_json_content:
-       name: slider_json_content
+       name: slider_list_json_content
        label: 轮播列表JSON内容
        type: textarea
-       placeholder: '填入json格式[{id:int,title:string,thumbnail:String,url:string}]'
-       description: '格式：[{"id":0,"title":"标题","thumbnail":"图片链接","url":"跳转连接"}]'
-    slider_main_tag:
-       name: slider_main_tag
+       placeholder: '请参考下方JSON格式'
+       description: '格式：[{"id":0,"cate":"类型","title":"标题","thumbnail":"图片链接","url":"跳转连接","author":"作者","authorUrl":"作者头像","createTime":"日期"}]'
+       default: '[{"id":0,"cate":"测试轮播","title":"JSON测试轮播效果0","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/41475962a1e20195a_1_cover-imager2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"},{"id":1,"cate":"测试轮播","title":"JSON测试轮播效果1","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/140bd62c252b83-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2020-12-11"},{"id":2,"cate":"测试轮播","title":"JSON测试轮播效果2","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/130cd5cd602253-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2019-12-11"},{"id":3,"cate":"测试轮播","title":"JSON测试轮播效果3","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/159aa39ad7fbd7-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-02-11"}]'
+    slider_list_tag_content:
+       name: slider_list_tag_content
        label: 列表标签别名
        type: text
        placeholder: '默认为liebiao'
