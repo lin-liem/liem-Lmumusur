@@ -2,25 +2,27 @@
 <div class="aside-container" @click.stop="" ref="asideContainer">
 	<div class="aside-bar">
 		<div class="bar-footer">
-			<div class="bar-item bar-qrcode">
-				<i class="b2font b2-erweima "></i>
-				<div class="bar-item-desc bar-qrcode-box">
-					<ul>
-						<li class="b2-radius">
-							<img :src="getQrcode('${canonical!}')">
-							<p>扫码打开当前页</p>
-						</li>
-						<li class="b2-radius">
-							<img src="${theme_base!}/source/picture/code-qibier.jpg">
-							<p>扫码进入公众号</p>
-						</li>
-						<li class="b2-radius">
-							<img src="${theme_base!}/source/picture/code-qibier.jpg">
-							<p>扫码下载APP</p>
-						</li>
-					</ul>
+			<#if settings.tool_qr_enable!true>
+				<div class="bar-item bar-qrcode">
+					<i class="b2font b2-erweima "></i>
+					<div class="bar-item-desc bar-qrcode-box">
+						<ul>
+							<li class="b2-radius">
+								<img :src="getQrcode('${canonical!}')">
+								<p>${settings.tool_qr_page_desc!'扫码打开当前页'}</p>
+							</li>
+							<li class="b2-radius">
+								<img src="${settings.tool_qr_01_img!}">
+								<p>${settings.tool_qr_01_desc!'暂无描述信息'}</p>
+							</li>
+							<li class="b2-radius">
+								<img src="${settings.tool_qr_02_img!}">
+								<p>${settings.tool_qr_02_desc!'暂无描述信息'}</p>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</#if>
 			<div class="bar-item" @click="goTop">
 				<i class="b2font b2-ictotop "></i> <span class="bar-item-desc">返回顶部</span>
 			</div>

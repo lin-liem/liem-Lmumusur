@@ -116,12 +116,12 @@ enable_config:
            label: 关闭
     hello_title:
        name: hello_title
-       label: 欢迎抬头
+       label: 问候称呼
        type: text
        default: '嗨，朋友！'
     hello_content:
        name: hello_content
-       label: 欢迎内容
+       label: 问候内容
        type: text
        default: '所有的伟大，都源于一个勇敢的开始'
     hot_post_enable:
@@ -135,6 +135,12 @@ enable_config:
            label: 开启
          - value: false
            label: 关闭
+    recent_post_count:
+       name: hot_post_count
+       label: 热文条数
+       type: text
+       default: '5'
+       description: '只能填数字，默认为5'
     recent_post_enable:
        name: recent_post_enable
        label: 最新文章
@@ -148,7 +154,7 @@ enable_config:
            label: 关闭
     recent_post_count:
        name: recent_post_count
-       label: 展示条数
+       label: 新文条数
        type: text
        default: '5'
        description: '只能填数字，默认为5'
@@ -176,7 +182,7 @@ enable_config:
            label: 关闭
     recent_comment_count:
        name: recent_comment_count
-       label: 展示条数
+       label: 留言条数
        type: text
        default: '5'
        description: '只能填数字，默认为5'
@@ -196,6 +202,45 @@ enable_config:
        label: 友链别名
        type: text
        placeholder: '规则为匹配分组名，默认：友情链接'
+social_config:
+  label: 社交配置
+  items:
+    tool_qr_enable:
+        name: qr_enable
+        label: 二维码开关
+        type: radio
+        data-type: bool
+        default: true
+        options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    tool_qr_page_desc:
+        name: tool_qr_page_desc
+        label: 当前页描述
+        type: text
+        placeholder: '当前页二维码描述文字'
+    tool_qr_01_img:
+        name: tool_qr_01_img
+        label: 二维码01图片
+        type: attachment
+        placeholder: '二维码01图片链接'
+    tool_qr_01_desc:
+       name: tool_qr_01_desc
+       label: 二维码01描述
+       type: text
+       placeholder: '二维码01图片描述信息'
+    tool_qr_02_img:
+        name: tool_qr_02_img
+        label: 二维码02图片
+        type: attachment
+        placeholder: '二维码02图片链接'
+    tool_qr_02_desc:
+       name: tool_qr_02_desc
+       label: 二维码02描述
+       type: text
+       placeholder: '二维码02图片描述信息'
 view_set:
   label: 界面配置
   items:
