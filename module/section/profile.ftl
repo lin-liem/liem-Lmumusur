@@ -26,7 +26,9 @@
 					</div>
 					<div class="user-widget-info">
 						<div class="user-w-avatar">
+							<a href="${blog_url!}" class="avatar-parent">
 							<img  src="${user.avatar!}" alt="${user.nickname!}" class="avatar"> 
+							</a>
 						</div>
 						<div class="user-w-name">
 							<a href="${blog_url!}">
