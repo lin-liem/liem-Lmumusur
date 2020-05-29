@@ -68,7 +68,7 @@
 				</#if>
 					
 				<div class="single-bottom-html mg-b box b2-radius">
-					<a href="${settings.ad_post_bottom_url!'#none'"><img src="${settings.ad_post_bottom!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
+					<a href="${settings.ad_post_bottom_url!'#none'}"><img src="${settings.ad_post_bottom!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
 				</div>
 				
 				<div class="comments-box">
