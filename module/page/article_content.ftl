@@ -8,8 +8,11 @@
 					</div>
 					<header class="entry-header">
 						<div class="">
-							<div class="post-list-cat  b2-radius"><a target="__blank" class="post-list-cat-item b2-radius" href="fenlei6.html"><span
-									 class="post-3-cat" style="border: 2px solid #55efc4"></span>未分类</a></div>
+							<div class="post-list-cat  b2-radius">
+								<a target="__blank" class="post-list-cat-item b2-radius" href="fenlei6.html">
+									<span class="post-3-cat" style="border: 2px solid #55efc4"></span>未分类
+								</a>
+							</div>
 						</div>
 						<h1>${post.title!}</h1>
 						<div id="post-meta">
@@ -20,11 +23,11 @@
 							</ul>
 							<div class="post-user-info">
 								<div class="post-meta-left"><a href="dBCBCkrns.html" class="link-block"></a>
-									<div class="avatar-parent"><img src="static/picture/1ad546e142a048-imageresizem_fill.jpg" class="avatar b2-radius"></div>
-									<div class="post-user-name"><b>明艺神疯</b><span class="user-title"></span></div>
+									<div class="avatar-parent"><img src="${user.avatar!}" class="avatar b2-radius"></div>
+									<div class="post-user-name"><b>${user.nickname!}</b><span class="user-title"></span></div>
 								</div>
 								<div class="post-meta-right">
-									<div><button><i class="b2font b2-jia "></i>关注</button> <button class="empty">私信</button></div>
+									<div>${user.description!}</div>
 								</div>
 							</div>
 						</div>
