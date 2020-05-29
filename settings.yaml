@@ -249,8 +249,8 @@ views_config:
        label: 头部链接
        type: textarea
        placeholder: '请参考下方JSON格式'
-       description: '格式：[{id:编号,icon:"图标",name:"名称",url:"链接"}]'
-       default: '[{id:0,icon:"",name:"公告",url:"https://mumusur.com"},{id:0,icon:"",name:"邀请码",url:"https://mumusur.com"},{id:0,icon:"b2font b2-vip",name:"成为会员",url:"https://mumusur.com"},{id:0,icon:"b2font b2-renzheng",name:"认证",url:"https://mumusur.com"}]'
+       description: '格式：[{"id":0,"icon":"图标","name":"名称","url":"链接"}]'
+       default: '[{"id":0,"icon":"","name":"公告","url":"https://mumusur.com"},{"id":0,"icon":"","name":"邀请码","url":"https://mumusur.com"},{"id":0,"icon":"b2font b2-vip","name":"成为会员","url":"https://mumusur.com"},{"id":0,"icon":"b2font b2-renzheng","name":"认证","url":"https://mumusur.com"}]'
     advert_enable:
        name: advert_enable
        label: 首页广告开关
