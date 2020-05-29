@@ -129,8 +129,8 @@
 }
 .search-input{
 	padding: 5px 50px 5px 36px;
-	border: 0;
-	border-radius: 3px;
+	border: 0 !important;
+	border-radius: 3px !important;
 	width: 210px;
 	background-color: #f0f0f0;
 }
