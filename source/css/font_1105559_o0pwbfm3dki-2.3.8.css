@@ -10,6 +10,7 @@
 .b2font {
   font-family: "b2font" !important;
   font-size: 16px;
+  vertical-align: -2px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

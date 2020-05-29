@@ -1,6 +1,6 @@
 <#import "../fragment/article_related_tag.ftl" as tags_related_macro>
 <div id="page" class="site">
-	<div id="content" class="site-content">
+	<div id="content" class="site-content" style="padding-bottom: 30px;">
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
