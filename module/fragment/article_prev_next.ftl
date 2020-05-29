@@ -3,9 +3,9 @@
 		<div class="post-pre">
 			<div class="post-pre-next-in b2-pd b2-radius" style="background-image:url('${prevPost.thumbnail!}')">
 				<div class="post-pre-next-info">
-					<#if prevPost.super.categories?? && prevPost.super.categories?size gt 0>
+					<#if prevPost.categories?? && prevPost.categories?size gt 0>
 						<div class="post-per-next-cats">
-							<#list prevPost.super.categories as cate>
+							<#list prevPost.categories as cate>
 								<a href="${cate.fullPath}" style="background-color:#607d8b"><span>${cate.name}</span></a>
 							</#list>
 						</div>
@@ -20,9 +20,9 @@
 		<div class="post-next">
 			<div class="post-pre-next-in b2-pd b2-radius" style="background-image:url('${nextPost.thumbnail!}')">
 				<div class="post-pre-next-info">
-					<#if nextPost.super.categories?? && nextPost.super.categories?size gt 0>
+					<#if nextPost.categories?? && nextPost.categories?size gt 0>
 						<div class="post-per-next-cats">
-							<#list nextPost.super.categories as cate>
+							<#list nextPost.categories as cate>
 								<a href="${cate.fullPath}" style="background-color:#607d8b"><span>${cate.name}</span></a>
 							</#list>
 						</div>

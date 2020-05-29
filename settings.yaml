@@ -249,6 +249,23 @@ ad_config:
        label: 文章顶部广告
        type: attachment
        description: '文章页标题顶部banner广告'
+    ad_post_top_url:
+       name: ad_post_top_url
+       label: 文章顶部广告链接
+       type: text
+       placeholder: '文章顶部广告链接'
+       description: '文章顶部广告链接banner广告'
+    ad_post_bottom:
+       name: ad_post_bottom
+       label: 文章底部广告
+       type: attachment
+       description: '文章页底部结束banner广告'
+    ad_post_bottom_url:
+       name: ad_post_bottom_url
+       label: 文章底部广告链接
+       type: text
+       placeholder: '文章底部广告链接'
+       description: '文章底部广告链接banner广告'
 views_config:
   label: 界面配置
   items:
