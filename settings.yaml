@@ -241,6 +241,14 @@ social_config:
        label: 二维码02描述
        type: text
        placeholder: '二维码02图片描述信息'
+ad_config:
+  label: 广告配置
+  items:
+    ad_post_top:
+       name: ad_post_top
+       label: 文章顶部广告
+       type: attachment
+       description: '文章页标题顶部banner广告'
 views_config:
   label: 界面配置
   items:

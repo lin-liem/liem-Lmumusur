@@ -3,7 +3,9 @@
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
-					<div class="single-top-html"><a href="#"><img src="static/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg"></a></div>
+					<div class="single-top-html">
+						<a href="#"><img src="${settings.ad_post_top!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
+					</div>
 					<header class="entry-header">
 						<div class="">
 							<div class="post-list-cat  b2-radius"><a target="__blank" class="post-list-cat-item b2-radius" href="fenlei6.html"><span
@@ -40,35 +42,29 @@
 						<div class="content-footer-zan-cai"><span class=""><i class="b2font b2-love "></i><b>41</b></span> <span class=""><i
 								 class="b2font b2-buxihuan "></i><b>6</b></span></div>
 					</div>
-					<div class="post-tags-meat"><a class="b2-radius" href="测试.html"><span class="tag-img"><img src="static/picture/137d757747ad08-imageresizem_fill.jpg"></span><span
-							 class="tag-text">测试</span></a><a class="b2-radius" href="wordpress.html"><span class="tag-img"><img src="static/picture/10b57acc0c7dd6-imageresizem_fill.png"></span><span
-							 class="tag-text">wordpress</span></a><a class="b2-radius" href="ziranzhi2.html"><span class="tag-img"><img src="static/picture/156fdce0743d84-imageresizem_fill.jpg"></span><span
-							 class="tag-text">ziranzhi2</span></a><a class="b2-radius" href="wp技巧.html"><span class="tag-img"><img src="static/picture/30985a92691f6e1cd-imageresizem_f.jpg"></span><span
-							 class="tag-text">WP技巧</span></a><a class="b2-radius" href="wordpress付费主题.html"><span class="tag-img"><i class="b2font b2-tags "></i></span><span
-							 class="tag-text">wordpress付费主题</span></a><a class="b2-radius" href="wp商用主题.html"><span class="tag-img"><img src="static/picture/19952cb3c4db65-imageresizem_fill.jpg"></span><span
-							 class="tag-text">WP商用主题</span></a></div>
+					<div class="post-tags-meat">
+						<#if tags?? && tags?size gt 0>
+							<#list tags as tag>
+							  <a class="b2-radius" href="${tag.fullPath!}">
+								<span class="tag-img">
+									<i class="b2font b2-tags "></i>
+								</span>
+								<span class="tag-text">${tag.name!}</span>
+							  </a>
+							</#list>
+						<#else>
+							<a class="b2-radius" href="#none">
+								<span class="tag-img">
+									<i class="b2font b2-tags "></i>
+								</span>
+								<span class="tag-text">暂无相关标签</span>
+							</a>
+						</#if>
+					</div>
 				</article>
-				<div class="post-pre-next mg-b box b2-radius">
-					<div class="post-pre">
-						<div class="post-pre-next-in b2-pd b2-radius" style="background-image:url(static/image/140bd62c252b83-imageresizem_fill1.jpg)">
-							<div class="post-pre-next-info">
-								<div class="post-per-next-cats"><a href="ertae.html" style="background-color:#43d480"><span>主题更新</span></a><a
-									 href="fenlei6.html" style="background-color:#55efc4"><span>未分类</span></a></div>
-								<h2><a href="33307.html">Seven主题 2.7.4 版本更新公告</a></h2>
-								<p>2018-11-22 1:12:22</p>
-							</div>
-						</div>
-					</div>
-					<div class="post-next">
-						<div class="post-pre-next-in b2-pd b2-radius" style="background-image:url(static/image/189259068a20ba-imageresizem_fill.jpg)">
-							<div class="post-pre-next-info">
-								<div class="post-per-next-cats"><a href="fenlei8.html" style="background-color:#607d8b"><span>测试分类</span></a></div>
-								<h2><a href="31478.html">柒比贰主题现已全面支持微信支付</a></h2>
-								<p>2018-5-26 23:04:34</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<#if nextPost?? && prevPost??>
+					<#include "../fragment/article_prev_next.ftl">
+				</#if>
 				<div class="single-bottom-html mg-b box b2-radius"><a href="#"><img src="static/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg"></a></div>
 				<div class="comments-box">
 					<div id="comments" class="comments-area box b2-radius">
