@@ -241,9 +241,16 @@ social_config:
        label: 二维码02描述
        type: text
        placeholder: '二维码02图片描述信息'
-view_set:
+views_config:
   label: 界面配置
   items:
+     header_links:
+       name: header_links
+       label: 头部链接
+       type: textarea
+       placeholder: '请参考下方JSON格式'
+       description: '格式：[{id:编号,icon:"图标",name:"名称",url:"链接"}]'
+       default: '[{id:0,icon:"",name:"公告",url:"https://mumusur.com"},{id:0,icon:"",name:"邀请码",url:"https://mumusur.com"},{id:0,icon:"b2font b2-vip",name:"成为会员",url:"https://mumusur.com"},{id:0,icon:"b2font b2-renzheng",name:"认证",url:"https://mumusur.com"}]'
     advert_enable:
        name: advert_enable
        label: 首页广告开关
@@ -332,14 +339,16 @@ footer_set:
       label: 页脚LOGO
       type: attachment
       placeholder: '页脚LOGO'
+      default: 'https://www.mumusur.com/upload/2020/3/logo2-b0d113f6a65b4b4280bef775e754d97f.png'
     footer_logo_memo:
       name: footer_logo_memo
       label: 页脚LOGO描述文字
       type: textarea
       placeholder: '页脚LOGO描述文字'
-      default: '<p>一个资源丰富的平台</p>
+      default: '<p>一个热衷于分享各类资源的平台，本平台支持代劳代查寻资源服务，目前本平台均为人工回复，若有怠慢，望体谅！</p>
                 <p>在线时间：10:00-17:00 22:00-24:00</p>
-                <p>电子邮箱：996052600@QQ.COM</p>'
+                <p>电子邮箱：996052600@qq.com</p>
+                <p>私人微信：mumukerf</p>'
     footer_more_links:
       name: footer_more_links
       label: 链接集

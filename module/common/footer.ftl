@@ -19,16 +19,9 @@
 					</div>
 					<div class="b2-widget-box">
 						<div class="about-widget">
-							<a href=""><img class="footer-logo" src="https://www.mumusur.com/upload/2020/3/logo2-b0d113f6a65b4b4280bef775e754d97f.png"></a>
+							<a href=""><img class="footer-logo" src="${settings.footer_logo!'https://www.mumusur.com/upload/2020/3/logo2-b0d113f6a65b4b4280bef775e754d97f.png'}"></a>
 							<div class="about-widget-content">
-								<a href="">
-									<p>一个热衷于分享各类资源的平台</p>
-									<p>本平台支持代劳代查寻资源服务。</p>
-									<p>本平台均人工回复，若有怠慢，望体谅！</p>
-									<p>在线时间：10:00-17:00 22:00-24:00</p>
-									<p>电子邮箱：996052600@qq.com</p>
-									<p>私人微信：mumukerf</p>
-								</a>
+								${settings.footer_logo_memo}
 							</div>
 						</div>
 					</div>
@@ -47,7 +40,6 @@
 									<p>查看本站的最新优惠</p>
 								</div>
 							</li>
-
 							<li>
 								<a class="link-block" href="#"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/kuozhan.png"></div>
@@ -99,30 +91,6 @@
 									<time datetime="2019-09-06T10:39:03+08:00">2019/09/06</time>
 								</div>
 								<a class="link-overlay" href="35223.html"></a>
-							</li>
-							<li class="b2-widget-box widget-post widget-post-none">
-								<div class="b2-widget-post-order widget-order-2"><span class="b2-radius">2</span></div>
-								<div class="b2-widget-post-title">
-									<h2>元旦快乐，2.8.0更新了！</h2>
-									<time datetime="2018-12-31T21:06:16+08:00">2018/12/31</time>
-								</div>
-								<a class="link-overlay" href="34000.html"></a>
-							</li>
-							<li class="b2-widget-box widget-post widget-post-none">
-								<div class="b2-widget-post-order widget-order-3"><span class="b2-radius">3</span></div>
-								<div class="b2-widget-post-title">
-									<h2>Seven主题 2.7.4 版本更新公告</h2>
-									<time datetime="2018-11-22T01:12:22+08:00">2018/11/22</time>
-								</div>
-								<a class="link-overlay" href="33307.html"></a>
-							</li>
-							<li class="b2-widget-box widget-post widget-post-none">
-								<div class="b2-widget-post-order widget-order-4"><span class="b2-radius">4</span></div>
-								<div class="b2-widget-post-title">
-									<h2>Seven 2.5.0 已经可以更新了，请大家关注</h2>
-									<time datetime="2018-06-23T18:15:37+08:00">2018/06/23</time>
-								</div>
-								<a class="link-overlay" href="31766.html"></a>
 							</li>
 						</ul>
 					</div>

@@ -12,11 +12,11 @@
 								<p>${settings.tool_qr_page_desc!'扫码打开当前页'}</p>
 							</li>
 							<li class="b2-radius">
-								<img src="${settings.tool_qr_01_img!}">
+								<img src="${settings.tool_qr_01_img!'https://www.mumusur.com/upload/2020/04/mumures-b2eca980e6b8475185722138416a2c26.png'}">
 								<p>${settings.tool_qr_01_desc!'暂无描述信息'}</p>
 							</li>
 							<li class="b2-radius">
-								<img src="${settings.tool_qr_02_img!}">
+								<img src="${settings.tool_qr_02_img!'https://www.mumusur.com/upload/2020/04/QQ_class-cccffa3ad8b94545abc3f52208606f21.png'}">
 								<p>${settings.tool_qr_02_desc!'暂无描述信息'}</p>
 							</li>
 						</ul>
