@@ -79,11 +79,11 @@
 				<#if nextPost?? && prevPost??>
 					<#include "../fragment/article_prev_next.ftl">
 				</#if>
-					
+				
 				<div class="single-bottom-html mg-b box b2-radius">
 					<a href="${settings.ad_post_bottom_url!'#none'}"><img src="${settings.ad_post_bottom!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
 				</div>
-				
+			
 				<div class="comments-box">
 					<div id="comments" class="comments-area box b2-radius">
 						<div class="comments-title">
@@ -271,95 +271,9 @@
 			<aside id="secondary" class="widget-area">
 				<div class="sidebar-innter" style="">
 					<div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-						<section id="b2-widget-user-21" class="mobile-hidden widget b2-widget-user mg-b box b2-radius">
-							<div class="b2-widget-box">
-								<div id="user-widget" class="user-widget">
-									<div class="user-widget-content">
-										<div class="widget-gujia-user" style="display: none;">
-											<div class="user-widget-cover"></div>
-											<div class="user-widget-info">
-												<div class="user-w-avatar"></div>
-												<div class="user-w-name"></div>
-											</div>
-											<div class="user-w-tj">
-												<div></div>
-												<div></div>
-												<div></div>
-												<div></div>
-											</div>
-											<div class="user-w-rw"></div>
-											<div class="user-w-gold">
-												<div class="user-money"></div>
-												<div class="user-credit"></div>
-											</div>
-										</div>
-										<div>
-											<div class="user-w-logon">
-												<p class="user-w-logon-title">嗨！朋友</p>
-												<p>所有的伟大，都源于一个勇敢的开始</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section id="b2-widget-hot-37" class="mobile-hidden widget b2-widget-hot mg-b box b2-radius">
-							<div class="b2-widget-title">
-								<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>文章聚合</h2>
-							</div>
-							<div class="b2-widget-box">
-								<ul class="b2-widget-list-ul">
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-1"><span class="b2-radius">1</span></div>
-										<div class="b2-widget-post-title">
-											<h2>大公司头条：阿里宣布 20 亿美元收购网易考拉</h2>
-											<time datetime="2019-09-06T10:39:03+08:00">2019/09/06</time>
-										</div>
-										<a class="link-overlay" href=""></a>
-									</li>
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-2"><span class="b2-radius">2</span></div>
-										<div class="b2-widget-post-title">
-											<h2>元旦快乐，2.8.0更新了！</h2>
-											<time datetime="2018-12-31T21:06:16+08:00">2018/12/31</time>
-										</div>
-										<a class="link-overlay" href="34000.html"></a>
-									</li>
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-3"><span class="b2-radius">3</span></div>
-										<div class="b2-widget-post-title">
-											<h2>Seven主题 2.7.4 版本更新公告</h2>
-											<time datetime="2018-11-22T01:12:22+08:00">2018/11/22</time>
-										</div>
-										<a class="link-overlay" href="33307.html"></a>
-									</li>
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-4"><span class="b2-radius">4</span></div>
-										<div class="b2-widget-post-title">
-											<h2>Seven 2.5.0 已经可以更新了，请大家关注</h2>
-											<time datetime="2018-06-23T18:15:37+08:00">2018/06/23</time>
-										</div>
-										<a class="link-overlay" href="31766.html"></a>
-									</li>
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-5"><span class="b2-radius">5</span></div>
-										<div class="b2-widget-post-title">
-											<h2>WP商用主题-柒比贰2.6.4升级说明：主要新增了邀请码注册的功能</h2>
-											<time datetime="2018-08-07T14:50:56+08:00">2018/08/07</time>
-										</div>
-										<a class="link-overlay" href="32304.html"></a>
-									</li>
-									<li class="b2-widget-box widget-post widget-post-none">
-										<div class="b2-widget-post-order widget-order-6"><span class="b2-radius">6</span></div>
-										<div class="b2-widget-post-title">
-											<h2>Seven 2.5 有赞个人免签支付设置说明</h2>
-											<time datetime="2018-06-22T19:00:28+08:00">2018/06/22</time>
-										</div>
-										<a class="link-overlay" href="31756.html"></a>
-									</li>
-								</ul>
-							</div>
-						</section>
+						<#include "./hello_info.ftl">
+						<#include "./recent_posts.ftl">
+						<#include "./tag_cloud.ftl">
 					</div>
 				</div>
 			</aside>
