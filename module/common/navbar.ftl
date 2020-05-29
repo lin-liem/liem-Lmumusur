@@ -24,8 +24,8 @@
 							<div class="button text empty mobile-show" @click="login(1)"><i class="b2font b2-user "></i></div>
 							-->
 							<div data-type="" class="top-search" >
-								<form method="get" action="" class="mobile-search-input">
-									<input type="text" name="s" autocomplete="off" placeholder="搜索" class="search-input b2-radius" >
+								<form method="get" action="/search" class="mobile-search-input">
+									<input type="text" name="keyword" autocomplete="off" placeholder="搜索" class="search-input b2-radius" >
 									<button class="search-button-action"><i class="b2font b2-search "></i></button>
 								</form>
 							</div>
