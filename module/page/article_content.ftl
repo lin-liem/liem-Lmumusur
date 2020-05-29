@@ -62,7 +62,7 @@
 								<span class="tag-img">
 									<i class="b2font b2-tags "></i>
 								</span>
-								<span class="tag-text">${tag.name!}</span>
+								<span class="tag-text">&nbsp;${tag.name!}</span>
 							  </a>
 							</#list>
 						<#else>
@@ -70,7 +70,7 @@
 								<span class="tag-img">
 									<i class="b2font b2-tags "></i>
 								</span>
-								<span class="tag-text">暂无相关标签</span>
+								<span class="tag-text">&nbsp;暂无相关标签</span>
 							</a>
 						</#if>
 					</div>
