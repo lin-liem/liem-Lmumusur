@@ -1,3 +1,4 @@
+<#import "../fragment/article_related_tag.ftl" as tags_related_macro>
 <div id="page" class="site">
 	<div id="content" class="site-content">
 		<div class="b2-single-content wrapper">
@@ -26,9 +27,9 @@
 						<h1>${post.title!}</h1>
 						<div id="post-meta">
 							<ul class="post-meta">
-								<li class="single-date"><span><time datetime="2019-9-6 10:39:03" itemprop="datePublished" data-tid="2" class="b2timeago">8月前</time></span></li>
-								<li class="single-like"><span><i class="b2font b2-love "></i><b>41</b></span></li>
-								<li class="single-eye"><span><i class="b2font b2-eye "></i><b>29.5k</b></span></li>
+								<li class="single-date"><span><time datetime="${post.createTime!}" itemprop="datePublished" data-tid="2" class="b2timeago">${post.createTime?string('yyyy-MM-dd HH:mm:ss')}</time></span></li>
+								<li class="single-like"><span><i class="b2font b2-pinglun"></i><b>${post.commentCount}</b></span></li>
+								<li class="single-eye"><span><i class="b2font b2-eye "></i><b>${post.visits!}</b></span></li>
 							</ul>
 							<div class="post-user-info">
 								<div class="post-meta-left">
@@ -42,7 +43,8 @@
 								</div>
 								<div class="post-meta-right">
 									<div>
-										<button><a href="${rss_url!}">RSS订阅</a></button> <button class="empty">企鹅群：932154986</button>
+										<button><a href="${rss_url!}">RSS订阅</a></button>
+										<button class="empty"><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=c98acaeab8547d5b5be9192e192192916603daca30143e21df22c9ed6999d806">企鹅群</a></button>
 									</div>
 								</div>
 							</div>
@@ -197,81 +199,15 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="related-posts mg-t box b2-radius">
 					<div class="related-posts-title">猜你喜欢</div>
 					<div class="hidden-line">
 						<div class="related-posts-in">
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/12d6c92a65af1d-imageresizem_fill.jpg)"><a
-										 href="29657.html" class="link-block"></a></div>
-									<h2><a href="29657.html">自然志高级商用主题 2.0.5版发布了！</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-03-03 19:07:59" itemprop="datePublished" data-tid="13">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>20</span><span><i class="b2font b2-eye "></i>2.1k</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/1b732bfab65454-imageresizem_fill.jpg)"><a
-										 href="29305.html" class="link-block"></a></div>
-									<h2><a href="29305.html">自然志2.0.0_alpha 开通下载，仅供测试，切勿部署在生产环境</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-01-22 22:49:06" itemprop="datePublished" data-tid="14">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>60</span><span><i class="b2font b2-eye "></i>2.9k</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/15ca3a1836fa9a-imageresizem_fill.jpg)"><a
-										 href="1028.html" class="link-block"></a></div>
-									<h2><a href="1028.html">测试文章 — 付费阅读</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-01-10 09:51:22" itemprop="datePublished" data-tid="15">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>19</span><span><i class="b2font b2-eye "></i>2.4k</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/159aa39ad7fbd7-imageresizem_fill.jpg)"><a
-										 href="30489.html" class="link-block"></a></div>
-									<h2><a href="30489.html">2.2.0版本发布，还有一些优化说明</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-03-31 23:19:01" itemprop="datePublished" data-tid="16">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>72</span><span><i class="b2font b2-eye "></i>4.4k</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/1ca826b9921512-imageresizem_fill.jpg)"><a
-										 href="30522.html" class="link-block"></a></div>
-									<h2><a href="30522.html">主题阿里云短信服务的设置</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-04-03 20:38:47" itemprop="datePublished" data-tid="17">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>13</span><span><i class="b2font b2-eye "></i>1.8k</span>
-									</div>
-								</div>
-							</div>
-
-							<div class="related-posts-item">
-								<div class="b2-pd">
-									<div class="related-post-thumb" style="background-image:url(static/image/1e17dbafbb503c-imageresizem_fill.jpg)"><a
-										 href="29685.html" class="link-block"></a></div>
-									<h2><a href="29685.html">自然志2.0主题使用说明</a></h2>
-									<div class="realte-post-meta">
-										<span><time class="b2timeago" datetime="2018-03-05 21:42:26" itemprop="datePublished" data-tid="18">2年前</time></span><span><i
-											 class="b2font b2-pinglun "></i>19</span><span><i class="b2font b2-eye "></i>5.3k</span>
-									</div>
-								</div>
-							</div>
+							<#-- 标签推荐 -->
+							<#if tags?? && tags?size gt 0>
+								<@tags_related_macro.tagsRelatedMacro />
+							</#if>
 						</div>
 					</div>
 				</div>
