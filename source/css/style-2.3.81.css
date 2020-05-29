@@ -3229,7 +3229,7 @@ a.collection-button:hover{
     font-size: 15px
 }
 .post-meta-right{
-    width: 155px;
+    width: 75%;
     min-width: 136px;
     text-align: right;
 }
