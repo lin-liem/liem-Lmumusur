@@ -244,7 +244,7 @@ social_config:
 views_config:
   label: 界面配置
   items:
-     header_links:
+    header_links:
        name: header_links
        label: 头部链接
        type: textarea
