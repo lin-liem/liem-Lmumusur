@@ -16,11 +16,19 @@
 				<div class="header-user">
 					<div class="top-user-info">
 						<div class="login-button" v-if="!userData.avatar" v-cloak="">
+							<#--
 							<div class="header-login-button">
 								<button class="empty mobile-hidden" @click="login(1)">个人信息</button>
 								<button class="mobile-hidden" @click="login(2)">快速搜索</button>
 							</div>
 							<div class="button text empty mobile-show" @click="login(1)"><i class="b2font b2-user "></i></div>
+							-->
+							<div data-type="" class="top-search" >
+								<form method="get" action="" class="mobile-search-input">
+									<input type="text" name="s" autocomplete="off" placeholder="搜索" class="search-input b2-radius" >
+									<button class="search-button-action"><i class="b2font b2-search "></i></button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>

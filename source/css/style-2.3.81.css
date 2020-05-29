@@ -124,6 +124,24 @@
 .logo-top.header{
     height:116px
 }
+.top-search{
+		position: relative;
+}
+.search-input{
+	padding: 5px 50px 5px 36px;
+	border: 0;
+	border-radius: 3px;
+	width: 210px;
+	background-color: #f0f0f0;
+}
+.search-button-action{
+	background: 0 0;
+	color: initial;
+	border: 0;
+	position: absolute;
+	left: -5px;
+	top: -2px;
+}
 .header{
     box-shadow: 0px 5px 40px 0px rgba(17, 58, 93, 0.1);
     position: relative;
