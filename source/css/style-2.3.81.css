@@ -127,6 +127,11 @@
 .top-search{
 		position: relative;
 }
+.give-gray{
+	letter-spacing: 0;
+    font-size: 12px;
+	color:#90949c;
+}
 .search-input{
 	padding: 5px 50px 5px 36px;
 	border: 0 !important;

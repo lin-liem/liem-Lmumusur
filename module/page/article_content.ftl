@@ -22,12 +22,20 @@
 								<li class="single-eye"><span><i class="b2font b2-eye "></i><b>29.5k</b></span></li>
 							</ul>
 							<div class="post-user-info">
-								<div class="post-meta-left"><a href="dBCBCkrns.html" class="link-block"></a>
-									<div class="avatar-parent"><img src="${user.avatar!}" class="avatar b2-radius"></div>
-									<div class="post-user-name"><b>${user.nickname!}</b><span class="user-title"></span></div>
+								<div class="post-meta-left">
+									<a href="https://www.dachaoka.com/u/auuAwtzuk" class="link-block"></a>
+									<div class="avatar-parent">
+										<img src="${user.avatar!}" class="avatar b2-radius">
+									</div>
+									<div class="post-user-name">
+										<b>${user.nickname!}</b>
+										<span class="user-title">${user.description!}</span>
+									</div>
 								</div>
 								<div class="post-meta-right">
-									<div>${user.description!}</div>
+									<div>
+										<button><a href="${rss_url!}">RSS订阅</a></button> <button class="empty">企鹅群：932154986</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -37,11 +45,12 @@
 					<div id="content-ds" class="content-ds" >
 						<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
 						<div class="content-ds-button"><button>赞赏</button></div>
-						<p class="gray">还没有人赞赏，快来当第一个赞赏的人吧！</p>
+						<p class="give-gray">还没有人赞赏，快来当第一个赞赏的人吧！</p>
 					</div>
 					<div class="content-footer">
-						<div class="content-footer-poster"><button class="poster-span"><i class="b2font b2-feiji "></i><b>海报分享</b></button>
-							<button class="text favorite-button"><i class="b2font b2-shoucang "></i>收藏</button></div>
+						<div class="content-footer-poster">
+							<button class="poster-span"><i class="b2font b2-feiji "></i><b>海报分享</b></button>
+						</div>
 						<div class="content-footer-zan-cai">
 							<span class="">最后编辑时间&nbsp;&nbsp;|&nbsp;&nbsp;${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</span> 
 						</div>
