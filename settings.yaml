@@ -331,7 +331,7 @@ views_config:
           	     <a href="https://www.mumusur.com/s/guestbook.html" target="_blank">
 				     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
 			     </a>'
-footer_set:
+footer_config:
   label: 页脚配置
   items:
     footer_logo:
