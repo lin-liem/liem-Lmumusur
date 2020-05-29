@@ -9,9 +9,18 @@
 					<header class="entry-header">
 						<div class="">
 							<div class="post-list-cat  b2-radius">
-								<a target="__blank" class="post-list-cat-item b2-radius" href="fenlei6.html">
-									<span class="post-3-cat" style="border: 2px solid #55efc4"></span>未分类
-								</a>
+								<#if categories?? && categories?size gt 0>
+									<#list categories as category>
+										<a target="__blank" class="post-list-cat-item b2-radius" href="${category.fullPath!}">
+											<span class="post-3-cat" style="border: 2px solid #55efc4"></span>${category.name!}
+										</a>
+									</#list>
+								<#else>
+									<a target="__blank" class="post-list-cat-item b2-radius" href="#none">
+										<span class="post-3-cat" style="border: 2px solid #55efc4"></span>暂无相关分类
+									</a>
+								</#if>
+								
 							</div>
 						</div>
 						<h1>${post.title!}</h1>
@@ -23,7 +32,6 @@
 							</ul>
 							<div class="post-user-info">
 								<div class="post-meta-left">
-									<a href="https://www.dachaoka.com/u/auuAwtzuk" class="link-block"></a>
 									<div class="avatar-parent">
 										<img src="${user.avatar!}" class="avatar b2-radius">
 									</div>
