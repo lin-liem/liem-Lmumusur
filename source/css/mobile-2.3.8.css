@@ -271,7 +271,7 @@
     }
     .header-logo{
         margin:0;
-        padding: 10px 0 10px 50px;
+        padding: 10px 0 10px 10px;
     }
     .logo img{
         display: block;
@@ -2157,10 +2157,10 @@
         width: 29px;
         height: 27px;
         padding: 6px 0;
-        margin-left: 10px;
+        margin-right: 10px;
         cursor: pointer;
         position: absolute;
-        left: 0;
+        right: 0;
         z-index: 2;
         top: 9px;
         background: #f6f6f6;

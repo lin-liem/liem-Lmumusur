@@ -3,17 +3,17 @@
 		<div class="top-style">
 			<div class="top-style-blur"></div>
 			<div class="wrapper">
-				<div id="mobile-menu-button" :class="['menu-icon',{'active':show}]" @click="showAc(true)">
-					<div class="line-1"></div>
-					<div class="line-2"></div>
-					<div class="line-3"></div>
-				</div>
 				<div class="header-logo">
 					<div class="logo">
 						<h1><a rel="home" href=""><img itemprop="logo" src="${blog_logo!}" alt="${blog_title!}"></a></h1>
 					</div>
 				</div>
-				<div class="header-user">
+				<div id="mobile-menu-button" :class="['menu-icon',{'active':show}]" @click="showAc(true)">
+					<div class="line-1"></div>
+					<div class="line-2"></div>
+					<div class="line-3"></div>
+				</div>
+				<div class="mobile-hidden header-user">
 					<div class="top-user-info">
 						<div class="login-button" v-if="!userData.avatar" v-cloak="">
 							<#--
