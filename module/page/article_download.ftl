@@ -50,33 +50,33 @@
 								<span>若显示条数与实际不符，表明部分留言非开放</span>
 							</div>
 							<div class="comment-tips" style="">
-								<span><span>世界以痛吻我，要我报之以歌</span></span>
+								<span><i class="b2font b2-write "></i>世界以痛吻我，要我报之以歌</span>
 							</div>
 						</div>
 						
 						<div class="comments-area-content respond">
 							<#if commentType=='post'>
-								<style type="text/css">
-									.halo-comment .comment-form input, .halo-comment .comment-form textarea{
-										border-radius: 0px !important;
-									}
-									.halo-comment .comment-buttons .button-preview-edit, .halo-comment .comment-buttons .button-submit{
-										border-radius: 0px !important;
-									}
-									.halo-comment .comment-form {
-										margin-left: 45px !important;
-									}
-									.halo-comment .avatar {
-										border-radius: 3px !important;
-										width: 34px !important;
-										height: 34px !important;
-									}
-								</style>
 								<@comment post,"post" />
 							<#else>
 								<@comment post,"sheet" />
 							</#if>
 						</div>
+						<style type="text/css">
+							.halo-comment .comment-form input, .halo-comment .comment-form textarea{
+								border-radius: 0px !important;
+							}
+							.halo-comment .comment-buttons .button-preview-edit, .halo-comment .comment-buttons .button-submit{
+								border-radius: 0px !important;
+							}
+							.halo-comment .comment-form {
+								margin-left: 45px !important;
+							}
+							.halo-comment .avatar {
+								border-radius: 3px !important;
+								width: 34px !important;
+								height: 34px !important;
+							}
+						</style>
 					</div> 
 				</div>
 				

@@ -130,7 +130,7 @@
 	}
 
 	.mg-t {
-		margin-top: 10px;
+		margin-top: 16px;
 	}
 
 	.shop-single-data .shop-item-delete {
