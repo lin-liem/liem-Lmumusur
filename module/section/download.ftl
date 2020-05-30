@@ -65,7 +65,7 @@
 	}
 
 	.shop-single-data li.shop-single-data-address-picked {
-		border: 1px solid #ececec;
+		border: 1px solid #ececec !important;
 		padding: 10px;
 		display: block;
 		background: #fafaff;
@@ -230,8 +230,8 @@
 									<div class="shop-single-data-value">
 										<#if categories?? && categories?size gt 0>
 											<#list categories as category>
-												<a target="__blank" class="post-list-cat-item b2-radius" href="${category.fullPath!}">
-													
+												<a target="__blank" href="${category.fullPath!}">
+													<span>${category.name}</span>
 												</a>
 											</#list>
 										<#else>
@@ -244,20 +244,12 @@
 									<div class="shop-single-data-value">
 										<#if tags?? && tags?size gt 0>
 											<#list tags as tag>
-											  <a class="b2-radius" href="${tag.fullPath!}">
-												<span class="tag-img">
-													<i class="b2font b2-tags "></i>
-												</span>
-												<span class="tag-text">&nbsp;${tag.name!}</span>
+											  <a href="${tag.fullPath!}" target="_blank">
+												<span>${tag.name!}</span>
 											  </a>
 											</#list>
 										<#else>
-											<a class="b2-radius" href="#none">
-												<span class="tag-img">
-													<i class="b2font b2-tags "></i>
-												</span>
-												<span class="tag-text">&nbsp;暂无相关标签</span>
-											</a>
+											<span>暂无相关标签</span>
 										</#if>
 									</div>
 								</li>
@@ -268,7 +260,7 @@
 							</ul>
 						</div>
 						<div class="lottery-desc">
-							<p>两边数字相等，代表中奖！</p>
+							<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
 						</div>
 						<div class="mg-t shop-single-action">
 							<div class="shop-single-action-left">

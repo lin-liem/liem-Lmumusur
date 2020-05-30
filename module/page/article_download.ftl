@@ -4,6 +4,9 @@
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
+					<div class="single-top-html">
+						<a href="${settings.ad_post_top_url!'#none'}"><img src="${settings.ad_post_top!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
+					</div>
 					<header class="entry-header">
 						<div id="post-meta">
 							<ul class="post-meta">
