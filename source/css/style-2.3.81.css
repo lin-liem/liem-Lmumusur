@@ -5562,7 +5562,7 @@ a.collection-button:hover{
     font-size: 12px;
     padding:16px;
     color: #bcbcbc;
-
+	border-bottom: 1px solid #e1e8ed;
 }
 .comments-area{
     margin: 0 auto;

@@ -1,3 +1,4 @@
+<#include "../comment/comment.ftl">
 <#import "../fragment/article_related_tag.ftl" as tags_related_macro>
 <div id="page" class="site">
 	<div id="content" class="site-content" style="padding-bottom: 30px;">
