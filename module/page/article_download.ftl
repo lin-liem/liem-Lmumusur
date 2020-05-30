@@ -4,9 +4,6 @@
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
-					<div class="single-top-html">
-						<a href="${settings.ad_post_top_url!'#none'}"><img src="${settings.ad_post_top!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
-					</div>
 					<header class="entry-header">
 						<div id="post-meta">
 							<ul class="post-meta">
@@ -34,18 +31,10 @@
 						</div>
 					</header>
 					<div class="entry-content">${post.formatContent!}</div>
-
-					<div id="content-ds" class="content-ds" >
-						<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
-						<div class="content-ds-button"><button>赞赏</button></div>
-						<p class="give-gray">还没有人赞赏，快来当第一个赞赏的人吧！</p>
-					</div>
+				 
 					<div class="content-footer">
-						<div class="content-footer-poster">
-							<button class="poster-span"><i class="b2font b2-feiji "></i><b>海报分享</b></button>
-						</div>
 						<div class="content-footer-zan-cai">
-							<span class="">最后编辑时间&nbsp;&nbsp;|&nbsp;&nbsp;${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</span> 
+							<span style="margin-left:0">最后编辑时间&nbsp;&nbsp;|&nbsp;&nbsp;${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</span> 
 						</div>
 					</div>
 					<div class="post-tags-meat">

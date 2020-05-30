@@ -274,7 +274,7 @@
 			</div>
 			<!---->
 		</div>
-		<div class="box b2-radius mg-b shop-single-attr">
+		<div class="box b2-radius shop-single-attr">
 			<div class="shop-single-attr-title">商品属性</div>
 			<div class="shop-single-attr-data">
 				<ul>
