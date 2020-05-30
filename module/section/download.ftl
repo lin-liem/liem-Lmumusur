@@ -1,4 +1,9 @@
 <style>
+	.shop-single-data-title:after{
+		content:"";
+		display:inline-block;
+		width:100%;
+    }
 	.shop-single-data-list ul li, .shop-single-attr-data ul li{
 		border-top: none !important;
 	}
@@ -150,7 +155,8 @@
 	}
 
 	.shop-single-attr-data {
-		padding: 0 10px 10px;
+		padding: 10px 10px;
+		/* padding: 0 10px 10px; */
 	}
 
 	.shop-single-attr-data ul {
@@ -280,8 +286,10 @@
 			<!---->
 		</div>
 		<div class="box b2-radius shop-single-attr">
-			<div class="shop-single-attr-title">商品属性</div>
+			<div class="shop-single-attr-title">资源介绍</div>
 			<div class="shop-single-attr-data">
+				${post.summary!}
+				<#--
 				<ul>
 					<li><span class="shop-single-attr-k">灵敏程度：</span><span class="shop-single-attr-v">91dB/mW</span></li>
 					<li><span class="shop-single-attr-k">音乐类型：</span><span class="shop-single-attr-v">人声女声类型</span></li>
@@ -290,6 +298,7 @@
 					<li><span class="shop-single-attr-k">频响范围：</span><span class="shop-single-attr-v">20-20000Hz</span></li>
 					<li><span class="shop-single-attr-k">佩戴方式：</span><span class="shop-single-attr-v">头戴护耳式</span></li>
 				</ul>
+				-->
 			</div>
 		</div>
 	</div>
