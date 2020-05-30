@@ -46,15 +46,32 @@
 						<div class="comments-title">
 							<div class="comment-info">
 								<span>${post.commentCount}条回复</span> 
-								<span><b class="comment-auth-mod comment-auth">A</b><i>文章作者</i></span>
-								<span><b class="comment-auth-mod comment-mod">M</b><i>管理员</i></span>
+								<span>|</span>
+								<span>若显示条数与实际不符，表明部分留言非开放</span>
 							</div>
 							<div class="comment-tips" style="">
 								<span><span>世界以痛吻我，要我报之以歌</span></span>
 							</div>
 						</div>
-						<div class="comments-area-content">
+						
+						<div class="comments-area-content respond">
 							<#if commentType=='post'>
+								<style type="text/css">
+									.halo-comment .comment-form input, .halo-comment .comment-form textarea{
+										border-radius: 0px !important;
+									}
+									.halo-comment .comment-buttons .button-preview-edit, .halo-comment .comment-buttons .button-submit{
+										border-radius: 0px !important;
+									}
+									.halo-comment .comment-form {
+										margin-left: 45px !important;
+									}
+									.halo-comment .avatar {
+										border-radius: 3px !important;
+										width: 34px !important;
+										height: 34px !important;
+									}
+								</style>
 								<@comment post,"post" />
 							<#else>
 								<@comment post,"sheet" />
