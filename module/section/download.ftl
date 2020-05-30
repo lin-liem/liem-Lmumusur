@@ -1,6 +1,6 @@
 <style>
-	.shop-single ul li,.shop-single-attr ul li{
-		border-top: none;
+	.shop-single-data-list ul li, .shop-single-attr-data ul li{
+		border-top: none !important;
 	}
 	.shop-single-data h1 {
 		font-size: 22px;
@@ -30,7 +30,7 @@
 		border: none;
 		font-size: 12px;
 	}
-	.shop-single-action-left .download-xz{
+	.shop-single-action-right .download-xz{
 		background: linear-gradient(40deg,#e0c3fc,#8ec5fc);
 		border: none;
 		font-size: 12px;
