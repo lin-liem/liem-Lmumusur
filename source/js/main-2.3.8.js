@@ -815,6 +815,7 @@ var recaptcha = new Vue({
     }
 })
 
+var indexPaged = 2;
 //首页加载更多
 function postCatSelect(){
     var cat = document.querySelectorAll('.post-load-button')
@@ -884,21 +885,36 @@ function postCatSelect(){
                 opt['post_paged'] = paged[i]
                 opt['post_i'] = i
 
-                axios.post(b2_rest_url+'getPostList',Qs.stringify(opt)).then(res=>{
+                axios.get('page/'+indexPaged).then(res=>{
 
                     if(res.status == 200){
 
                         //如果点击的是加载更多
                         if(type === 'more'){
+          					 let dom = parseDom(res.data);
+                    
+                            var fragment = document.createDocumentFragment();
 
+                            let items = [];
+                            dom.forEach(element => {
+                              if(element.tagName == 'DIV'){
+                                  fragment.appendChild(element );
+                                  items.push(element)
+                              }
+                            });
+          					console.log(items);
+          					var contentHtml = items[0].getElementsByClassName('b2_gap')
+          					
+          					var htmlItem = contentHtml[0].innerHTML;
+                          
                             //追加内容
-                            box.insertAdjacentHTML('beforeend', res.data.data)
-
+                            box.insertAdjacentHTML('beforeend', htmlItem)
+							indexPaged++;
                             //增加渐变效果
                             listFadein(box.childNodes,20)
-
+							
                             //如果是最后一页，提示加载完毕
-                            if(res.data.pages == paged[i]){
+                            if(htmlItem.trim().length == 0 && htmlItem.trim() == ''){
                                 buttonDisabledNone(e.target,true,e.target.getAttribute('data-none'))
                             }else{
                                 e.target.innerText = e.target.getAttribute('data-text')
@@ -943,6 +959,7 @@ function postCatSelect(){
                             //e.target.childNodes[0].className = e.target.childNodes[0].className.replace(' b2-loading','')
                         }
                         b2RestTimeAgo(document.querySelectorAll('.b2timeago'))
+         
                     }
 
                     NProgress.done()
