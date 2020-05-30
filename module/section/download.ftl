@@ -210,18 +210,18 @@
 									</div>
 								</li>
 								<li>
-									<div class="shop-single-data-title">允许参与</div>
+									<div class="shop-single-data-title">热度</div>
 									<div class="shop-single-data-value shop-single-data-roles">
 										<div>
 											<span class="lv-icon user-vip b2-vip0" style="background-color:rgba(221, 51, 51, 0.18)">
 												<i style="border-color:#dd3333" ></i>
-												<b style="color:#dd3333">${post.commentCount}</b>
+												<b style="color:#dd3333">留言：${post.commentCount}</b>
 											</span>
 										</div>
 										<div>
 											<span class="lv-icon user-vip b2-vip2" style="background-color:rgba(129, 215, 66, 0.18)">
 												<i style="border-color:#81d742"></i>
-												<b style="color:#81d742">铂金会员</b>
+												<b style="color:#81d742">浏览：${post.visits!}</b>
 											</span>
 										</div>
 									</div>
@@ -231,7 +231,7 @@
 									<div class="shop-single-data-value"><span>${post.createTime?string('yyyy-MM-dd HH:mm:ss')}</span></div>
 								</li>
 								<li>
-									<div class="shop-single-data-title">所属分类</div>
+									<div class="shop-single-data-title">分类</div>
 									<div class="shop-single-data-value">
 										<#if categories?? && categories?size gt 0>
 											<#list categories as category>
@@ -245,7 +245,7 @@
 									</div>
 								</li>
 								<li>
-									<div class="shop-single-data-title">所属标签</div>
+									<div class="shop-single-data-title">标签</div>
 									<div class="shop-single-data-value">
 										<#if tags?? && tags?size gt 0>
 											<#list tags as tag>
