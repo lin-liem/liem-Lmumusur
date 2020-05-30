@@ -4,34 +4,7 @@
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
-					<header class="entry-header">
-						<div id="post-meta">
-							<ul class="post-meta">
-								<li class="single-date"><span><time datetime="${post.createTime!}" itemprop="datePublished" data-tid="2" class="b2timeago">${post.createTime?string('yyyy-MM-dd HH:mm:ss')}</time></span></li>
-								<li class="single-like"><span><i class="b2font b2-pinglun"></i><b>${post.commentCount}</b></span></li>
-								<li class="single-eye"><span><i class="b2font b2-eye "></i><b>${post.visits!}</b></span></li>
-							</ul>
-							<div class="post-user-info">
-								<div class="post-meta-left">
-									<div class="avatar-parent">
-										<img src="${user.avatar!}" class="avatar b2-radius">
-									</div>
-									<div class="post-user-name">
-										<b>${user.nickname!}</b>
-										<span class="user-title">${user.description!}</span>
-									</div>
-								</div>
-								<div class="post-meta-right">
-									<div>
-										<button><a href="${rss_url!}">RSS订阅</a></button>
-										<button class="empty"><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=c98acaeab8547d5b5be9192e192192916603daca30143e21df22c9ed6999d806">企鹅群</a></button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</header>
 					<div class="entry-content">${post.formatContent!}</div>
-				 
 					<div class="content-footer">
 						<div class="content-footer-zan-cai">
 							<span style="margin-left:0">最后编辑时间&nbsp;&nbsp;|&nbsp;&nbsp;${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</span> 

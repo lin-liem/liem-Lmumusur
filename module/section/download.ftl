@@ -106,7 +106,7 @@
 	}
 
 	.mg-t {
-		margin-top: 16px;
+		margin-top: 10px;
 	}
 
 	.shop-single-data .shop-item-delete {
@@ -192,7 +192,7 @@
 				<div data-id="471" class="shop-single-top">
 					<div class="shop-single-data">
 						<div>
-							<h1>测试</h1>
+							<h1><h1>${post.title!}</h1></h1>
 						</div>
 						<div class="shop-single-data-list">
 							<ul>
@@ -206,18 +206,23 @@
 											<span class="shop-single-price-title">积分：</span>
 											<span class="shop-single-price"><i><i class="b2font b2-jifen "></i></i> <b>1000</b></span>
 										</div>
-										<span class="views"><i class="b2font b2-hot "></i><b>2k</b></span>
+										<span class="views"><i class="b2font b2-hot "></i><b>${post.visits!}</b></span>
 									</div>
 								</li>
 								<li>
-									<div class="shop-single-data-title"> 允许参与</div>
+									<div class="shop-single-data-title">允许参与</div>
 									<div class="shop-single-data-value shop-single-data-roles">
 										<div>
-											<span class="lv-icon user-vip b2-vip0" style="background-color:rgba(221, 51, 51, 0.18)"><i style="border-color:#dd3333"></i><b
-												 style="color:#dd3333">白银会员</b></span>
+											<span class="lv-icon user-vip b2-vip0" style="background-color:rgba(221, 51, 51, 0.18)">
+												<i style="border-color:#dd3333" ></i>
+												<b style="color:#dd3333">${post.commentCount}</b>
+											</span>
 										</div>
-										<div><span class="lv-icon user-vip b2-vip2" style="background-color:rgba(129, 215, 66, 0.18)"><i style="border-color:#81d742"></i><b
-												 style="color:#81d742">铂金会员</b></span>
+										<div>
+											<span class="lv-icon user-vip b2-vip2" style="background-color:rgba(129, 215, 66, 0.18)">
+												<i style="border-color:#81d742"></i>
+												<b style="color:#81d742">铂金会员</b>
+											</span>
 										</div>
 									</div>
 								</li>
