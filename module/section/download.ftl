@@ -24,6 +24,10 @@
 	.shop-single-data {
 		width: 100%;
 		/* padding-left: 20px; */
+		font-size: 14px;
+		color: gray;
+		text-align: justify;
+		line-height: 1.5rem;
 	}
 
 	.shop-single-top {
@@ -70,6 +74,14 @@
 	}
 
 	.shop-single-data li.shop-single-data-address-picked {
+		border: 1px solid #ececec !important;
+		padding: 10px;
+		display: block;
+		background: #fafaff;
+		margin-top: -1px;
+	}
+	
+	.shop-single-data-desc {
 		border: 1px solid #ececec !important;
 		padding: 10px;
 		display: block;
@@ -206,11 +218,11 @@
 									<div class="shop-single-data-value">
 										<div class="shop-item-normal-price shop-item-delete">
 											<span class="shop-single-price-title">价格：</span>
-											<span class="shop-single-price"><i>￥</i> <b>1400</b></span>
+											<span class="shop-single-price"><i>￥</i> <b>100.00</b></span>
 										</div>
 										<div class="shop-item-u-price">
 											<span class="shop-single-price-title">积分：</span>
-											<span class="shop-single-price"><i><i class="b2font b2-jifen "></i></i> <b>1000</b></span>
+											<span class="shop-single-price"><i><i class="b2font b2-jifen "></i></i> <b>0.00</b></span>
 										</div>
 										<span class="views"><i class="b2font b2-hot "></i><b>${post.visits!}</b></span>
 									</div>
@@ -288,8 +300,6 @@
 		<div class="box b2-radius shop-single-attr">
 			<div class="shop-single-attr-title">资源介绍</div>
 			<div class="shop-single-attr-data">
-				${post.summary!}
-				<#--
 				<ul>
 					<li><span class="shop-single-attr-k">灵敏程度：</span><span class="shop-single-attr-v">91dB/mW</span></li>
 					<li><span class="shop-single-attr-k">音乐类型：</span><span class="shop-single-attr-v">人声女声类型</span></li>
@@ -298,7 +308,7 @@
 					<li><span class="shop-single-attr-k">频响范围：</span><span class="shop-single-attr-v">20-20000Hz</span></li>
 					<li><span class="shop-single-attr-k">佩戴方式：</span><span class="shop-single-attr-v">头戴护耳式</span></li>
 				</ul>
-				-->
+				<div class="shop-single-data-desc">${post.summary!}</div>
 			</div>
 		</div>
 	</div>

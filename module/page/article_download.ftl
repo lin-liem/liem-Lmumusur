@@ -169,7 +169,6 @@
 						</#if>
 							
 						<#include "../section/recent_posts.ftl">
-						<#include "../section/tag_cloud.ftl">
 					</div>
 				</div>
 			</aside>
