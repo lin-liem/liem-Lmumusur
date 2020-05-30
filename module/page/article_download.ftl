@@ -215,7 +215,7 @@
 			<aside id="secondary" class="widget-area">
 				<div class="sidebar-innter" style="">
 					<div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
-						<#include "../section/hello_info.ftl">
+						<#include "../section/download.ftl">
 						<#include "../section/recent_posts.ftl">
 						<#include "../section/tag_cloud.ftl">
 					</div>
