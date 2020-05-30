@@ -1,3 +1,4 @@
+<#include "../comment/comment.ftl">
 <#import "../fragment/article_related_tag.ftl" as tags_related_macro>
 <#import "../fragment/article_related_categories.ftl" as categories_related_macro>
 <div id="page" class="site">
@@ -43,107 +44,23 @@
 				<div class="comments-box">
 					<div id="comments" class="comments-area box b2-radius">
 						<div class="comments-title">
-							<div class="comment-info"><span>
-									136 条回复 </span> <span><b class="comment-auth-mod comment-auth">A</b><i>文章作者</i></span> <span><b class="comment-auth-mod comment-mod">M</b><i>管理员</i></span></div>
-							<div class="comment-tips" style=""><span><span>世界以痛吻我，要我报之以歌
-									</span></span></div>
+							<div class="comment-info">
+								<span>${post.commentCount}条回复</span> 
+								<span><b class="comment-auth-mod comment-auth">A</b><i>文章作者</i></span>
+								<span><b class="comment-auth-mod comment-mod">M</b><i>管理员</i></span>
+							</div>
+							<div class="comment-tips" style="">
+								<span><span>世界以痛吻我，要我报之以歌</span></span>
+							</div>
 						</div>
 						<div class="comments-area-content">
-							<ol class="comment-list">
-								<li>
-									<article id="comment-2960" itemscope="itemscope" itemtype="http://schema.org/Comment" class="comment">
-										<figure class="gravatar avatar-parent"><img alt="" src="static/picture/2679969ed953e9625_1_avatar-image1.jpg"
-											 srcset="https://static.7b2.com/wp-content/uploads/2020/04/2679969ed953e9625_1_avatar.jpg?x-oss-process=image/resize,https://www.dachaoka.com/m_fill,https://www.dachaoka.com/h_121,https://www.dachaoka.com/w_121 2x"
-											 height="43" width="43" class="avatar avatar-43 photo avatar-default"><svg fill="currentColor" viewBox="0 0 24 24"
-											 width="18" height="18" class="Zi Zi--BadgeCert">
-												<g fill="none" fill-rule="evenodd">
-													<path fill="#0F88EB" d="M2.64 13.39c1.068.895 1.808 2.733 1.66 4.113l.022-.196c-.147 1.384.856 2.4 2.24 2.278l-.198.016c1.387-.122 3.21.655 4.083 1.734l-.125-.154c.876 1.084 2.304 1.092 3.195.027l-.127.152c.895-1.068 2.733-1.808 4.113-1.66l-.198-.022c1.386.147 2.402-.856 2.279-2.238l.017.197c-.122-1.388.655-3.212 1.734-4.084l-.154.125c1.083-.876 1.092-2.304.027-3.195l.152.127c-1.068-.895-1.808-2.732-1.66-4.113l-.022.198c.147-1.386-.856-2.4-2.24-2.279l.198-.017c-1.387.123-3.21-.654-4.083-1.733l.125.153c-.876-1.083-2.304-1.092-3.195-.027l.127-.152c-.895 1.068-2.733 1.808-4.113 1.662l.198.02c-1.386-.147-2.4.857-2.279 2.24L4.4 6.363c.122 1.387-.655 3.21-1.734 4.084l.154-.126c-1.083.878-1.092 2.304-.027 3.195l-.152-.127z"></path>
-													<path fill="#FFF" d="M9.78 15.728l-2.633-2.999s-.458-.705.242-1.362c.7-.657 1.328-.219 1.328-.219l1.953 2.132 4.696-4.931s.663-.348 1.299.198c.636.545.27 1.382.27 1.382s-3.466 3.858-5.376 5.782c-.98.93-1.778.017-1.778.017z"></path>
-												</g>
-											</svg></figure>
-										<div class="comment-item">
-											<div role="complementary" class="comment-meta">
-												<div class="comment-user-info">
-													<div><span class="comment-author"><a target="_blank" href="dBvzwlpqs.html">iiuu23</a><span></span><span
-															 class="user-title">春哥测试账户5</span></span> <span><span class="lv-icon user-vip b2-vip2" style="background-color: rgba(129, 215, 66, 0.18);"><i
-																 style="border-color: rgb(129, 215, 66);"></i><b style="color: rgb(129, 215, 66);">铂金会员</b></span><span
-															 class="lv-icon user-lv b2-lv3"><b>高中</b><i>lv3</i></span></span></div>
-												</div>
-												<div class="comment-floor"><time datetime="2020-04-14 18:55:05" itemprop="datePublished" data-tid="4" class="b2timeago">1月前</time></div>
-											</div>
-											<div itemprop="text" class="comment-content post-content">
-												<div class="comment-content-text">
-													<p>测试</p>
-												</div>
-												<div class="comment-footer">
-													<div class="comment-footer-tools">
-														<div class="comment-vote-hidden"><button id="comment-up-2960" onclick="b2CommentList.vote(this,'comment_up','2960')"
-															 class="comment-up text "><i class="b2font b2-love "></i><span>0</span></button> <button id="comment-down-2960"
-															 onclick="b2CommentList.vote(this,'comment_down','2960')" class="comment-down text "><i class="b2font b2-buxihuan "></i><span>0</span></button></div>
-														<div class="comment-item-hidden"><button onclick="b2CommentList.sticky('2960')" class="text comment-zd">置顶</button>
-															<button data-id="2960" onclick="b2CommentList.move('2960')" class="text fr reply">回复</button></div>
-													</div>
-												</div>
-												<div id="comment-form-2960"></div>
-											</div>
-										</div>
-										<div id="comment-children-2960" class="children children-mark"></div>
-									</article>
-								</li>
-							</ol>
+							<#if commentType=='post'>
+								<@comment post,"post" />
+							<#else>
+								<@comment post,"sheet" />
+							</#if>
 						</div>
-						<div class="b2-pagenav comment-nav b2-radius ">
-							<div class="ajax-pager">
-								<div class="ajax-pagenav">
-									<div class="btn-group"><button class="empty button">1</button><button disabled="disabled" class="empty button bordernone">...</button><button
-										 class="empty button">9</button><button class="empty button">10</button><button class="empty button">11</button><button
-										 disabled="disabled" class="empty button selected">12</button> <label class="pager-center"><input type="text"
-											 autocomplete="off">/12 页</label></div>
-									<div class="btn-pager"><button class="empty button">❮</button> <button disabled="disabled" class="empty button">❯</button></div>
-								</div>
-							</div>
-						</div>
-					</div><!-- #comments -->
-
-					<div id="comment-form" class="comment-form mg-t">
-						<div id="respond" class="respond box b2-radius">
-							<div class="com-info"><img class="com-info-avatar avatar b2-radius" src="https://www.dachaoka.com/wp-content/themes/b2/Assets/fontend/images/default-avatar.png"></div>
-							<div data-commenter="{&quot;user_name&quot;:&quot;&quot;,&quot;user_email&quot;:&quot;&quot;,&quot;avatar&quot;:&quot;https:\/\/www.dachaoka.com\/wp-content\/themes\/b2\/Assets\/fontend\/images\/default-avatar.png&quot;}"
-							 class="com-form">
-								<div id="com-form-title" class="com-form-title b2-show">
-									<div>
-										<div><span>欢迎您，新朋友，感谢参与互动！</span></div>
-									</div>
-									<div><button class="text">修改资料</button></div>
-								</div>
-								<div class="com-form-input"><input id="author" type="text" name="nickname" placeholder="称呼"> <input id="email"
-									 type="text" name="email" placeholder="邮箱"></div>
-								<div class="com-form-textarea"><textarea id="textarea" placeholder="说说你的看法" style="overflow: hidden; overflow-wrap: break-word; height: 100px;"></textarea></div>
-								<div class="com-form-button">
-									<div class="com-form-button-l"><span><i class="b2font b2-face"></i></span>
-										<div class="comment-smile-box"><button class="text smily-button"><img src="static/picture/1f600.svg" class="b2-smilies"></button><button
-											 class="text smily-button"><img src="static/picture/1f604.svg" class="b2-smilies"></button><button class="text smily-button"><img
-												 src="static/picture/1f60e.svg" class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f612.svg"
-												 class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f613.svg" class="b2-smilies"></button><button
-											 class="text smily-button"><img src="static/picture/1f602.svg" class="b2-smilies"></button><button class="text smily-button"><img
-												 src="static/picture/1f60d.svg" class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f60f.svg"
-												 class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f619.svg" class="b2-smilies"></button><button
-											 class="text smily-button"><img src="static/picture/1f61f.svg" class="b2-smilies"></button><button class="text smily-button"><img
-												 src="static/picture/1f616.svg" class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f61d.svg"
-												 class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f628.svg" class="b2-smilies"></button><button
-											 class="text smily-button"><img src="static/picture/1f631.svg" class="b2-smilies"></button><button class="text smily-button"><img
-												 src="static/picture/1f62d.svg" class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f480.svg"
-												 class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f4a9.svg" class="b2-smilies"></button><button
-											 class="text smily-button"><img src="static/picture/1f44d.svg" class="b2-smilies"></button><button class="text smily-button"><img
-												 src="static/picture/1f4aa.svg" class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f44a.svg"
-												 class="b2-smilies"></button><button class="text smily-button"><img src="static/picture/1f61a.svg" class="b2-smilies"></button></div>
-										<!---->
-									</div>
-									<div class="com-form-button-r"><button class="text mg-r">取消回复</button> <button class="">提交</button></div>
-								</div>
-							</div>
-						</div>
-					</div>
+					</div> 
 				</div>
 				
 				<div class="related-posts mg-t box b2-radius">
