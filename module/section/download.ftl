@@ -81,12 +81,19 @@
 		margin-top: -1px;
 	}
 	
+	.shop-single-data-desc:after{
+		content:"";
+		display:inline-block;
+		width:100%;
+	}
 	.shop-single-data-desc {
 		border: 1px solid #ececec !important;
 		padding: 10px;
 		display: block;
 		background: #fafaff;
-		margin-top: -1px;
+		font-size: 14px;
+		color: #999;
+		text-align: justify;
 	}
 
 	.shop-single-data li {
@@ -178,9 +185,10 @@
 
 	.shop-single-attr-data li {
 		font-size: 14px;
-		margin-top: 10px;
+		/* margin-top: 10px; */
 		width: 50%;
 		display: flex;
+		padding: 0 10px 10px !important;
 	}
 
 	.shop-single-attr-data li span {
