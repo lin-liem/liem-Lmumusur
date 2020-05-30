@@ -4,27 +4,7 @@
 		<div class="b2-single-content wrapper">
 			<div id="primary-home" class="content-area">
 				<article class="single-article b2-radius box">
-					<div class="single-top-html">
-						<a href="${settings.ad_post_top_url!'#none'}"><img src="${settings.ad_post_top!'${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg'}"></a>
-					</div>
 					<header class="entry-header">
-						<div class="">
-							<div class="post-list-cat  b2-radius">
-								<#if categories?? && categories?size gt 0>
-									<#list categories as category>
-										<a target="__blank" class="post-list-cat-item b2-radius" href="${category.fullPath!}">
-											<span class="post-3-cat" style="border: 2px solid #55efc4"></span>${category.name!}
-										</a>
-									</#list>
-								<#else>
-									<a target="__blank" class="post-list-cat-item b2-radius" href="#none">
-										<span class="post-3-cat" style="border: 2px solid #55efc4"></span>暂无相关分类
-									</a>
-								</#if>
-								
-							</div>
-						</div>
-						<h1>${post.title!}</h1>
 						<div id="post-meta">
 							<ul class="post-meta">
 								<li class="single-date"><span><time datetime="${post.createTime!}" itemprop="datePublished" data-tid="2" class="b2timeago">${post.createTime?string('yyyy-MM-dd HH:mm:ss')}</time></span></li>

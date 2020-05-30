@@ -212,25 +212,54 @@
 								<li>
 									<div class="shop-single-data-title"> 允许参与</div>
 									<div class="shop-single-data-value shop-single-data-roles">
-										<div><span class="lv-icon user-vip b2-vip0" style="background-color:rgba(221, 51, 51, 0.18)"><i style="border-color:#dd3333"></i><b
-												 style="color:#dd3333">白银会员</b></span></div>
+										<div>
+											<span class="lv-icon user-vip b2-vip0" style="background-color:rgba(221, 51, 51, 0.18)"><i style="border-color:#dd3333"></i><b
+												 style="color:#dd3333">白银会员</b></span>
+										</div>
 										<div><span class="lv-icon user-vip b2-vip2" style="background-color:rgba(129, 215, 66, 0.18)"><i style="border-color:#81d742"></i><b
-												 style="color:#81d742">铂金会员</b></span></div>
-
-
+												 style="color:#81d742">铂金会员</b></span>
+										</div>
 									</div>
 								</li>
 								<li>
-									<div class="shop-single-data-title"> 商品</div>
-									<div class="shop-single-data-value"><span>实物</span></div>
+									<div class="shop-single-data-title">更新时间</div>
+									<div class="shop-single-data-value"><span>${post.createTime?string('yyyy-MM-dd HH:mm:ss')}</span></div>
 								</li>
 								<li>
-									<div class="shop-single-data-title"> 总数</div>
-									<div class="shop-single-data-value"><span>9990</span></div>
+									<div class="shop-single-data-title">所属分类</div>
+									<div class="shop-single-data-value">
+										<#if categories?? && categories?size gt 0>
+											<#list categories as category>
+												<a target="__blank" class="post-list-cat-item b2-radius" href="${category.fullPath!}">
+													
+												</a>
+											</#list>
+										<#else>
+											<span>暂无相关分类</span>
+										</#if>
+									</div>
 								</li>
 								<li>
-									<div class="shop-single-data-title"> 抽中</div>
-									<div class="shop-single-data-value"><span>109</span></div>
+									<div class="shop-single-data-title">所属标签</div>
+									<div class="shop-single-data-value">
+										<#if tags?? && tags?size gt 0>
+											<#list tags as tag>
+											  <a class="b2-radius" href="${tag.fullPath!}">
+												<span class="tag-img">
+													<i class="b2font b2-tags "></i>
+												</span>
+												<span class="tag-text">&nbsp;${tag.name!}</span>
+											  </a>
+											</#list>
+										<#else>
+											<a class="b2-radius" href="#none">
+												<span class="tag-img">
+													<i class="b2font b2-tags "></i>
+												</span>
+												<span class="tag-text">&nbsp;暂无相关标签</span>
+											</a>
+										</#if>
+									</div>
 								</li>
 								<li class="shop-single-data-address-picked">
 									<p class="shop-single-data-address-desc">实物收货地址（必选）：<span><i class="b2font b2-zidingyi "></i>编辑地址</span></p>
