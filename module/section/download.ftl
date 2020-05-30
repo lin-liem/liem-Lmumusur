@@ -1,4 +1,7 @@
 <style>
+	.shop-single ul li,.shop-single-attr ul li{
+		border-top: none;
+	}
 	.shop-single-data h1 {
 		font-size: 22px;
 		margin-bottom: 10px;
@@ -22,7 +25,11 @@
 		display: flex;
 		padding: 20px;
 	}
-
+	.shop-single-action-left .download-zs{
+		 background: -webkit-linear-gradient(top,#ff557f,#f16b6f);
+		border: 1px solid #FF557F;
+		font-size: 12px;
+	}
 	.shop-single-data li.shop-single-data-price {
 		background-image: url(//www.dachaoka.com/wp-content/themes/b2/Assets/fontend/images/price-bg.jpg);
 		background-color: #e9e9e9;
@@ -229,8 +236,8 @@
 							<p>两边数字相等，代表中奖！</p>
 						</div>
 						<div class="mg-t shop-single-action">
-							<div class="shop-single-action-left"><button disabled="disabled">抽奖</button></div>
-							<div class="shop-single-action-right"><button class="text favorite-button"><i class="b2font b2-shoucang "></i><span>收藏</span></button></div>
+							<div class="shop-single-action-left"><button class="download-zs">赞赏</button></div>
+							<div class="shop-single-action-right"><button>抽奖</button></button></div>
 						</div>
 					</div>
 				</div>
