@@ -27,9 +27,15 @@
 	}
 	.shop-single-action-left .download-zs{
 		 background: -webkit-linear-gradient(top,#ff557f,#f16b6f);
-		border: 1px solid #FF557F;
+		border: none;
 		font-size: 12px;
 	}
+	.shop-single-action-left .download-xz{
+		background: linear-gradient(40deg,#e0c3fc,#8ec5fc);
+		border: none;
+		font-size: 12px;
+	}
+	
 	.shop-single-data li.shop-single-data-price {
 		background-image: url(//www.dachaoka.com/wp-content/themes/b2/Assets/fontend/images/price-bg.jpg);
 		background-color: #e9e9e9;
@@ -236,8 +242,11 @@
 							<p>两边数字相等，代表中奖！</p>
 						</div>
 						<div class="mg-t shop-single-action">
-							<div class="shop-single-action-left"><button class="download-zs">赞赏</button></div>
-							<div class="shop-single-action-right"><button>抽奖</button></button></div>
+							<div class="shop-single-action-left">
+								<button class="download-zs">赞赏</button>
+								<button class="download-zs">分享海报</button>
+							</div>
+							<div class="shop-single-action-right"><button class="download-xz">下载</button></button></div>
 						</div>
 					</div>
 				</div>
@@ -248,9 +257,9 @@
 			<div class="shop-single-attr-title">商品属性</div>
 			<div class="shop-single-attr-data">
 				<ul>
-					<li><span class="shop-single-attr-k">灵敏度：</span><span class="shop-single-attr-v">91dB/mW</span></li>
-					<li><span class="shop-single-attr-k">适用音乐类型：</span><span class="shop-single-attr-v">人声女声流行风类型</span></li>
-					<li><span class="shop-single-attr-k">阻抗：</span><span class="shop-single-attr-v">20Ω</span></li>
+					<li><span class="shop-single-attr-k">灵敏程度：</span><span class="shop-single-attr-v">91dB/mW</span></li>
+					<li><span class="shop-single-attr-k">音乐类型：</span><span class="shop-single-attr-v">人声女声类型</span></li>
+					<li><span class="shop-single-attr-k">阻抗大小：</span><span class="shop-single-attr-v">20Ω</span></li>
 					<li><span class="shop-single-attr-k">耳机类型：</span><span class="shop-single-attr-v">无线</span></li>
 					<li><span class="shop-single-attr-k">频响范围：</span><span class="shop-single-attr-v">20-20000Hz</span></li>
 					<li><span class="shop-single-attr-k">佩戴方式：</span><span class="shop-single-attr-v">头戴护耳式</span></li>
