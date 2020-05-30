@@ -212,7 +212,7 @@
 					</div>
 				</div>
 			</div>
-			<aside id="secondary" class="widget-area">
+			<aside id="secondary" class="widget-area" style="min-width: 350px;">
 				<div class="sidebar-innter" style="">
 					<div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
 						<#include "../section/download.ftl">
