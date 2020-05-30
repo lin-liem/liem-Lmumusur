@@ -1,4 +1,5 @@
 <#import "../fragment/article_related_tag.ftl" as tags_related_macro>
+<#import "../fragment/article_related_tag.ftl" as categories_related_macro>
 <div id="page" class="site">
 	<div id="content" class="site-content" style="padding-bottom: 30px;">
 		<div class="b2-single-content wrapper">
@@ -161,6 +162,12 @@
 				<div class="sidebar-innter" style="">
 					<div class="inner-wrapper-sticky" style="position: relative; transform: translate3d(0px, 0px, 0px);">
 						<#include "../section/download.ftl">
+							
+						<#-- 分类推荐 -->
+						<#if categories?? && categories?size gt 0>
+							<@categories_related_macro.categoryRelatedMacro />
+						</#if>
+							
 						<#include "../section/recent_posts.ftl">
 						<#include "../section/tag_cloud.ftl">
 					</div>
