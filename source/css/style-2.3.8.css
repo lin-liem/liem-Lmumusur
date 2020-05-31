@@ -262,7 +262,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	object-fit: cover;
-	vertical-align: text-top;
+	vertical-align: bottom;
 }
 button::-moz-focus-inner {
 	border: 0;

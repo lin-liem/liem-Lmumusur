@@ -19,7 +19,7 @@
 										</div>
 										<div class="b2-widget-post-title">
 											<h2> ${post.title!}</h2>
-											<div class="products-price green"> <i class="b2font b2-jifen "></i>&nbsp;${post.createTime?string('yyyy-MM-dd')}</div>
+											<div class="products-price green"> <i class="b2font b2-time "></i>&nbsp;${post.createTime?string('yyyy-MM-dd')}</div>
 										</div>
 										<a ref="nofollow" class="link-overlay" href="${post.fullPath!}"></a>
 									</div>
