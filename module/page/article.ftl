@@ -8,4 +8,9 @@
 	<#if pageType == 'download'>
 		<#include "./article_download.ftl">
 	</#if>
+	
+	<#-- 分类页模板 -->
+	<#if pageType == 'category'>
+		<#include "./article_category.ftl">
+	</#if>
 </#macro>
