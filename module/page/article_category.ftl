@@ -1,7 +1,30 @@
 <div id="page" class="site">
 	<div id="content" class="site-content">
 		<div class="tax-header mg-t- mg-b">
-			<div class="b2-light-dark">
+			<div class="b2-light-dark" >
+				<style>
+					.b2-light-dark-outside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.08);
+}
+.b2-light-dark-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: blur(25px);
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -ms-filter: blur(25px);
+    -o-filter: blur(25px);
+					
+				</style>
+				<div class="b2-light-dark-outside">
+					<div class="b2-light-dark-bg" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);"></div>
+				</div>
 				<div class="wrapper">
 					<div class="tax-info">
 						<div class="tax-info-item">
