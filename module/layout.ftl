@@ -34,7 +34,7 @@
 		<#include "common/style.ftl">
 	</head>
 
-	<body class="home blog">
+	<body class="blog">
 		<div id="page" class="site">
 			<div class="site-header mg-b">
 				<div class="site-header-in">
