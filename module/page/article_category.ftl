@@ -145,13 +145,13 @@
 		<div class="sidebar-innter">
 			<!-- 问候模块 -->
 			<#if settings.hello_info_enable!true>
-				<#include "./hello_info.ftl">
+				<#include "../section/hello_info.ftl">
 			</#if>
 				
 				
 			<!-- 导入最新文章 -->
 			<#if settings.recent_post_enable!true>
-				<#include "./recent_posts.ftl">
+				<#include "../section/recent_posts.ftl">
 			</#if>
 			
 		</div>
