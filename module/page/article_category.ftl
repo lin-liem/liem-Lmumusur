@@ -39,18 +39,25 @@
 						<ul>
 							<li>
 								<div class="filter-name">分类：</div>
-								<div class="filter-items"><a href="fenlei14.html" class="" title="这是另外一个分类目录">这是另外一个分类目录</a><a href="fenlei3.html"
-									 class="" title="分类5">分类5</a><a href="fenlei4.html" class="" title="分类6">分类6</a><a href="years.html" class=""
-									 title="years">years</a><a href="fenlei6.html" class="" title="未分类">未分类</a><a href="wp-jq.html" class=""
-									 title="WP技巧">WP技巧</a><a href="" class="current" title="分类3">分类3</a><a href="fenlei2.html" class="" title="分类4">分类4</a><a
-									 href="fenlei8.html" class="" title="测试分类">测试分类</a><a href="ertae.html" class="" title="主题更新">主题更新</a></div>
+								<div class="filter-items">
+									<a href="javascript:;" class="current" title="全部">全部</a>
+									<@categoryTag method="list">
+										<#list categories as category>
+											 <a href="${category.fullPath!}"  title="${category.slug}">${category.name}</a>
+										</#list>
+									</@categoryTag>
+								</div>
 							</li>
 							<li>
-								<div class="filter-name">专题：</div>
-								<div class="filter-items"><a href="" class="current">全部</a><a href="javascript:;" class="" title="柒比贰主题技巧">柒比贰主题技巧</a><a
-									 href="javascript:;" class="" title="新物种奇观">新物种奇观</a><a href="javascript:;" class="" title="疯狂的大自然">疯狂的大自然</a><a
-									 href="javascript:;" class="" title="动物也逗逼">动物也逗逼</a><a href="javascript:;" class="" title="心系武汉，区块链从业者不是旁观者">心系武汉，区块链从业者不是旁观者</a><a
-									 href="javascript:;" class="" title="它是外星物种吗？">它是外星物种吗？</a><a href="javascript:;" class="" title="地理奇迹之旅">地理奇迹之旅</a></div>
+								<div class="filter-name">标签：</div>
+								<div class="filter-items">
+									<a href="javascript:;" class="current" title="全部">全部</a>
+									<@tagTag method="list">
+										<#list tags as tag>
+											<a href="${tag.fullPath!}"  title="${tag.slug}">${tag.name}</a>
+										</#list>
+									</@tagTag>
+								</div>
 							</li>
 						</ul>
 					</div>
