@@ -1,7 +1,7 @@
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
 		<div class="b2-light-dark-outside">
-			<div class="b2-light-dark-bg" style="background-image: url(${category.thumbnail!}),url(${theme_base!}/source/picture/category_bg.jpg);"></div>
+			<div class="b2-light-dark-bg" style="background-image: url(${tag.thumbnail!}),url(${theme_base!}/source/picture/category_bg.jpg);"></div>
 		</div>
 		<div class="wrapper">
 			<div class="tax-info">
