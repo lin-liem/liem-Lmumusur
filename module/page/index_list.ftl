@@ -5,7 +5,7 @@
 			<p class="module-desc">这是一个专题</p>
 		</div>
 		<!-- 分类 -->
-		<#include "../fragment/categories.ftl">
+		<#include "../fragment/index_navbar_categories.ftl">
 	</div>
 	<div class="hidden-line">
 		<ul class="b2_gap">

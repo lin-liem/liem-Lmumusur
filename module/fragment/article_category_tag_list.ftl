@@ -58,13 +58,13 @@
 							<li>
 								<div class="filter-name">分类：</div>
 								<div class="filter-items">
-									<a href="javascript:;" class="current" title="全部">全部</a>
+									<a href="${categories_url!}" class="current" title="全部">全部</a>
 									<@categoryTag method="list">
 										<#list categories as categoryItem>
 											<#if category?? && categoryItem.id==category.id>
 												<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a>
-												<#else>
-													<a href="${categoryItem.fullPath!}" title="${categoryItem.slug}">${categoryItem.name}</a>
+											<#else>
+												<a href="${categoryItem.fullPath!}" title="${categoryItem.slug}">${categoryItem.name}</a>
 											</#if>
 										</#list>
 									</@categoryTag>
@@ -73,13 +73,13 @@
 							<li>
 								<div class="filter-name">标签：</div>
 								<div class="filter-items">
-									<a href="javascript:;" class="current" title="全部">全部</a>
+									<a href="${tags_url!}" class="current" title="全部">全部</a>
 									<@tagTag method="list">
 										<#list tags as tagItem>
 											<#if tag?? && tagItem.id==tag.id>
 												<a href="${tagItem.fullPath!}" class="current" title="${tagItem.slug}">${tagItem.name}</a>
-												<#else>
-													<a href="${tagItem.fullPath!}" title="${tagItem.slug}">${tagItem.name}</a>
+											<#else>
+												<a href="${tagItem.fullPath!}" title="${tagItem.slug}">${tagItem.name}</a>
 											</#if>
 										</#list>
 									</@tagTag>
