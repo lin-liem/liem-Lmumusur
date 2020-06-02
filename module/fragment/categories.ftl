@@ -8,7 +8,7 @@
           	</#list>
             </@categoryTag>
 		</#assign>
-		<a class="cat-list picked post-load-button" data-cats="${slugName}" href="javascript:void(0)" data-type="cat" data-i="6">
+		<a class="cat-list picked post-load-button" data-cats="[${slugName?substring(0,slugName?length-2)}]" href="javascript:void(0)" data-type="cat" data-i="6">
 			<span data-type="cat">全部</span>
 		</a>
 		<@categoryTag method="list">
