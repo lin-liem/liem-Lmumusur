@@ -815,7 +815,6 @@ var recaptcha = new Vue({
     }
 })
 
-var indexPaged = 2;
 //首页加载更多
 function postCatSelect(){
     var cat = document.querySelectorAll('.post-load-button')
@@ -884,14 +883,20 @@ function postCatSelect(){
                 opt['post_cat'] = cats
                 opt['post_paged'] = paged[i]
                 opt['post_i'] = i
-				console.log('cats',cats);
-                axios.get('page/'+indexPaged).then(res=>{
+          
+          		var request_url ="";
+          		if(cats.length > 1){
+          			request_url = 'page/'+paged[i]
+          		}else{
+          			request_url = 'categories/'+cats[0]+'/page/'+paged[i]
+          		}
+                axios.get(request_url).then(res=>{
 
                     if(res.status == 200){
-
+						console.log(type);
                         //如果点击的是加载更多
                         if(type === 'more'){
-          					 let dom = parseDom(res.data);
+          					let dom = parseDom(res.data);
                     
                             var fragment = document.createDocumentFragment();
 
@@ -909,7 +914,7 @@ function postCatSelect(){
                           
                             //追加内容
                             box.insertAdjacentHTML('beforeend', htmlItem)
-							indexPaged++;
+	
                             //增加渐变效果
                             listFadein(box.childNodes,20)
 							
@@ -922,15 +927,30 @@ function postCatSelect(){
                             }
 
                         }else{
-
-                            //如果内容为空，加载提示
-                            if(res.data.data == ''){
-                                box.innerHTML = b2_global.empty_page
+          					let dom = parseDom(res.data);
+          					var fragment = document.createDocumentFragment();
+                            let items = [];
+                            dom.forEach(element => {
+                              if(element.tagName == 'DIV'){
+                                  fragment.appendChild(element );
+                                  items.push(element)
+                              }
+                            });
+          					var contentHtml = items[0].getElementsByClassName('b2_gap')
+							// 获取所需文本          					
+          					var htmlItem = contentHtml[0].innerHTML;
+          					var dataResult = contentHtml[0].getElementsByClassName('post-list-item');
+          					//如果内容为空，加载提示
+                            if(dataResult.length == 0 && htmlItem.trim() == ''){
+                                box.innerHTML = "<div class=\"empty-page\"><i class=\"b2font b2-page-empty\"><\/i><p>啥也没有...<\/p><h2>不信你看<\/h2><\/div>";
                                 //隐藏按钮
                                 hiddenButton(button,false)
+          
                             //如果内容不为空，并且只有一页，隐藏加载更多按钮
-                            }else if(res.data.pages == 1){
-                                box.innerHTML = res.data.data
+                            }else if(dataResult.length < 12 ){
+                                
+                            	// 追加内容
+                            	box.innerHTML = htmlItem
 
                                 //增加渐变效果
                                 listFadein(box.childNodes,20)
@@ -942,7 +962,8 @@ function postCatSelect(){
                                 }
                                 
                             }else{
-                                box.innerHTML = res.data.data
+                                // 追加内容
+                                box.innerHTML = htmlItem
 
                                 //增加渐变效果
                                 listFadein(box.childNodes,20)
