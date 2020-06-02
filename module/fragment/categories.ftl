@@ -4,7 +4,7 @@
 		<#assign slugName>
           	<@categoryTag method="list">
           	<#list categories as category>
-            	'${category.slug}'
+            	'${category.slug}',
           	</#list>
             </@categoryTag>
 		</#assign>
