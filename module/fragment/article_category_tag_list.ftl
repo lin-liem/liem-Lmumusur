@@ -30,10 +30,18 @@
 					<a href="测试.html">测试</a> <a href="wordpress.html">wordpress</a> <a href="ziranzhi2.html">ziranzhi2</a> <a href="wp技巧.html">WP技巧</a>
 				</div>
 				<div class="tax-title">
-					<#if tag?? >
-						<h1 class="b2-radius" style="background-image:url(${(tag.thumbnail?length gt 0)? tag.thumbnail : theme_base+'/source/picture/category_bg.jpg'});"><span>${tag.name}</span></h1>
-					<#elseif category?? >
-						<h1 class="b2-radius" style="background-image:url(${(category.thumbnail?length gt 0)? category.thumbnail : theme_base+'/source/picture/category_bg.jpg'});"><span>${category.name}</span></h1>
+					<#if tag?? && tag.thumbnail?length gt 0>
+						<h1 class="b2-radius" style="background-image: url(${tag.thumbnail!});"><span>${tag.name}</span></h1>
+					<#elseif category?? && category.thumbnail?length gt 0>
+						<h1 class="b2-radius" style="background-image:url(${category.thumbnail!});"><span>${category.name}</span></h1>
+					<#else>
+						<h1 class="b2-radius" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);">
+							<#if tag??>
+								<span>${tag.name}</span>
+							<#elseif category??>
+								<span>${category.name}</span>
+							</#if>
+						</h1>
 					</#if>
 				</div>
 			</div>
