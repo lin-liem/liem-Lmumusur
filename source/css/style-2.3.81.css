@@ -3524,7 +3524,7 @@ a.collection-button:hover{
 }
 .download-box .b2-loading::before,.download-page-button .b2-loading::before{
     content: '';
-    background-image: url(../image/loading-empty.svg);
+    background-image: url(../images/loading-empty.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
@@ -3720,7 +3720,7 @@ a.collection-button:hover{
     font-size: 13px
 }
 .content-show-roles{
-    background-image: url(../image/loading-empty.svg);
+    background-image: url(../images/loading-empty.svg);
     background-repeat: no-repeat;
     background-position: center;
     min-height: 220px;
@@ -7634,7 +7634,7 @@ button.author-has-follow{
     width:186px;
     height:186px;
     background-color: #f3f3f3;
-    background-image: url(../image/loading-empty.svg);
+    background-image: url(../images/loading-empty.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px;
