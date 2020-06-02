@@ -42,8 +42,12 @@
 								<div class="filter-items">
 									<a href="javascript:;" class="current" title="全部">全部</a>
 									<@categoryTag method="list">
-										<#list categories as category>
-											 <a href="${category.fullPath!}"  title="${category.slug}">${category.name}</a>
+										<#list categories as categoryItem>
+											<#if categoryItem.id == category.id>
+												<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a> 
+											<#else>
+												<a href="${categoryItem.fullPath!}"  title="${categoryItem.slug}">${categoryItem.name}</a>
+											</#if>
 										</#list>
 									</@categoryTag>
 								</div>
