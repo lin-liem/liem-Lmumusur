@@ -53,8 +53,12 @@
 								<div class="filter-items">
 									<a href="javascript:;" class="current" title="全部">全部</a>
 									<@tagTag method="list">
-										<#list tags as tag>
-											<a href="${tag.fullPath!}"  title="${tag.slug}">${tag.name}</a>
+										<#list tags as tagItem>
+											<#if tagItem.id == tag.id>
+												<a href="${tagItem.fullPath!}" class="current" title="${tagItem.slug}">${tagItem.name}</a>
+											<#else>
+												<a href="${tagItem.fullPath!}"  title="${tagItem.slug}">${tagItem.name}</a>
+											</#if>
 										</#list>
 									</@tagTag>
 								</div>
