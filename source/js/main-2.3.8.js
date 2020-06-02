@@ -884,7 +884,7 @@ function postCatSelect(){
                 opt['post_cat'] = cats
                 opt['post_paged'] = paged[i]
                 opt['post_i'] = i
-
+				console.log('cats',cats);
                 axios.get('page/'+indexPaged).then(res=>{
 
                     if(res.status == 200){
