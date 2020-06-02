@@ -9,13 +9,13 @@
 		<div class="archive-row">
 			<div class="post-3 post-list post-item-1 hidden-line" id="post-list">
 				<ul class="b2_gap ">
-					<@categoryTag method="list">
+					<@tagTag  method="list">
 					  <#list tags as tag>
-					    <@postTag method="listByTgaId" categoryId="${tag.id}">
+					    <@postTag method="listByTagId" tagId="${tag.id}">
 							<#include "../fragment/article_categorys_tags_content.ftl">
 					    </@postTag>
 					  </#list>
-					</@categoryTag>
+					</@tagTag >
 				</ul>
 			</div>
 		</div>

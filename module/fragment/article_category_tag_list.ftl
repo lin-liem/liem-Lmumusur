@@ -40,6 +40,8 @@
 								<span>${tag.name}</span>
 							<#elseif category??>
 								<span>${category.name}</span>
+							<#else>
+								<span>全部</span>
 							</#if>
 						</h1>
 					</#if>
