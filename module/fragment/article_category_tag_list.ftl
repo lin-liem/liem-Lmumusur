@@ -1,12 +1,12 @@
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
 		<div class="b2-light-dark-outside">
-			<#if tag??>
+			<#if tag?? && tag.thumbnail?length gt 0>
 				<div class="b2-light-dark-bg" style="background-image: url(${tag.thumbnail!});"></div>
-			<#elseif category??>
-				<div class="b2-light-dark-bg" style="background-image: url(${category.thumbnail!});"></div>
-			<#else>
-				<div class="b2-light-dark-bg" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);"></div>
+				<#elseif category?? && category.thumbnail?length gt 0>
+					<div class="b2-light-dark-bg" style="background-image: url(${category.thumbnail!});"></div>
+					<#else>
+						<div class="b2-light-dark-bg" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);"></div>
 			</#if>
 		</div>
 		<div class="wrapper">
@@ -33,8 +33,8 @@
 					<h1 class="b2-radius" style="background-image:url(${theme_base!}/source/image/1ea9b58345ba48.jpg)">
 						<#if tag??>
 							<span>${tag.name}</span>
-						<#elseif category??>
-							<span>${category.name}</span>
+							<#elseif category??>
+								<span>${category.name}</span>
 						</#if>
 					</h1>
 				</div>
@@ -55,10 +55,10 @@
 									<a href="javascript:;" class="current" title="全部">全部</a>
 									<@categoryTag method="list">
 										<#list categories as categoryItem>
-											<#if category?? && categoryItem.id == category.id>
-												<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a> 
-											<#else>
-												<a href="${categoryItem.fullPath!}"  title="${categoryItem.slug}">${categoryItem.name}</a>
+											<#if category?? && categoryItem.id==category.id>
+												<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a>
+												<#else>
+													<a href="${categoryItem.fullPath!}" title="${categoryItem.slug}">${categoryItem.name}</a>
 											</#if>
 										</#list>
 									</@categoryTag>
@@ -70,10 +70,10 @@
 									<a href="javascript:;" class="current" title="全部">全部</a>
 									<@tagTag method="list">
 										<#list tags as tagItem>
-											<#if tag?? && tagItem.id == tag.id>
+											<#if tag?? && tagItem.id==tag.id>
 												<a href="${tagItem.fullPath!}" class="current" title="${tagItem.slug}">${tagItem.name}</a>
-											<#else>
-												<a href="${tagItem.fullPath!}"  title="${tagItem.slug}">${tagItem.name}</a>
+												<#else>
+													<a href="${tagItem.fullPath!}" title="${tagItem.slug}">${tagItem.name}</a>
 											</#if>
 										</#list>
 									</@tagTag>
