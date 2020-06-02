@@ -299,7 +299,7 @@
 								<button class="download-zs">赞赏</button>
 								<button class="download-zs">分享海报</button>
 							</div>
-							<div class="shop-single-action-right"><button class="download-xz">下载</button></button></div>
+							<div class="shop-single-action-right"><button class="download-xz">免费下载</button></button></div>
 						</div>
 					</div>
 				</div>
