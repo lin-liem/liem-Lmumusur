@@ -48,6 +48,7 @@
 		</div>
 		
 		<#include "common/footer.ftl">
+		<#include "common/modal_box.ftl">
 		<#include "common/navbar_tool.ftl">
 		<#include "common/scripts.ftl">
 	</body>

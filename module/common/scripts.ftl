@@ -1,11 +1,5 @@
 <script type="text/javascript" src="${theme_base!}/source/js/smartideo-2.7.0.js"></script>
-<script type="text/javascript">
-	/* <![CDATA[ */
-	var b2_global = {
-		 
-	};
-	/* ]]> */
-</script>
+<#include "./js_constant.ftl">
 <script type="text/javascript" src="${theme_base!}/source/js/vue.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/tua-bsl.esm.browser.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/axios.min-2.3.8.js"></script>

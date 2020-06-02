@@ -942,7 +942,7 @@ function postCatSelect(){
           					var dataResult = contentHtml[0].getElementsByClassName('post-list-item');
           					//如果内容为空，加载提示
                             if(dataResult.length == 0 && htmlItem.trim() == ''){
-                                box.innerHTML = "<div class=\"empty-page\"><i class=\"b2font b2-page-empty\"><\/i><p>啥也没有诶<\/p><h2>不信你看<\/h2><\/div>";
+                                box.innerHTML = b2_global.empty_page; 
                                 //隐藏按钮
                                 hiddenButton(button,false)
           
