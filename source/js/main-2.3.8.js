@@ -938,7 +938,7 @@ function postCatSelect(){
                             });
           					var contentHtml = items[0].getElementsByClassName('b2_gap')
 							// 如果没有内容则调出
-							if(contentHtml == null || contentHtml.length == 0|| contentHtml.trim() == ''){
+							if(contentHtml == null || contentHtml.length == 0){
 								 box.innerHTML = b2_global.empty_page; 
 								//隐藏按钮
 								hiddenButton(button,false)
