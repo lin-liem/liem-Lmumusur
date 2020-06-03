@@ -937,9 +937,17 @@ function postCatSelect(){
                               }
                             });
           					var contentHtml = items[0].getElementsByClassName('b2_gap')
+							// 如果没有内容则调出
+							if(contentHtml == null || contentHtml.length == 0|| contentHtml.trim() == ''){
+								 box.innerHTML = b2_global.empty_page; 
+								//隐藏按钮
+								hiddenButton(button,false)
+								return;
+							}
 							// 获取所需文本          					
           					var htmlItem = contentHtml[0].innerHTML;
           					var dataResult = contentHtml[0].getElementsByClassName('post-list-item');
+							
           					//如果内容为空，加载提示
                             if(dataResult.length == 0 && htmlItem.trim() == ''){
                                 box.innerHTML = b2_global.empty_page; 
