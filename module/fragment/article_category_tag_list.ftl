@@ -1,7 +1,11 @@
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
 		<div class="b2-light-dark-outside">
-			<#if tag?? && tag.thumbnail?length gt 0>
+			<#-- if tag?? && tag.thumbnail?length gt 0 -->
+			<#if tag??>
+			${tag}
+			---------------------------
+			${tag.thumbnail}
 				<div class="b2-light-dark-bg" style="background-image: url(${tag.thumbnail!});"></div>
 			<#elseif category?? && category.thumbnail?length gt 0>
 				<div class="b2-light-dark-bg" style="background-image: url(${category.thumbnail!});"></div>
@@ -18,13 +22,13 @@
 					<button class="fliter-button">筛选<i class="b2font b2-jt-block-down "></i></button>
 				</div>
 				<div class="tax-search tax-info-item">
-					<form method="post" action="https://www.dachaoka.com/wp-jq/fenlei1" autocomplete="off">
-						<input type="text" name="archiveSearch" class="b2-radius" placeholder="请输入关键字搜索" value="">
+					<form method="get" action="/search" autocomplete="off">
+						<input type="text" name="keyword" class="b2-radius" placeholder="请输入关键字搜索" value="">
 						<button class="text"><i class="b2font b2-search "></i></button>
 					</form>
 				</div>
 				<div class="tax-info-item">
-					<a class="fliter-button button" href="javascript:;" target="_blank">全部标签</a>
+					<a class="fliter-button button" href="${tags_url!}" target="_blank">全部标签</a>
 				</div>
 				<div class="tax-info-item tag-list">
 					<a href="测试.html">测试</a> <a href="wordpress.html">wordpress</a> <a href="ziranzhi2.html">ziranzhi2</a> <a href="wp技巧.html">WP技巧</a>
