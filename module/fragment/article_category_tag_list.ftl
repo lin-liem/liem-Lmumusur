@@ -1,13 +1,9 @@
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
 		<div class="b2-light-dark-outside">
-			<#-- if tag?? && tag.thumbnail?length gt 0 -->
-			<#if tag??>
-			${tag}
-			---------------------------
-			${tag.thumbnail}
+			<#if tag?? && tag.thumbnail?? && tag.thumbnail?length gt 0 >
 				<div class="b2-light-dark-bg" style="background-image: url(${tag.thumbnail!});"></div>
-			<#elseif category?? && category.thumbnail?length gt 0>
+			<#elseif category?? && category.thumbnail?? && category.thumbnail?length gt 0>
 				<div class="b2-light-dark-bg" style="background-image: url(${category.thumbnail!});"></div>
 			<#else>
 				<div class="b2-light-dark-bg" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);"></div>
@@ -34,9 +30,9 @@
 					<a href="测试.html">测试</a> <a href="wordpress.html">wordpress</a> <a href="ziranzhi2.html">ziranzhi2</a> <a href="wp技巧.html">WP技巧</a>
 				</div>
 				<div class="tax-title">
-					<#if tag?? && tag.thumbnail?length gt 0>
+					<#if tag?? && tag.thumbnail?? && tag.thumbnail?length gt 0>
 						<h1 class="b2-radius" style="background-image: url(${tag.thumbnail!});"><span>${tag.name}</span></h1>
-					<#elseif category?? && category.thumbnail?length gt 0>
+					<#elseif category?? && category.thumbnail?? && category.thumbnail?length gt 0>
 						<h1 class="b2-radius" style="background-image:url(${category.thumbnail!});"><span>${category.name}</span></h1>
 					<#else>
 						<h1 class="b2-radius" style="background-image: url(${theme_base!}/source/picture/category_bg.jpg);">
