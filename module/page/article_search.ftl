@@ -87,11 +87,21 @@
 									<a href="${number.fullPath!}" class="button empty ">${number.page!}</a>
 								</#if>
 							</#list>
-							<label class="pager-center"><input type="text" value="${posts.number}"> /${posts.totalPages} 页 </label>
+							<label class="pager-center"><input type="text" value="${posts.number + 1}"> /${posts.totalPages} 页 </label>
 						</div>
 						<div class="btn-pager">
-							<a herf="${pagination.prevPageFullPath!}" class="button empty <#if pagination.hasPrev><#else > selected</#if>">❮</a>
-							<a href="${pagination.nextPageFullPath!}" class="empty button <#if pagination.hasNext><#else > selected</#if>">❯</a>
+							<#if pagination.hasPrev>
+								<a herf="${pagination.prevPageFullPath!}" class="button empty">❮</a>
+							<#else >
+								<a herf="javascript:;" class="button empty selected">❮</a>
+							</#if>
+							
+							<#if pagination.hasNext>
+								<a href="${pagination.nextPageFullPath!}" class="empty button">❯</a>
+							<#else >
+								<a href="javascript:;" class="empty button selected">❯</a>
+							</#if>
+							
 						</div>
 					</div>
 				</div>
