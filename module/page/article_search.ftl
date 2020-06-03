@@ -80,14 +80,19 @@
 				<div class="ajax-pager">
 					<div class="ajax-pagenav">
 						<div class="btn-group">
+							${posts}
+							-------------------------
+							${pagination}
+							--------------------------
+							${pagination.rainbowPages}
 							<#list pagination.rainbowPages as number>
 								<#if number.isCurrent>
-									<a href="${number.fullPath!}" class="button empty selected disabled">${number.page!}</a>
+									<a href="javascript:;" class="button empty selected disabled">${number.page!}</a>
 								<#else>
 									<a href="${number.fullPath!}" class="button empty ">${number.page!}</a>
 								</#if>
 							</#list>
-							<label class="pager-center"><input type="text" value=">${number.page!}"> /${posts.totalPages} 页 </label>
+							<label class="pager-center"><input type="text" value="1"> /${posts.totalPages} 页 </label>
 						</div>
 						<div class="btn-pager">
 							<a herf="${pagination.prevPageFullPath!}" class="button empty <#if pagination.hasPrev><#else > selected</#if>">❮</a>
