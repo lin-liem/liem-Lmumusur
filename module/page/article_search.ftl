@@ -80,7 +80,10 @@
 				<div class="ajax-pager">
 					<div class="ajax-pagenav">
 						<div class="btn-group">
-							${posts}
+							
+							<#list posts as post>
+								 ${posts}
+							</#list>
 							-------------------------
 							${pagination}
 							--------------------------
