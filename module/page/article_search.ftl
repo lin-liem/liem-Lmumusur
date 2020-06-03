@@ -26,7 +26,7 @@
 				<div class="hidden-line">
 					<ul class="b2_gap ">
 						<#list posts.content as post>
-							<li class="post-list-item item-post-style-5" id="item-32693">
+							<li class="post-list-item item-post-style-${(post_index%5)+1}" id="item-32693">
 								<div class="item-in b2-radius">
 									<div class="post-module-thumb" style="padding-top:61.8%">
 										<a href="${post.fullPath!}" rel="nofollow" class="thumb-link">
@@ -91,9 +91,9 @@
 						</div>
 						<div class="btn-pager">
 							<#if pagination.hasPrev>
-								<a herf="${pagination.prevPageFullPath!}" class="button empty">❮</a>
+								<a herf="${pagination.prevPageFullPath!}" class="empty button">❮</a>
 							<#else >
-								<a herf="javascript:;" class="button empty selected">❮</a>
+								<a herf="javascript:;" class="empty button selected">❮</a>
 							</#if>
 							
 							<#if pagination.hasNext>
