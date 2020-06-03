@@ -34,7 +34,7 @@
 						<div class="post-list-meta-box ">
 							<ul class="post-list-meta">
 								<li class="post-list-meta-user">
-									<a class="post-list-meta-avatar" href="dBCBCkrns.html">
+									<a class="post-list-meta-avatar" href="/">
 										<img class="avatar b2-radius lazy" data-src="${user.avatar!}" src="${theme_base!}/source/picture/default-img.jpg">
 										<span>${user.nickname!"博主"}</span>
 									</a>
