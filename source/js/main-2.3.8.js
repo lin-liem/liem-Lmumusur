@@ -2488,15 +2488,15 @@ var b2Ds = new Vue({
     },
     methods:{
         show(){
-            let userData = JSON.parse(localStorage.getItem('userData'))
-            if(!userData){
-                login.show = true
-            }else{
+            // let userData = JSON.parse(localStorage.getItem('userData'))
+            // if(!userData){
+            //     login.show = true
+            // }else{
                 b2DsBox.money = this.data.moneys
                 b2DsBox.show = true
                 b2DsBox.showtype = 'ds'
                 b2DsBox.msg = this.data.single_post_ds_text
-            }
+            // }
         },
     }
 })

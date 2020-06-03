@@ -40,7 +40,7 @@
 											<div class="post-list-cat  b2-radius">
 												<#if post.categories?? && post.categories?size gt 0>
 													<#list post.categories as category>
-														<a class="post-list-cat-item b2-radius" style="background-color:#43d480;" href="${category.fullPath!}">${category.name!}</a>
+														<a class="post-list-cat-item b2-radius" style="background-color:#607d8b;" href="${category.fullPath!}">${category.name!}</a>
 													</#list>
 												</#if>
 											</div>

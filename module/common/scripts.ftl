@@ -1,3 +1,4 @@
+
 <script type="text/javascript" src="${theme_base!}/source/js/smartideo-2.7.0.js"></script>
 <#include "./js_constant.ftl">
 <script type="text/javascript" src="${theme_base!}/source/js/vue.min-2.3.8.js"></script>
