@@ -58,7 +58,7 @@
 					<div class="empty-page box">
 						<i class="b2font b2-page-empty"></i>
 						<p>啥也没有诶</p>
-						<h2>不信你看！</h2>
+						<h2>不信你看</h2>
 					</div>
 				</#if>
 			</div>
