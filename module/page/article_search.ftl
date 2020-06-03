@@ -1,4 +1,14 @@
-<div class="b2-single-content wrapper single-sidebar-hidden">
+<style type="text/css">
+	.search .tax-search {
+		width: 100%;
+		padding: 0 10px 10px;
+		border-bottom: 1px solid #f3f3f3;
+	}
+	.post-item-1 ul.b2_gap>li {
+		width: 25%;
+	}
+</style>
+<div class="b2-single-content wrapper single-sidebar-hidden search">
 	<div id="primary-home" class="wrapper box b2-radius">
 		<div class="search-page-title">
 			<h2>资源</h2>
@@ -6,7 +16,7 @@
 		</div>
 		<div class="tax-search">
 			<form method="get" action="${blog_url!}/search" autocomplete="off">
-				<input type="text" name="s" class="b2-radius" placeholder="输入关键字搜索" value="${keyword}">
+				<input type="text" name="keyword" class="b2-radius" placeholder="输入关键字搜索" value="${keyword}">
 				<input type="hidden" name="type" value="post">
 				<button class="text"><i class="b2font b2-search "></i></button>
 			</form>
@@ -20,8 +30,7 @@
 								<div class="item-in b2-radius">
 									<div class="post-module-thumb" style="padding-top:61.8%">
 										<a href="${post.fullPath!}" rel="nofollow" class="thumb-link">
-											<img class="post-thumb lazy loaded" data-src="${post.thumbnail!}" src="${theme_base!}/source/picture/default-img.jpg" alt="${post.title!}" data-was-processed="true">
-											<i class="b2font b2-play1 "></i>
+											<img class="post-thumb lazy loaded" data-src="${post.thumbnail!}" src="${post.thumbnail!}" alt="${post.title!}" data-was-processed="true">
 										</a>
 										<div class="post-list-meta-box">
 											<ul class="post-list-meta">
@@ -29,7 +38,11 @@
 												<li class="post-list-meta-like"><span><i class="b2font b2-pinglun"></i>${post.commentCount}</span></li>
 											</ul> 
 											<div class="post-list-cat  b2-radius">
-												<a class="post-list-cat-item b2-radius" style="background-color:#43d480;" href="https://www.dachaoka.com/ertae">主题更新</a>
+												<#if post.categories?? && post.categories?size gt 0>
+													<#list post.categories as category>
+														<a class="post-list-cat-item b2-radius" style="background-color:#43d480;" href="${category.fullPath!}">${category.name!}</a>
+													</#list>
+												</#if>
 											</div>
 										</div>
 									</div>
@@ -38,7 +51,7 @@
 										<div class="post-excerpt">${post.summary!}</div>
 										<div class="list-footer">
 											<a class="post-list-meta-avatar" href="/">
-												<img class="avatar b2-radius lazy loaded" data-src="${user.avatar!}" src="${theme_base!}/source/picture/default-img.jpg" data-was-processed="true">
+												<img class="avatar b2-radius lazy loaded" data-src="${user.avatar!}" src="${user.avatar!}" data-was-processed="true">
 												<span>${user.nickname!"博主"}</span>
 												<svg class="Zi Zi--BadgeCert" fill="currentColor" viewBox="0 0 24 24" width="18" height="18">
 													<g fill="none" fill-rule="evenodd">
