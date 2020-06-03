@@ -1,41 +1,20 @@
-<#include "../fragment/article_category_tag_list.ftl">
-<div class="b2-single-content wrapper category single-sidebar-show ">
-	<div id="primary-home" class="content-area box">
-		<style>
-			.post-item-1 ul.b2_gap > li{
-					width:100%    
-			}
-		</style>
-		<div class="archive-row">
-			<div class="post-3 post-list post-item-1 hidden-line" id="post-list">
-				<ul class="b2_gap ">
-					<@categoryTag method="list">
-					  <#list categories as category>
-					    <@postTag method="listByCategoryId" categoryId="${category.id}">
-							<#include "../fragment/article_categorys_tags_content.ftl">
-					    </@postTag>
-					  </#list>
-					</@categoryTag>
-				</ul>
-			</div>
-		</div>
+<div class="b2-single-content wrapper">
+	<div id="tags" class="tags-page wrapper">
+		<main id="main" class="site-main">
+			<h1>热门分类</h1>
+			<ul>
+				<@tagTag method="list">
+                    <#list tags as tag>
+						<li>
+							<a href="${tag.fullPath!}" target="_blank" class="box b2-radius b2-mg">
+								<h2 title="${tag.name}">${tag.name}</h2>
+								<p>共${tag.postCount!}篇文章</p>
+							</a>
+						</li>
+					</#list>
+				</@tagTag>
+			</ul>
+		</main>
 	</div>
-
-
-	<aside id="secondary" class="widget-area">
-		<div class="sidebar-innter">
-			<!-- 问候模块 -->
-			<#if settings.hello_info_enable!true>
-				<#include "../section/hello_info.ftl">
-			</#if>
-				
-				
-			<!-- 导入最新文章 -->
-			<#if settings.recent_post_enable!true>
-				<#include "../section/recent_posts.ftl">
-			</#if>
-			
-		</div>
-	</aside>
 </div>
 
