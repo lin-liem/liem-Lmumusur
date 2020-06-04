@@ -56,8 +56,8 @@
 								</#if>
 								<#if menu.children?? && menu.children?size gt 0>
 									<li class="depth-0  has_children b2-menu-3">
-										<a href="ertae.html">
-											<span class="hob" style="background-color:#fc3c2d"></span>下拉菜单<i class="b2font b2-jt-down "></i>
+										<a href="${menu.url}" target="${menu.target!}">
+											<span class="hob" style="background-color:#fc3c2d"></span>${menu.name}<i class="b2font b2-jt-down "></i>
 										</a>
 										<ul class="sub-menu-0 sub-menu box b2-radius">
 											<#list menu.children?sort_by('priority') as child>
