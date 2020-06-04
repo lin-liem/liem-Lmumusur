@@ -2,7 +2,7 @@
 Vue.prototype.$http = axios //需要鉴权
 Vue.prototype.$https = axios //不需要鉴权
 Vue.prototype.$b2JsonData = []
-var b2_rest_url = b2_global.rest_url+'b2/v1/'
+var b2_rest_url = b2_global.rest_url+'/'
 
 Vue.use(Toasted)
 Vue.use(vueDirectiveTooltip,{
@@ -1541,7 +1541,7 @@ var b2GG = new Vue({
         show:false
     },
     mounted(){
-        this.$http.post(b2_rest_url+'getLatestAnnouncement').then(res=>{
+        this.$http.get(b2_rest_url+'tags/notice').then(res=>{
             let gg = JSON.parse(localStorage.getItem('gg_info'))
             if(!gg && res.data.title && res.data.show){
                 this.ggdata = res.data

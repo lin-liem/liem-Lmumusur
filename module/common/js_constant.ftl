@@ -23,7 +23,7 @@
 			"site_uri": "https:\/\/www.dachaoka.com\/wp-content\/themes\/b2"
 		},
 		"b2_gap": "16",
-		"rest_url": "https:\/\/www.dachaoka.com\/wp-json\/",
+		"rest_url": "https://mumusur.com/",
 		"pay_url": "https:\/\/www.dachaoka.com\/pay",
 		"localStorage_msg": "您的浏览器不支持 localStorage ，请更换浏览器以后再进行登录和注册的操作",
 		"empty_page": "<div class=\"empty-page\"><i class=\"b2font b2-page-empty\"><\/i><p>啥也没有诶<\/p><h2>不信你看<\/h2><\/div>",

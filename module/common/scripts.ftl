@@ -4,8 +4,6 @@
 
 <script type='text/javascript' src='${theme_base!}/source/js/vue.min-2.3.8.js'></script>
 <script type='text/javascript' src='${theme_base!}/source/js/tua-bsl.esm.browser.min-2.3.8.js'></script>
-<script type="text/javascript" src="${theme_base!}/source/js/vue.min-2.3.8.js"></script>
-<script type="text/javascript" src="${theme_base!}/source/js/tua-bsl.esm.browser.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/axios.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/qs.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/vue-toasted.min-2.3.8.js"></script>
