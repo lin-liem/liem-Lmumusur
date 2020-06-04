@@ -1554,9 +1554,9 @@ var b2GG = new Vue({
 		this.$http.get(b2_rest_url+'tags/notice/posts', param).then(res=>{
 			let gg = JSON.parse(localStorage.getItem('gg_info'))
 			 
-			var data = res.data;
-			if(data.hasContent){
-				var content =  data.content[0];
+			var json_data = res.data.data;
+			if(json_data.hasContent){
+				var content =  json_data.content[0];
 				var contentData = {
 					'title': content.title,
 					'thumb': content.thumbnail,
@@ -1566,10 +1566,10 @@ var b2GG = new Vue({
 					'close':0
 				}
 				
-				 if(!gg && content.title){
+				 if(!gg){
 				    this.ggdata = contentData
 				    this.show = true
-				}else if(content.title){
+				}else{
 				    this.ggdata =contentData
 				    let timestamp = new Date().getTime()
 				    timestamp = parseInt(timestamp/1000)
