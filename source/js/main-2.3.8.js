@@ -1574,7 +1574,7 @@ var b2GG = new Vue({
 				    let timestamp = new Date().getTime()
 				    timestamp = parseInt(timestamp/1000)
 				    
-				    if(timestamp - gg.close >= res.data.id*86400){
+				    if(timestamp - gg.close >= 86400){
 				        this.show = true
 				    }
 				}
