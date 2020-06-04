@@ -270,7 +270,7 @@ var b2Ds = new Vue({
 })
 
 
-function ds_box(){
+function b2SidebarSticky(){
     if(B2ClientWidth <= 768) return
     if(typeof window.b2Stick !== 'undefined'){
         for (let i = 0; i < window.b2Stick.length; i++) {
