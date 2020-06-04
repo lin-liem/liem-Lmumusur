@@ -53,7 +53,7 @@
 
 			<div id="content-ds" class="content-ds" >
 				<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
-				<div class="content-ds-button"><button>赞赏</button></div>
+				<div class="content-ds-button"><button @click="show()">赞赏</button></div>
 				<p class="give-gray">还没有人赞赏，快来当第一个赞赏的人吧！</p>
 			</div>
 			<div class="content-footer">

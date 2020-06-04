@@ -93,10 +93,9 @@ var b2GG = new Vue({
 /**
  * 赞赏
  */
-
 Vue.component('ds-box', {
     props: ['show','money','msg','user','author','data','showtype'],
-    template:b2_global.ds_box,
+    template: b2_global.ds_box,
     data(){
         return {
             value:0,
@@ -144,9 +143,6 @@ Vue.component('ds-box', {
             }
             data['pay_type'] = this.payType
 
-            data = Object.assign({
-                'redirect_url':JSON.parse(localStorage.getItem('historyUrl')) + '?paystatus=check'
-            },data)
 
             return data;
         },
@@ -161,64 +157,6 @@ Vue.component('ds-box', {
             }
 
             return false
-        },
-        chosePayType(val){
-            
-            if(this.locked == true) return;
-            this.locked = true
-            this.payType = val
-
-            this.$http.post(b2_rest_url+'checkPayType','pay_type='+val).then(res=>{
-                if(res.data.pay_type == 'card'){
-                    this.$emit('change','card')
-                    this.card.text = res.data.card_text
-                    this.jump = res.data.pay_type
-                }else{
-                    if(this.showtype == 'card'){
-                        this.$emit('change','cz')
-                    }
-                    this.jump = res.data.pay_type
-
-                    this.isWeixin = res.data.is_weixin
-                    this.isMobile = res.data.is_mobile
-                    if(this.jump == 'jump'){
-                        let url = b2_global.pay_url+'?'+Qs.stringify(this.restData())
-                        this.href = encodeURI(url)
-                    }
-                }
-                this.locked = false
-            }).catch(err=>{
-                this.$toasted.show(err.response.data.message, { 
-                    theme: 'primary', 
-                    position: 'top-center', 
-                    duration : 4000,
-                    type:'error'
-                })
-                this.locked = false
-            })
-        },
-        writeOrder(id){
-            localStorage.setItem('order_id',id)
-        },
-        balancePay(order_id){
-            let data = this.restData();
-            this.$http.post(b2_rest_url+'balancePay','order_id='+order_id).then(res=>{
-                this.close()
-                b2PayCheck.show = true
-                b2PayCheck.title = data['title']
-                this.locked = false
-            }).catch(err=>{
-                this.$toasted.show(err.response.data.message,{
-                    theme: 'primary',
-                    position: 'top-center', 
-                    duration : 4000,
-                    type:'error'
-                })
-                this.locked = false
-            })
-        },
-        creditAdd(){
-            return parseInt(this.payMoney*this.cg.dh)
         }
     }
 })
@@ -269,34 +207,4 @@ var b2Ds = new Vue({
     }
 })
 
-
-function b2SidebarSticky(){
-    if(B2ClientWidth <= 768) return
-    if(typeof window.b2Stick !== 'undefined'){
-        for (let i = 0; i < window.b2Stick.length; i++) {
-            window.b2Stick[i].updateSticky()
-        }
-        return
-    }
-
-    if(b2_global.is_home){
-        var b2sidebar = document.querySelectorAll('.widget-ffixed');
-    }else{
-        var b2sidebar = document.querySelectorAll('.sidebar-innter');
-    }
-
-    if(b2sidebar){
-        if(B2ClientWidth > 768){
-            var b2Stick = []
-            for (let i = 0; i < b2sidebar.length; i++) {
-                b2Stick[i] = new StickySidebar(b2sidebar[i], {
-                    topSpacing: 20,
-                    bottomSpacing: 20
-                });
-            }
-
-            window.b2Stick = b2Stick
-        }
-    }
-
-}
+ 
