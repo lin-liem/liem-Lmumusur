@@ -2556,7 +2556,7 @@ if(typeof userTools !== 'undefined'){
     })
 }
 
-function b2SidebarSticky(){
+function ds_box(){
     if(B2ClientWidth <= 768) return
     if(typeof window.b2Stick !== 'undefined'){
         for (let i = 0; i < window.b2Stick.length; i++) {
