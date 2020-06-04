@@ -1562,8 +1562,7 @@ var b2GG = new Vue({
 					'thumb': content.thumbnail,
 					'desc': content.summary,
 					'date':  content.createTime,
-					'href': content.fullPath,
-					'close':0
+					'href': content.fullPath
 				}
 				
 				 if(!gg){
