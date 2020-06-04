@@ -1543,6 +1543,8 @@ var b2GG = new Vue({
     mounted(){
 		var param = {
 			params: {
+				size:1,
+				sort:'desc'
 			},
 			headers: {
 				'Content-Type': 'application/json;charset=UTF-8',
@@ -1550,20 +1552,34 @@ var b2GG = new Vue({
 			}
 		 }
 		this.$http.get(b2_rest_url+'tags/notice/posts', param).then(res=>{
-			console.log(res);
-            let gg = JSON.parse(localStorage.getItem('gg_info'))
-            if(!gg && res.data.title && res.data.show){
-                this.ggdata = res.data
-                this.show = true
-            }else if(res.data.title && res.data.show){
-                this.ggdata = res.data
-                let timestamp = new Date().getTime()
-                timestamp = parseInt(timestamp/1000)
-                
-                if(timestamp - gg.close >= res.data.days*86400){
-                    this.show = true
-                }
-            }
+			let gg = JSON.parse(localStorage.getItem('gg_info'))
+			 
+			var data = res.data;
+			if(data.hasContent){
+				var content =  data.content[0];
+				var contentData = {
+					'title': content.title,
+					'thumb': content.thumbnail,
+					'desc': content.summary,
+					'date':  content.createTime,
+					'href': content.fullPath,
+					'close':0
+				}
+				
+				 if(!gg && content.title){
+				    this.ggdata = contentData
+				    this.show = true
+				}else if(content.title){
+				    this.ggdata =contentData
+				    let timestamp = new Date().getTime()
+				    timestamp = parseInt(timestamp/1000)
+				    
+				    if(timestamp - gg.close >= res.data.id*86400){
+				        this.show = true
+				    }
+				}
+			}
+           
         }).catch(err=>{
             this.$toasted.show(err.response.data.message, { 
                 theme: 'primary', 
