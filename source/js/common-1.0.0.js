@@ -146,6 +146,13 @@ Vue.component('ds-box', {
 
             return data;
         },
+		chosePayType(val){
+            
+            this.locked = true
+            this.payType = val
+
+             
+        },
         disabled(){
             if(this.data.pay_type !=='card'){
                 if(this.jump == '') return true
