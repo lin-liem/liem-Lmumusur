@@ -7523,27 +7523,28 @@ button.author-has-follow{
 }
 .pay-type{
     padding:10px;
-    height:68px
+    /* height:68px */
+	height: auto;
 }
 .pay-type i{
     font-size: 20px;
     margin-right:3px
 }
 .pay-type li > button{
-    display: flex;
+    /* display: flex; */
     align-items: center;
     margin: 5px;
     justify-content: center;
     border: 1px solid #eee;
-    height: 38px;
+    /* height: 38px; */
     font-size: 12px;
     line-height: 1;
     background: none;
     color: #333;
     width: 100%;
-    padding:0
+    padding:5px
 }
-.pay-type li > button.picked{
+.pay-type li > button.picked span{
     border-color: #f16b6f;
     color: #f16b6f;
 }
@@ -7653,12 +7654,14 @@ button.author-has-follow{
 }
 .qrcode-money span{
     display: inline-block;
-    color: #fff;
-    background-color: green;
-    padding: 5px 14px;
-    border-radius: 3px;
+    color: #999;
+    /* background-color: green; */
+    padding-top: 10px;
+    /* border-radius: 3px; */
     font-size: 15px;
     line-height: 1;
+    border-top: 1px dashed #d4d4d4;
+    width: 80%;
 }
 .qrcode-desc{
     font-size: 15px;
