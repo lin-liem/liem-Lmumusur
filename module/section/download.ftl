@@ -62,9 +62,11 @@
 	.shop-single-data-address-desc {
 		font-size: 12px;
 		color: #999;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
-
+	.shop-single-data-address-desc-line{
+		line-height: 150%;
+	}
 	.shop-single-data li {
 		display: flex;
 		padding: 10px 0;
@@ -287,7 +289,7 @@
 								<li class="shop-single-data-address-picked">
 									<p class="shop-single-data-address-desc">资源下载须知：<span>
 									<i class="b2font b2-zidingyi "></i>免责声明</span></p>
-									<p>本资源仅供交流学习，资源版权归发行方所有，请勿进行恶意传播！</p>
+									<p class="shop-single-data-address-desc-line">本资源仅供交流学习，资源版权归发行方所有，请勿进行恶意传播！</p>
 								</li>
 							</ul>
 						</div>

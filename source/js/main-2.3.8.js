@@ -1517,88 +1517,7 @@ var socialBox = new Vue({
     }
 })
 
-Vue.component('gg-box', {
-    props: ['show','ggdata'],
-    template: b2_global.gg_box,
-    methods:{
-        close(){
-            this.$emit('close')
-        },
-    }
-})
-
-var b2GG = new Vue({
-    el:'#gg-box',
-    data:{
-        ggdata:{
-            'title':'',
-            'thumb':'',
-            'desc':'',
-            'date':0,
-            'href':'',
-            'close':0
-        },
-        show:false
-    },
-    mounted(){
-		var param = {
-			params: {
-				size:1,
-				sort:'desc'
-			},
-			headers: {
-				'Content-Type': 'application/json;charset=UTF-8',
-				'API-Authorization': b2_global.api_content
-			}
-		 }
-		this.$http.get(b2_rest_url+'tags/notice/posts', param).then(res=>{
-			let gg = JSON.parse(localStorage.getItem('gg_info'))
-			 
-			var json_data = res.data.data;
-			if(json_data.hasContent){
-				var content =  json_data.content[0];
-				var contentData = {
-					'title': content.title,
-					'thumb': content.thumbnail,
-					'desc': content.summary,
-					'date':  content.createTime,
-					'href': content.fullPath
-				}
-				
-				 if(!gg){
-				    this.ggdata = contentData
-				    this.show = true
-				}else{
-				    this.ggdata =contentData
-				    let timestamp = new Date().getTime()
-				    timestamp = parseInt(timestamp/1000)
-				    
-				    if(timestamp - gg.close >= 86400){
-				        this.show = true
-				    }
-				}
-			}
-           
-        }).catch(err=>{
-            this.$toasted.show(err.response.data.message, { 
-                theme: 'primary', 
-                position: 'top-center', 
-                duration : 4000,
-                type:'error'
-            })
-        })
-    },
-    methods:{
-        close(){
-            this.show = false
-            let timestamp = new Date().getTime()
-            timestamp = parseInt(timestamp/1000)
-
-            this.ggdata.close = timestamp
-            localStorage.setItem('gg_info',JSON.stringify(this.ggdata))
-        }
-    }
-})
+// 曾经公告
 
 Vue.component('dmsg-box', {
     props: ['show','userid','type'],
@@ -2478,52 +2397,52 @@ Vue.component('ds-box', {
 })
 
 //支付容器
-var b2DsBox = new Vue({
-    el:'#ds-box',
-    data:{
-        money:[],
-        show:false,
-        msg:'',
-        user:[],
-        author:[],
-        data:[],
-        showtype:''
-    },
-    methods: {
-        close(){
-            this.show = !this.show
-        },
-        clean(){
-            setTimeout(()=>{
-                this.data = []
-                this.money = []
-            },100)
-        },
-        change(type){
-            this.showtype = type
-        }
-    },
-})
-
-var b2Ds = new Vue({
-    el:'#content-ds',
-    data:{
-        data:''
-    },
-    methods:{
-        show(){
-            // let userData = JSON.parse(localStorage.getItem('userData'))
-            // if(!userData){
-            //     login.show = true
-            // }else{
-                b2DsBox.money = this.data.moneys
-                b2DsBox.show = true
-                b2DsBox.showtype = 'ds'
-                b2DsBox.msg = this.data.single_post_ds_text
-            // }
-        },
-    }
-})
+// var b2DsBox = new Vue({
+//     el:'#ds-box',
+//     data:{
+//         money:[],
+//         show:false,
+//         msg:'',
+//         user:[],
+//         author:[],
+//         data:[],
+//         showtype:''
+//     },
+//     methods: {
+//         close(){
+//             this.show = !this.show
+//         },
+//         clean(){
+//             setTimeout(()=>{
+//                 this.data = []
+//                 this.money = []
+//             },100)
+//         },
+//         change(type){
+//             this.showtype = type
+//         }
+//     },
+// })
+// 
+// var b2Ds = new Vue({
+//     el:'#content-ds',
+//     data:{
+//         data:''
+//     },
+//     methods:{
+//         show(){
+//             // let userData = JSON.parse(localStorage.getItem('userData'))
+//             // if(!userData){
+//             //     login.show = true
+//             // }else{
+//                 b2DsBox.money = this.data.moneys
+//                 b2DsBox.show = true
+//                 b2DsBox.showtype = 'ds'
+//                 b2DsBox.msg = this.data.single_post_ds_text
+//             // }
+//         },
+//     }
+// })
 
 function b2pay(event){
     let userData = JSON.parse(localStorage.getItem('userData'))
