@@ -51,15 +51,15 @@ Vue.component('poster-box', {
         getbase64(){
             if(this.locked) return;
             this.locked = true 
-            // this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
-            //     this.logo = res.data;
-            //     this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
-            //         this.thumb = res.data;
-            //         setTimeout(()=>{
-            //             this.html2canvas()
-            //         }, 0);
-            //     });
-            // });
+            this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
+                this.logo = res.data;
+                this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
+                    this.thumb = res.data;
+                    setTimeout(()=>{
+                        this.html2canvas()
+                    }, 0);
+                });
+            });
         },
         html2canvas(){
             var dom = this.$refs.posterContent,
@@ -135,69 +135,6 @@ var b2ContentFooter = new Vue({
     methods:{
         openPoster(){
             posterBox.show = true;
-        },
-        postFavoriteAc(){
-            let userData = JSON.parse(localStorage.getItem('userData'))
-            if(!userData){
-                login.show = true
-            }else{
-                if(this.locked == true) return
-                this.locked = true
-
-                this.$http.post(b2_rest_url+'userFavorites','post_id='+b2_global.post_id).then(res=>{
-                    if(res.data == true){
-                        this.postData.favorites_isset = true
-                    }else{
-                        this.postData.favorites_isset = false
-                    }
-                    this.locked = false
-                }).catch(err=>{
-                    this.$toasted.show(err.response.data.message, { 
-                        theme: 'primary', 
-                        position: 'top-center', 
-                        duration : 4000,
-                        type:'error'
-                    })
-                    this.locked = false
-                })
-            }
-        },
-        vote(type){
-            let userData = JSON.parse(localStorage.getItem('userData'))
-            if(!userData){
-                login.show = true
-            }else{
-                if(this.locked == true) return
-                this.locked = true
-
-                this.$http.post(b2_rest_url+'postVote','type='+type+'&post_id='+b2_global.post_id).then(res=>{
-
-                    this.postData.up = parseInt(this.postData.up) + parseInt(res.data.up)
-                    this.postData.down = parseInt(this.postData.down) + parseInt(res.data.down)
-                    
-                    if(res.data.up > 0){
-                        this.postData.up_isset = true
-                    }else{
-                        this.postData.up_isset = false
-                    }
-
-                    if(res.data.down > 0){
-                        this.postData.down_isset = true
-                    }else{
-                        this.postData.down_isset = false
-                    }
-
-                    this.locked = false
-                }).catch(err=>{
-                    this.$toasted.show(err.response.data.message, { 
-                        theme: 'primary', 
-                        position: 'top-center', 
-                        duration : 4000,
-                        type:'error'
-                    })
-                    this.locked = false
-                })
-            }
         }
     }
 })
