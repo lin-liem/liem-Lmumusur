@@ -40,20 +40,35 @@ Vue.component('poster-box', {
 
             openWin(url,type,500,500)
         },
-        getbase64(){
+		getbase64(){
             if(this.locked) return;
             this.locked = true 
-			
-           // this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
-                this.logo = 'https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png';
-                //this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
-                    this.thumb = 'https://static.mumusur.com/static/mumusur/images/26bec5dadc6d2a2b3abc529006f479cf.png';
-                    setTimeout(()=>{
-                        this.html2canvas()
-                    }, 0);
-                //});
-           // });
+			this.logo = this.data.logo;
+			this.thumb = this.data.thumb;
+			this.getUrlBase64(path, 'jpeg', function (base64) {
+				console.log(base64);//base64编码值
+				this.logo = base64
+			});
+			setTimeout(()=>{
+				this.html2canvas()
+			}, 0);
+		 
         },
+		getUrlBase64(url, ext, callback) {
+			var canvas = document.createElement("canvas");   //创建canvas DOM元素
+			var ctx = canvas.getContext("2d");
+			var img = new Image;
+			img.crossOrigin = 'Anonymous';
+			img.src = url;
+			img.onload = function () {
+				canvas.height = img.height; //指定画板的高度,自定义
+				canvas.width = img.width; //指定画板的宽度，自定义
+				ctx.drawImage(img, 0, 0, img.width,  img.height); //参数可自定义
+				var dataURL = canvas.toDataURL("image/" + ext);
+				callback.call(this, dataURL); //回掉函数获取Base64编码
+				canvas = null;
+			};
+		},
         html2canvas(){
             var dom = this.$refs.posterContent,
                 w = dom.clientWidth,
