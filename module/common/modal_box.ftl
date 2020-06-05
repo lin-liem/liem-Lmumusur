@@ -24,6 +24,11 @@
 </div>
 
 <!-- 扫码支付 -->
+<div id="gongzhonghao-box" @click.stop="">
+	<gongzhonghao-box :show="show" :data="data" @close="close" v-cloak=""></gongzhonghao-box>
+</div>
+
+<!-- 扫码支付 -->
 <div id="scan-box" @click.stop="">
 	<scan-box :show="show" :data="data" @close="close" v-cloak=""></scan-box>
 </div>
