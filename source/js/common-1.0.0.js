@@ -217,44 +217,11 @@ var b2Ds = new Vue({
 /**
  * 关注微信公众号
  */
-//扫码支付组件
-Vue.component('gongzhonghao-box',{
-    props: ['show','data'],
-    template: b2_global.gongzhonghao_box,
-    data(){
-        return {
-            locked:false,
-            qrcode:'',
-            timeOut:300,
-            timesec:'',
-            sTime:'',
-            success:''
-        }
-    },
-    methods:{
-        close(){
-            this.$emit('close')
-        },
-		show(val){
-		    if(val){
-		        this.sTime = ''
-		        this.success = false
-		        this.checkTime = ''
-		    }else{
-		        this.sTime = null
-		        this.success = false
-		        this.checkTime = null
-		    }
-		}
-    }
-})
-
 //扫码支付
-var b2ScanPay = new Vue({
+var gongzhonghao_box = new Vue({
     el:'#gongzhonghao-box',
     data:{
-        data:[],
-        show:false
+        show: false
     },
     methods:{
         close(){
@@ -265,3 +232,4 @@ var b2ScanPay = new Vue({
 		}
     }
 })
+

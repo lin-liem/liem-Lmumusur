@@ -30,7 +30,22 @@
 
 <!-- 扫码支付 -->
 <div id="scan-box" @click.stop="">
-	<scan-box :show="show" :data="data" @close="close" v-cloak=""></scan-box>
+	<div data-money="" :class="['modal','ds-box scan-box',{'show-modal':show}]">
+		<div class="modal-content b2-radius">
+			<div class="pay-box-title">
+				<div class="pay-box-left"><span>${settings.gongzhonghao_title!'关注微信公众号！'}</span></div>
+				<div class="pay-box-right"><span class="pay-close" @click="close()">×</span></div>
+			</div>
+			<div class="pay-box-content">
+				<div class="scan-info">
+					<div class="qrcode-img b2-radius">
+						<img src="${settings.gongzhonghao_qr!}"></div>
+					<div class="qrcode-money"><span>${settings.gongzhonghao_id!'mumures'}</span></div>
+					<div class="qrcode-desc">${settings.gongzhonghao_desc!'请打开手机扫描添加'}</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- 支付检查 -->
