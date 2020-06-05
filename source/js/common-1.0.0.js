@@ -217,7 +217,6 @@ var b2Ds = new Vue({
 /**
  * 关注微信公众号
  */
-//扫码支付
 var gongzhonghao_box = new Vue({
     el:'#gongzhonghao-box',
     data:{
