@@ -383,6 +383,30 @@ article_config:
        type: text
        placeholder: '赞赏关闭按钮文字'
        default: '不想赞赏'
+    gongzhonghao_title:
+       name: gongzhonghao_title
+       label: 公众号引导标题
+       type: text
+       placeholder: '关注微信公众号'
+       default: '关注微信公众号'
+    gongzhonghao_qr:
+       name: gongzhonghao_qr
+       label: 公众号二维码
+       type: attachment
+       placeholder: '公众号二维码'
+       default: 'https://www.mumusur.com/upload/2020/04/mumures-b2eca980e6b8475185722138416a2c26.png'
+    gongzhonghao_id:
+       name: gongzhonghao_id
+       label: 公众号唯一ID
+       type: text
+       placeholder: '公众号唯一标识'
+       default: 'mumures'
+    gongzhonghao_desc:
+       name: gongzhonghao_desc
+       label: 公众号描述
+       type: text
+       placeholder: '公众号描述'
+       default: '请打开手机扫描快速添加'
 footer_config:
   label: 页脚配置
   items:
