@@ -179,10 +179,11 @@ var b2Ds = new Vue({
 /**
  * 关注微信公众号
  */
-var gongzhonghao_box = new Vue({
+var gongzhonghaoBox = new Vue({
     el:'#gongzhonghao-box',
     data:{
-        show: false
+        searchType:'all',
+        show:false
     },
     methods:{
         close(){
@@ -190,13 +191,3 @@ var gongzhonghao_box = new Vue({
         }
     }
 })
-
-var c_gongzhonghao = new Vue({
-    el:'#content-gongzhonghao',
-    methods:{
-        show(){
-			gongzhonghao_box.show = true
-        }
-    }
-})
-

@@ -42,7 +42,7 @@
 						</div>
 						<div class="post-meta-right">
 							<div id="content-gongzhonghao">
-								<button @click="show()" id="gongzhonghao_box">RSS订阅</button>
+								<button onclick="gongzhonghaoBox.show = true" >RSS订阅</button>
 								<button class="empty"><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=c98acaeab8547d5b5be9192e192192916603daca30143e21df22c9ed6999d806">企鹅群</a></button>
 							</div>
 						</div>
