@@ -356,6 +356,33 @@ views_config:
           	     <a href="https://www.mumusur.com/s/guestbook.html" target="_blank">
 				     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
 			     </a>'
+article_config:
+  label: 文章配置
+  items:
+    donate_guide_desc:
+       name: donate_guide_desc
+       label: 赞赏引导
+       type: text
+       placeholder: '赞赏引导'
+       default: '予人玫瑰，手有余香'
+    donate_alipay:
+      name: donate_alipay
+      label: 支付宝捐赠二维码
+      type: attachment
+      placeholder: '支付宝捐赠二维码'
+      default: 'https://www.mumusur.com/upload/2020/04/zs_zhifubao%20-79d1fb26fbe44e5083adee5c873ec230.png'
+    donate_wecatpay:
+      name: donate_wecatpay
+      label: 微信捐赠二维码
+      type: attachment
+      placeholder: '微信捐赠二维码'
+      default: 'https://www.mumusur.com/upload/2020/04/zs_weixin-895727c2b2aa4906a79a37ba98096a33.png'
+    donate_close_btn:
+       name: donate_close_btn
+       label: 赞赏关闭按钮文字
+       type: text
+       placeholder: '赞赏关闭按钮文字'
+       default: '不想赞赏'
 footer_config:
   label: 页脚配置
   items:
