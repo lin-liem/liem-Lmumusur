@@ -412,7 +412,7 @@ article_config:
        label: 宣传海报描述
        type: textarea
        description: '宣传海报描述'
-       default: '我们不必期望每个梦想都成真，不必在乎每一个得失和错漏，不要总是想自己得到没有，人生，不可能总是精彩。'
+       default: '让我们享受人生的滋味吧，如果我们感受得越多，我们就会生活得越长久！'
 footer_config:
   label: 页脚配置
   items:
