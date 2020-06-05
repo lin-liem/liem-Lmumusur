@@ -51,15 +51,15 @@ Vue.component('poster-box', {
         getbase64(){
             if(this.locked) return;
             this.locked = true 
-            this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
-                this.logo = res.data;
-                this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
-                    this.thumb = res.data;
+           // this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
+                this.logo = 'https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png';
+                //this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
+                    this.thumb = 'https://www.mumusur.com/upload/2020/3/image-5e16e4fe25bc4ca5a05b2d5317449243.png';
                     setTimeout(()=>{
                         this.html2canvas()
                     }, 0);
-                });
-            });
+                //});
+           // });
         },
         html2canvas(){
             var dom = this.$refs.posterContent,
