@@ -25,11 +25,6 @@
 
 <!-- 扫码支付 -->
 <div id="gongzhonghao-box" @click.stop="">
-	<gongzhonghao-box :show="show" :data="data" @close="close" v-cloak=""></gongzhonghao-box>
-</div>
-
-<!-- 扫码支付 -->
-<div id="scan-box" @click.stop="">
 	<div data-money="" :class="['modal','ds-box scan-box',{'show-modal':show}]">
 		<div class="modal-content b2-radius">
 			<div class="pay-box-title">
@@ -46,6 +41,11 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<!-- 扫码支付 -->
+<div id="scan-box" @click.stop="">
+	<scan-box :show="show" :data="data" @close="close" v-cloak=""></scan-box>
 </div>
 
 <!-- 支付检查 -->
