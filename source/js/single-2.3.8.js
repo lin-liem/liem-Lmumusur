@@ -1,6 +1,3 @@
-
-  
-
 Vue.component('poster-box', {
     props: ['show'],
     template:b2_global.poster_box,
@@ -21,7 +18,7 @@ Vue.component('poster-box', {
         this.data = JSON.parse(this.$refs.poster.getAttribute('data-poster'))
 		
         const qr = new QRious({
-            value: this.data.link,
+            value: encodeURI(this.data.link),
             size:100,
             level:'L'
           });
