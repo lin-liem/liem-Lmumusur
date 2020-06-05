@@ -93,88 +93,22 @@ var b2GG = new Vue({
 /**
  * 赞赏
  */
-Vue.component('ds-box', {
-    props: ['show','money','msg','user','author','data','showtype'],
-    template: b2_global.ds_box,
-    data(){
-        return {
-            value:0,
-            custom:0,
-            content:'',
-            payType:'',
-            payMoney:0,
-            locked:false,
-            jump:'',
-            href:'',
-            isWeixin:'',
-            isMobile:'',
-            allow:[],
-            card:[],
-            cg:[],
-            newWin: null
-        }
-    },
-    methods:{
-        close(){
-            setTimeout(()=>{
-                this.$emit('close')
-                this.locked = false
-            },10)
-        },
-        clean(){
-            this.$emit('clean')
-        },
-        picked(m,val){
-            this.value = val
-            this.payMoney = m
-        },
-		chosePayType(val){
-            this.locked = true
-            this.payType = val
-        }
-    }
-})
-
-
-var b2DsBox = new Vue({
-    el:'#ds-box',
+var donateBox = new Vue({
+    el:'#donate-box',
     data:{
-        money:[],
-        show:false,
-        msg:'',
-        user:[],
-        author:[],
-        data:[],
-        showtype:''
+		payType:'',
+        show:false
     },
     methods: {
         close(){
             this.show = !this.show
         },
-        clean(){
-            setTimeout(()=>{
-                this.data = []
-                this.money = []
-            },100)
-        },
-        change(type){
-            this.showtype = type
-        }
-    },
-})
-
-
-var b2Ds = new Vue({
-    el:'#content-ds',
-    data:{
-        data:''
-    },
-    methods:{
-        show(){
-			b2DsBox.show = true
-        }
+		choseType(val){
+		    this.payType = val
+		}
     }
 })
+ 
 
 /**
  * 关注微信公众号
@@ -182,7 +116,6 @@ var b2Ds = new Vue({
 var gongzhonghaoBox = new Vue({
     el:'#gongzhonghao-box',
     data:{
-        searchType:'all',
         show:false
     },
     methods:{

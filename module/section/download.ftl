@@ -297,8 +297,8 @@
 							<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
 						</div>
 						<div class="mg-t shop-single-action">
-							<div class="shop-single-action-left"  id="content-ds"  >
-								<button class="download-zs" @click="show()">赞赏</button>
+							<div class="shop-single-action-left" >
+								<button class="download-zs" onclick="donateBox.show = true">赞赏</button>
 								<button class="download-zs">分享海报</button>
 							</div>
 							<div class="shop-single-action-right"><button class="download-xz">免费下载</button></button></div>

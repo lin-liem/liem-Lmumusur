@@ -36,7 +36,7 @@
 					<div class="qrcode-img b2-radius">
 						<img src="${settings.gongzhonghao_qr!}"></div>
 					<div class="qrcode-money"><span>${settings.gongzhonghao_id!'mumures'}</span></div>
-					<div class="qrcode-desc">${settings.gongzhonghao_desc!'请打开手机扫描添加'}</div>
+					<div class="qrcode-desc">${settings.gongzhonghao_desc!'请打开手机微信扫描'}</div>
 				</div>
 			</div>
 		</div>
@@ -54,8 +54,45 @@
 </div>
 
 <!-- 支付组件 -->
-<div id="ds-box" ref="dsmoney">
-	<ds-box :show="show" :money="money" :msg="msg" :user="user" :author="author" :data="data" :showtype="showtype" @close="close" @clean="clean" @change="change" v-cloak=""></ds-box>
+<div id="donate-box" ref="dsmoney">
+	<div :class="['modal','ds-box',{'show-modal':show}]">
+		<div class="modal-content b2-radius">
+			<div class="pay-box-title">
+				<div class="pay-box-left ds-pay-title">
+					<img src="${user.avatar!}">
+					<span>给${user.nickname!}打赏</span></div>
+				<div class="pay-box-right">
+					<span class="pay-close" @click="close()">×</span>
+				</div>
+			</div>
+			<div class="pay-box-content ds">
+				<div class="ds-msg">${settings.donate_guide_desc!'予人玫瑰，手有余香'}</div>
+			</div>
+			<div class="pay-type">
+				<ul>
+					<li>
+						<button class="b2-radius" :class="payType == 'alipay' ? 'picked' : ''" onclick="donateBox.choseType('alipay')"  >
+							<img src="${settings.donate_alipay!}">
+							<div class="qrcode-money">
+								<span><i class="b2font b2-pay-zhifubao "></i>支付宝</span>
+							</div>
+						</button>
+					</li>
+					<li>
+						<button class="b2-radius" :class="payType == 'wecatpay' ? 'picked' : ''" onclick="donateBox.choseType('wecatpay')""  >
+							<img src="${settings.donate_wecatpay!}">
+							<div class="qrcode-money">
+								<span><i class="b2font b2-pay-weixin "></i>微信</span>
+							</div>
+						</button>
+					</li>
+				</ul>
+			</div>
+			<div class="pay-button">
+				<div><button class="button " @click="close()">${settings.donate_close_btn!'不想赞赏'}</button></div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <!-- 积分支付组件 -->
