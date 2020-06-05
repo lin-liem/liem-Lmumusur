@@ -22,10 +22,7 @@
 <script type="text/javascript" src="${theme_base!}/source/js/lazyload.min-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/jweixin-1.2.0-2.3.8.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/main-2.3.8.js"></script>
-
 <script type="text/javascript" src="${theme_base!}/source/js/index-2.3.8.js"></script>
-
 <script type='text/javascript' src='${theme_base!}/source/js/single-2.3.8.js'></script>
 <script type='text/javascript' src='${theme_base!}/source/js/prettify.min-2.3.8.js'></script>
-
 <script type='text/javascript' src='${theme_base!}/source/js/common-1.0.0.js'></script>

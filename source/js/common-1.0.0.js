@@ -6,6 +6,10 @@ var b2_rest_url = b2_global.rest_url + '/'
 
 var B2ClientWidth = document.body.clientWidth;
 
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".entry-content img"
+});
+
 //  公告模态
 Vue.component('gg-box', {
 	props: ['show', 'ggdata'],
@@ -125,3 +129,67 @@ var gongzhonghaoBox = new Vue({
         }
     }
 })
+
+
+
+//文章内部图片点击放大
+function b2ImgZooming(sele){
+    if(!b2_global.show_slider || b2_global.show_slider == '0') return
+
+    let att = document.querySelectorAll('.attachment img')
+    for (let _i = 0; _i < att.length; _i++) {
+        b2zoom.listen(att[_i])
+    }
+
+    var imgs = document.querySelectorAll(sele)
+
+    for (let i = 0; i < imgs.length; i++) {
+		//      if(
+		//          imgs[i].className.indexOf('po-img-big') !== -1 || 
+		//          imgs[i].className.indexOf('alignnone') !== -1 || 
+		//          imgs[i].className.indexOf('alignleft') !== -1 ||
+		//          imgs[i].className.indexOf('alignright') !== -1 ||
+		//          imgs[i].className.indexOf('aligncenter') !== -1 ||
+		//          imgs[i].className.indexOf('gallery-image') !== -1 ||
+		//          imgs[i].className.indexOf('size-full') !== -1 ||
+		//          imgs[i].className.indexOf('wp-image-') !== -1 ||
+		// 			imgs[i].className.indexOf('loading') !== -1 
+		//      ){
+		//          b2zoom.listen(imgs[i]);
+		//      }
+		b2zoom.listen(imgs[i]);
+    }
+
+}
+document.addEventListener('DOMContentLoaded', function () {
+    b2ImgZooming('.entry-content img')
+})
+
+
+ 
+//附件下载，复制解压码
+function b2FileDown(){
+    let code = document.querySelectorAll('.entry-content .file-down-pass span');
+    code.forEach(e => {
+        e.onclick = (ev)=>{
+
+            let input = ev.target.firstElementChild;
+            input.select()
+
+            if(document.execCommand('copy')){
+
+                ev.target.firstChild.data = b2_global.copy.success
+                setTimeout(()=>{
+                    ev.target.firstChild.data = b2_global.copy.text
+                },1000)
+
+            }else{
+                ev.target.firstChild.data = b2_global.copy.error
+            }
+
+            window.getSelection().removeAllRanges();
+        }
+    });
+}
+b2FileDown()
+

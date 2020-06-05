@@ -58,7 +58,7 @@
 			</div>
 			<div class="content-footer">
 				<div class="content-footer-poster">
-					<button class="poster-span"><i class="b2font b2-feiji "></i><b>海报分享</b></button>
+					<button class="poster-span" @click="openPoster()"><i class="b2font b2-feiji "></i><b>海报分享</b></button>
 				</div>
 				<div class="content-footer-zan-cai">
 					<span class="">最后编辑时间&nbsp;&nbsp;|&nbsp;&nbsp;${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</span> 

@@ -114,3 +114,8 @@
 <div id="mp-box">
 	<mp-box ref="b2mp" :show="show" :qrcode="qrcode" :invitation="'1'" :invitation-link="'https://www.dachaoka.com/invitation-code'" :invitation-text="'获取邀请码'" @close="close" v-cloak=""></mp-box>
 </div>
+
+<!-- 海报组件 -->
+<div id="poster-box">
+	<poster-box :show="show" :data="data" @close-form="close" v-cloak=""></poster-box>
+</div>
