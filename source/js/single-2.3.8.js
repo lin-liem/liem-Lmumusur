@@ -19,7 +19,7 @@ Vue.component('poster-box', {
     mounted(){
         this.isWeixin = b2isWeixin()
         this.data = JSON.parse(this.$refs.poster.getAttribute('data-poster'))
-
+console.log(this.data );
         let userData = JSON.parse(localStorage.getItem('userData'))
 
         if(userData){
@@ -52,23 +52,10 @@ Vue.component('poster-box', {
             if(this.locked) return;
             this.locked = true 
 			
-			var diyData = {
-				title: "这是牛逼的标题",
-				content: "这是间接内容",
-				thumb: "https://www.mumusur.com/upload/2020/3/image-5e16e4fe25bc4ca5a05b2d5317449243.png",
-				logo: "https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png",
-				desc: "一个资源分享的网站！",
-				date: {
-					year: "2029",
-					month: "19",
-					day: "12"
-				},
-				link: "https://baidu.com",
-			}
            // this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
-                this.logo = diyData;
+                this.logo = 'https://www.mumusur.com/upload/2020/3/image-5e16e4fe25bc4ca5a05b2d5317449243.png';
                 //this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
-                    this.thumb = diyData;
+                    this.thumb = 'https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png';
                     setTimeout(()=>{
                         this.html2canvas()
                     }, 0);
@@ -93,9 +80,6 @@ Vue.component('poster-box', {
                     canvas.msImageSmoothingEnabled = false;
                     canvas.imageSmoothingEnabled = false;
                     this.poster = canvas.toDataURL();
-                    console.log(imgData)
-                    this.poster = canvas.convertToJPEG(canvas, canvas.width, canvas.height);
-                    this.poster = URL.createObjectURL(this.base64ToBlob(imgData))
                 }
             });
         },
