@@ -407,6 +407,12 @@ article_config:
        type: text
        placeholder: '公众号描述'
        default: '请打开手机扫描快速添加'
+    bill_desc:
+       name: bill_desc
+       label: 宣传海报描述
+       type: textarea
+       description: '宣传海报描述'
+       default: '我们不必期望每个梦想都成真，不必在乎每一个得失和错漏，不要总是想自己得到没有，人生，不可能总是精彩。'
 footer_config:
   label: 页脚配置
   items:
