@@ -43,8 +43,8 @@ Vue.component('poster-box', {
 		getbase64(){
             if(this.locked) return;
             this.locked = true 
-			this.logo = this.data.logo;
-			this.thumb = this.data.thumb;
+			var path = this.data.logo;
+			
 			this.getUrlBase64(path, 'jpeg', function (base64) {
 				console.log(base64);//base64编码值
 				this.logo = base64
