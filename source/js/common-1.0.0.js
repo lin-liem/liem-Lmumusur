@@ -128,42 +128,9 @@ Vue.component('ds-box', {
             this.value = val
             this.payMoney = m
         },
-        restData(data = []){
-            if(this.showtype == 'ds'){
-                data = Object.assign(data,{
-                    'title':this.$refs.dstitle.innerText,
-                    'order_price':this.payMoney,
-                    'order_type':'ds',
-                    'post_id':b2_global.post_id,
-                    'pay_type':this.payType,
-                    'order_content':this.content
-                })
-            }else{
-                data = Object.assign(this.data,data)
-            }
-            data['pay_type'] = this.payType
-
-
-            return data;
-        },
 		chosePayType(val){
-            
             this.locked = true
             this.payType = val
-
-             
-        },
-        disabled(){
-            if(this.data.pay_type !=='card'){
-                if(this.jump == '') return true
-                if(this.jump == 'jump' && this.href == '') return true
-                if(this.locked == true) return true
-                if(this.payType == '') return true
-            }else{
-                if(!this.card.number || !this.card.password) return true
-            }
-
-            return false
         }
     }
 })
@@ -204,13 +171,8 @@ var b2Ds = new Vue({
     },
     methods:{
         show(){
-			b2DsBox.money = this.data.moneys
 			b2DsBox.show = true
-			b2DsBox.showtype = 'ds'
-			b2DsBox.msg = this.data.single_post_ds_text
-			console.log(this.data.moneys);
-			console.log(this.data.single_post_ds_text);
-        },
+        }
     }
 })
 
@@ -225,10 +187,16 @@ var gongzhonghao_box = new Vue({
     methods:{
         close(){
             this.show = !this.show
-        },
-		show(){
-			this.show = true
-		}
+        }
+    }
+})
+
+var c_gongzhonghao = new Vue({
+    el:'#content-gongzhonghao',
+    methods:{
+        show(){
+			gongzhonghao_box.show = true
+        }
     }
 })
 
