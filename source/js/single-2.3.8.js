@@ -260,7 +260,9 @@ function b2ImgZooming(sele){
             imgs[i].className.indexOf('aligncenter') !== -1 ||
             imgs[i].className.indexOf('gallery-image') !== -1 ||
             imgs[i].className.indexOf('size-full') !== -1 ||
-            imgs[i].className.indexOf('wp-image-') !== -1 
+            imgs[i].className.indexOf('wp-image-') !== -1 ||
+			imgs[i].className.indexOf('loading') !== -1 ||
+			
         ){
             b2zoom.listen(imgs[i]);
         }
