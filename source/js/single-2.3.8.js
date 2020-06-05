@@ -86,12 +86,7 @@ Vue.component('poster-box', {
                     canvas.webkitImageSmoothingEnabled = false;
                     canvas.msImageSmoothingEnabled = false;
                     canvas.imageSmoothingEnabled = false;
-					var img = new Image();
-					img.setAttribute('crossOrigin', 'anonymous');
-					console.log(canvas.imageSmoothingEnabled);
-					img.src =  canvas.toDataURL();
-					console.log(img);
-     //                this.poster = canvas.toDataURL();
+					this.poster = canvas.toDataURL();
 					
                 }
             });
