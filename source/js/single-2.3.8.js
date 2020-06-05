@@ -19,14 +19,6 @@ Vue.component('poster-box', {
     mounted(){
         this.isWeixin = b2isWeixin()
         this.data = JSON.parse(this.$refs.poster.getAttribute('data-poster'))
-console.log(this.data );
-        let userData = JSON.parse(localStorage.getItem('userData'))
-
-        if(userData){
-            this.data.link = new URL(this.data.link)
-            this.data.link.searchParams.set('ref', userData.user_code)
-            this.data.link = this.data.link.href
-        }
 
         const qr = new QRious({
             value: this.data.link,
@@ -79,7 +71,13 @@ console.log(this.data );
                     canvas.webkitImageSmoothingEnabled = false;
                     canvas.msImageSmoothingEnabled = false;
                     canvas.imageSmoothingEnabled = false;
-                    this.poster = canvas.toDataURL();
+					var img = new Image();
+					img.setAttribute('crossOrigin', 'anonymous');
+					console.log(canvas.imageSmoothingEnabled);
+					img.src =  canvas.toDataURL();
+					console.log(img);
+     //                this.poster = canvas.toDataURL();
+					
                 }
             });
         },
