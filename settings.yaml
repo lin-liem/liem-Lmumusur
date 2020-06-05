@@ -412,7 +412,7 @@ article_config:
        label: 宣传海报描述
        type: textarea
        description: '宣传海报描述'
-       default: '让我们享受人生的滋味吧，如果我们感受得越多，我们就会生活得越长久！'
+       default: '让我们享受人生的滋味吧，若感受得越多，就会生活得越长久！'
 footer_config:
   label: 页脚配置
   items:
