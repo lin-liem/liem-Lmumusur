@@ -53,9 +53,9 @@ console.log(this.data );
             this.locked = true 
 			
            // this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.logo).then(res=>{
-                this.logo = 'https://www.mumusur.com/upload/2020/3/image-5e16e4fe25bc4ca5a05b2d5317449243.png';
+                this.logo = 'https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png';
                 //this.$http.post(b2_rest_url+'urlToBase64','url='+this.data.thumb).then(res=>{
-                    this.thumb = 'https://www.mumusur.com/upload/2020/3/logo-1f641936712245e3b4d9590389da3770.png';
+                    this.thumb = 'https://static.mumusur.com/static/mumusur/images/26bec5dadc6d2a2b3abc529006f479cf.png';
                     setTimeout(()=>{
                         this.html2canvas()
                     }, 0);
