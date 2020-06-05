@@ -252,21 +252,21 @@ function b2ImgZooming(sele){
     var imgs = document.querySelectorAll(sele)
 
     for (let i = 0; i < imgs.length; i++) {
-        if(
-            imgs[i].className.indexOf('po-img-big') !== -1 || 
-            imgs[i].className.indexOf('alignnone') !== -1 || 
-            imgs[i].className.indexOf('alignleft') !== -1 ||
-            imgs[i].className.indexOf('alignright') !== -1 ||
-            imgs[i].className.indexOf('aligncenter') !== -1 ||
-            imgs[i].className.indexOf('gallery-image') !== -1 ||
-            imgs[i].className.indexOf('size-full') !== -1 ||
-            imgs[i].className.indexOf('wp-image-') !== -1 ||
-			imgs[i].className.indexOf('loading') !== -1 ||
-			
-        ){
-            b2zoom.listen(imgs[i]);
-        }
-        
+   //      if(
+   //          imgs[i].className.indexOf('po-img-big') !== -1 || 
+   //          imgs[i].className.indexOf('alignnone') !== -1 || 
+   //          imgs[i].className.indexOf('alignleft') !== -1 ||
+   //          imgs[i].className.indexOf('alignright') !== -1 ||
+   //          imgs[i].className.indexOf('aligncenter') !== -1 ||
+   //          imgs[i].className.indexOf('gallery-image') !== -1 ||
+   //          imgs[i].className.indexOf('size-full') !== -1 ||
+   //          imgs[i].className.indexOf('wp-image-') !== -1 ||
+			// imgs[i].className.indexOf('loading') !== -1 
+   //      ){
+   //          b2zoom.listen(imgs[i]);
+   //      }
+   
+		b2zoom.listen(imgs[i]);
     }
 
 }
