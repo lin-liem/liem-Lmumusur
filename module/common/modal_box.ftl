@@ -79,7 +79,7 @@
 						</button>
 					</li>
 					<li>
-						<button class="b2-radius" :class="payType == 'wecatpay' ? 'picked' : ''" onclick="donateBox.choseType('wecatpay')""  >
+						<button class="b2-radius" :class="payType == 'wecatpay' ? 'picked' : ''" onclick="donateBox.choseType('wecatpay')" >
 							<img src="${settings.donate_wecatpay!}">
 							<div class="qrcode-money">
 								<span><i class="b2font b2-pay-weixin "></i>微信</span>
