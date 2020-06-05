@@ -100,7 +100,7 @@ console.log(this.data );
     watch:{
         show(val){
             if(val && !this.loadedjs){
-                b2loadScript(b2_global.site_info.site_uri+'/Assets/fontend/library/html2canvas.min.js',()=>{
+                b2loadScript(b2_global.site_info.plugin_uri+'html2canvas.min.js',()=>{
                     this.loadedjs = true
                     this.getbase64()
                 })
