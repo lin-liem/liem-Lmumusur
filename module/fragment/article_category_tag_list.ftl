@@ -174,7 +174,18 @@
 							<li>
 								<div class="filter-name">分类：</div>
 								<div class="filter-items">
-									<a href="${categories_url!}" class="current" title="全部">全部</a>
+									<@categoryTag method="list">
+										<#list categories as categoryChild>
+											<#if category?? && ( categoryChild.parentId == category.id && category.parentId == 0 )>
+												<#if category?? && categoryChild.id == category.id>
+													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">全部</a>
+												<#else>
+													<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">全部</a>
+												</#if>
+											</#if>
+										</#list>
+									</@categoryTag>
+										
 									<@categoryTag method="list">
 										<#list categories as categoryChild>
 											<#if category?? && (categoryChild.parentId == category.id || categoryChild.parentId == category.parentId && category.parentId != 0)>
