@@ -183,34 +183,36 @@
 				<div id="filter-top">
 					<div class="filters-box">
 						<ul>
-							<li>
-								<div class="filter-name">分类：</div>
-								<div class="filter-items">
-									<@categoryTag method="list">
-										<#list categories as categoryChild>
-											<#if category?? && ( categoryChild.id == category.id && category.parentId == 0  ) || ( categoryChild.id == category.parentId && categoryChild.parentId == 0 )>
-												<#if category?? && categoryChild.id == category.id>
-													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">全部</a>
-												<#else>
-													<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">全部</a>
+							<#if category?? >
+								<li>
+									<div class="filter-name">分类：</div>
+									<div class="filter-items">
+										<@categoryTag method="list">
+											<#list categories as categoryChild>
+												<#if ( categoryChild.id == category.id && category.parentId == 0  ) || ( categoryChild.id == category.parentId && categoryChild.parentId == 0 )>
+													<#if categoryChild.id == category.id>
+														<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">全部</a>
+													<#else>
+														<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">全部</a>
+													</#if>
 												</#if>
-											</#if>
-										</#list>
-									</@categoryTag>
-										
-									<@categoryTag method="list">
-										<#list categories as categoryChild>
-											<#if category?? && (categoryChild.parentId == category.id || categoryChild.parentId == category.parentId && category.parentId != 0)>
-												<#if category?? && categoryChild.id == category.id>
-													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">${categoryChild.name}</a>
-												<#else>
-													<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">${categoryChild.name}</a>
+											</#list>
+										</@categoryTag>
+											
+										<@categoryTag method="list">
+											<#list categories as categoryChild>
+												<#if (categoryChild.parentId == category.id || categoryChild.parentId == category.parentId && category.parentId != 0)>
+													<#if categoryChild.id == category.id>
+														<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">${categoryChild.name}</a>
+													<#else>
+														<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">${categoryChild.name}</a>
+													</#if>
 												</#if>
-											</#if>
-										</#list>
-									</@categoryTag>
-								</div>
-							</li>
+											</#list>
+										</@categoryTag>
+									</div>
+								</li>
+							</#if>
 							<#--
 							<li>
 								<div class="filter-name">标签：</div>
