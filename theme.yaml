@@ -11,9 +11,9 @@ version: 1.0.0
 require: 1.3.1
 
 postMetaField:
-  - resource_desc_json           # 资源描述，为json格式，[{id:0, name:'', value:''},{id:0, name:'', value:''}]
   - resource_old_price      # 资源原来价格，如：0.01
   - resource_price          # 资源价格，如：0.01
+  - resource_desc_json      # 资源描述，为json格式，[{id:0, name:'', value:''},{id:0, name:'', value:''}]
   - download_url            # 资源下载地址
 
 sheetMetaField:
