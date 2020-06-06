@@ -287,9 +287,12 @@
 									</div>
 								</li>
 								<li class="shop-single-data-address-picked">
-									<p class="shop-single-data-address-desc">资源下载须知：<span>
-									<i class="b2font b2-zidingyi "></i>免责声明</span></p>
-									<p class="shop-single-data-address-desc-line">本资源仅供交流学习，资源版权归发行方所有，请勿进行恶意传播！</p>
+									<p class="shop-single-data-address-desc">资源下载须知：
+										<span onclick="window.open('${settings.download_notice_file_url!}')">
+											<i class="b2font b2-zidingyi "></i>${settings.download_notice_file_title!}
+										</span>
+									</p>
+									<p class="shop-single-data-address-desc-line">${settings.download_notice_desc!}</p>
 								</li>
 							</ul>
 						</div>

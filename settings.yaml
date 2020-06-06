@@ -370,6 +370,25 @@ views_config:
 article_config:
   label: 文章配置
   items:
+    download_notice_desc:
+       name: download_notice_desc
+       label: 下载须知描述
+       type: textarea
+       default: '本资源仅供交流学习，资源版权归发行方所有，请勿进行恶意传播！'
+       description: '再资源下载页展示，建议描述不超过35个字'
+    download_notice_file_title:
+       name: download_notice_file_title
+       label: 文件名称
+       type: text
+       placeholder: '下载须知名称'
+       default: '免责声明'
+       description: '再资源下载页展示，如免责声明等建议描述不超过7个字'
+    download_notice_file_url:
+       name: download_notice_file_url
+       label: 文件链接
+       type: text
+       placeholder: '下载须知链接'
+       description: '再资源下载页展示，如免责声明文件链接'
     donate_guide_desc:
        name: donate_guide_desc
        label: 赞赏引导
