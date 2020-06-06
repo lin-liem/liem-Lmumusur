@@ -283,9 +283,9 @@ views_config:
        data-type: bool
        default: ONLY_TYPE_SHOW
        options:
-         - value: 'ALL_TYPE_SHOW'
+         - value: ALL_TYPE_SHOW
            label: 全部显示
-         - value: 'ONLY_TYPE_SHOW'
+         - value: ONLY_TYPE_SHOW
            label: 显示分类
     advert_enable:
        name: advert_enable
