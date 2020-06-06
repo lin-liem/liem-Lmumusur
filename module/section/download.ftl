@@ -228,7 +228,7 @@
 									<div class="shop-single-data-value">
 										<div class="shop-item-normal-price shop-item-delete">
 											<span class="shop-single-price-title">原价：</span>
-											<span class="shop-single-price"><i>￥</i> <b>${metas.resource_old_price!'100'}</b></span>
+											<span class="shop-single-price"><i>￥</i> <b>${metas.resource_old_price!'100.00'}</b></span>
 										</div>
 										<div class="shop-item-u-price">
 											<span class="shop-single-price-title">现价：</span>
@@ -305,7 +305,7 @@
 								<button class="download-zs">分享海报</button>
 							</div>
 							<div class="shop-single-action-right">
-								<#if metas.resource_price?? && metas.resource_price != '' 
+								<#if metas.resource_price?? && metas.resource_price != '' >
 									<#if (metas.resource_price?number) gt 0>
 										<button class="download-xz" onclick="window.open('${metas.download_url!}')">付${metas.resource_price}元下载</button>
 									<#else>
