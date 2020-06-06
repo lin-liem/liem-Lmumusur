@@ -1,4 +1,4 @@
-<#-- 备用方案 -->
+<#-- 暂时没用：备用方案 -->
 <#include "../fragment/article_category_tag_list.ftl">
 <div class="b2-single-content wrapper category single-sidebar-show ">
 	<div id="primary-home" class="content-area box">

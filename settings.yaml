@@ -276,6 +276,17 @@ views_config:
        placeholder: '请参考下方JSON格式'
        description: '格式：[{"id":0,"icon":"图标","name":"名称","url":"链接"}]'
        default: '[{"id":0,"icon":"","name":"公告","url":"https://mumusur.com"},{"id":0,"icon":"","name":"邀请码","url":"https://mumusur.com"},{"id":0,"icon":"b2font b2-vip","name":"成为会员","url":"https://mumusur.com"},{"id":0,"icon":"b2font b2-renzheng","name":"认证","url":"https://mumusur.com"}]'
+    tag_and_type_list_model:
+       name: tag_and_type_list_model
+       label: 分类显示模式
+       type: radio
+       data-type: bool
+       default: ONLY_TYPE_SHOW
+       options:
+         - value: 'ALL_TYPE_SHOW'
+           label: 全部显示
+         - value: 'ONLY_TYPE_SHOW'
+           label: 显示分类
     advert_enable:
        name: advert_enable
        label: 首页广告开关
