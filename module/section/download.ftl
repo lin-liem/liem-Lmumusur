@@ -227,12 +227,12 @@
 								<li class="shop-single-data-price">
 									<div class="shop-single-data-value">
 										<div class="shop-item-normal-price shop-item-delete">
-											<span class="shop-single-price-title">价格：</span>
-											<span class="shop-single-price"><i>￥</i> <b>100.00</b></span>
+											<span class="shop-single-price-title">原价：</span>
+											<span class="shop-single-price"><i>￥</i> <b>${metas.resource_old_price!'100'}</b></span>
 										</div>
 										<div class="shop-item-u-price">
-											<span class="shop-single-price-title">积分：</span>
-											<span class="shop-single-price"><i><i class="b2font b2-jifen "></i></i> <b>0.00</b></span>
+											<span class="shop-single-price-title">现价：</span>
+											<span class="shop-single-price"><i><i class="b2font b2-jifen "></i></i> <b>${metas.resource_price!'0.00'}</b></span>
 										</div>
 										<span class="views"><i class="b2font b2-hot "></i><b>${post.visits!}</b></span>
 									</div>
@@ -301,7 +301,13 @@
 								<button class="download-zs" onclick="donateBox.show = true">赞赏</button>
 								<button class="download-zs">分享海报</button>
 							</div>
-							<div class="shop-single-action-right"><button class="download-xz">免费下载</button></button></div>
+							<div class="shop-single-action-right">
+								<#if metas.resource_price != '0.00'>
+									<button class="download-xz"><a href="${metas.download_url}" target="_blank">付${metas.resource_price}元下载</a></button>
+								<#else>
+									<button class="download-xz"><a href="${metas.download_url}" target="_blank">免费下载</a></button>
+								</#if>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -312,12 +318,14 @@
 			<div class="shop-single-attr-title">资源介绍</div>
 			<div class="shop-single-attr-data">
 				<ul>
-					<li><span class="shop-single-attr-k">灵敏程度：</span><span class="shop-single-attr-v">91dB/mW</span></li>
-					<li><span class="shop-single-attr-k">音乐类型：</span><span class="shop-single-attr-v">人声女声类型</span></li>
-					<li><span class="shop-single-attr-k">阻抗大小：</span><span class="shop-single-attr-v">20Ω</span></li>
-					<li><span class="shop-single-attr-k">耳机类型：</span><span class="shop-single-attr-v">无线</span></li>
-					<li><span class="shop-single-attr-k">频响范围：</span><span class="shop-single-attr-v">20-20000Hz</span></li>
-					<li><span class="shop-single-attr-k">佩戴方式：</span><span class="shop-single-attr-v">头戴护耳式</span></li>
+					<#assign text>${metas.resource_desc_json}</#assign>
+					<#assign json=text?eval />
+					<#list json.userlist as item>
+						<li>
+							<span class="shop-single-attr-k">${item.name}：</span>
+							<span class="shop-single-attr-v">${item.value}</span>
+						</li>
+					</#list>
 				</ul>
 				<div class="shop-single-data-desc">${post.summary!}</div>
 			</div>
