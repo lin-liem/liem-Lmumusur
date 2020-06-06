@@ -1,5 +1,5 @@
 <#-- 所有分类和标签模式 -->
-<#if settings.tag_and_type_list_model!'ONLY_TYPE_SHOW' == 'ALL_TYPE_SHOW'>
+<#if  (settings.tag_and_type_list_model!'ONLY_TYPE_SHOW') == 'ALL_TYPE_SHOW'>
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
 		<div class="b2-light-dark-outside">
@@ -110,7 +110,7 @@
 		</div>
 	</div>
 </div>
-<#elseif settings.tag_and_type_list_model!'ONLY_TYPE_SHOW' == 'ONLY_TYPE_SHOW'>
+<#elseif (settings.tag_and_type_list_model!'ONLY_TYPE_SHOW') == 'ONLY_TYPE_SHOW'>
 <#-- 分类下详尽分类模式 -->
 <div class="tax-header mg-t- mg-b">
 	<div class="b2-light-dark">
@@ -175,6 +175,8 @@
 								<div class="filter-name">分类：</div>
 								<div class="filter-items">
 									<a href="${categories_url!}" class="current" title="全部">全部</a>
+									${category.children}
+									<#--
 									<#if category.children?? && category.children?size gt 0>
 										<#list category.children?sort_by('priority') as child>
 											<#if category?? && child.id==category.id>
@@ -184,6 +186,7 @@
 											</#if>
 										</#list>
 									</#if>
+									-->
 								</div>
 							</li>
 							<li>
