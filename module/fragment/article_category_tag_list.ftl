@@ -14,7 +14,11 @@
 		<div class="wrapper">
 			<div class="tax-info">
 				<div class="tax-info-item">
-					<button class="fliter-button" @click.stop="show('hot')">智能<i class="b2font b2-jt-block-down "></i></button>
+					<#if tag??>
+						<button class="fliter-button" @click.stop="show('hot')">${tag.name}<i class="b2font b2-jt-block-down "></i></button>
+					<#elseif category??>
+						<button class="fliter-button" @click.stop="show('hot')">${category.name}<i class="b2font b2-jt-block-down "></i></button>
+					<#else>
 				</div>
 				<div class="tax-info-item mobile-show" @click.stop="show('cat')">
 					<button class="fliter-button">筛选<i class="b2font b2-jt-block-down "></i></button>
@@ -126,7 +130,11 @@
 		<div class="wrapper">
 			<div class="tax-info">
 				<div class="tax-info-item">
-					<button class="fliter-button" @click.stop="show('hot')">智能<i class="b2font b2-jt-block-down "></i></button>
+					<#if tag??>
+						<button class="fliter-button" @click.stop="show('hot')">${tag.name}<i class="b2font b2-jt-block-down "></i></button>
+					<#elseif category??>
+						<button class="fliter-button" @click.stop="show('hot')">${category.name}<i class="b2font b2-jt-block-down "></i></button>
+					<#else>
 				</div>
 				<div class="tax-info-item mobile-show" @click.stop="show('cat')">
 					<button class="fliter-button">筛选<i class="b2font b2-jt-block-down "></i></button>
