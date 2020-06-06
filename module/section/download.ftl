@@ -294,7 +294,7 @@
 							</ul>
 						</div>
 						<div class="lottery-desc">
-							<p><i class="b2font b2-shipinye-meiguihua "></i><span>予人玫瑰，手有余香</span></p>
+							<p><i class="b2font b2-shipinye-meiguihua "></i><span>${settings.donate_guide_desc!'予人玫瑰，手有余香'}</span></p>
 						</div>
 						<div class="mg-t shop-single-action">
 							<div class="shop-single-action-left" >
@@ -302,7 +302,7 @@
 								<button class="download-zs">分享海报</button>
 							</div>
 							<div class="shop-single-action-right">
-								<#if metas.resource_price != '0.00'>
+								<#if metas.resource_price?? && metas.resource_price != '0.00'>
 									<button class="download-xz"><a href="${metas.download_url}" target="_blank">付${metas.resource_price}元下载</a></button>
 								<#else>
 									<button class="download-xz"><a href="${metas.download_url}" target="_blank">免费下载</a></button>
