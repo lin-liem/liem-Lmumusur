@@ -177,15 +177,13 @@
 									<a href="${categories_url!}" class="current" title="全部">全部</a>
 									<@categoryTag method="list">
 										<#list categories as categoryChild>
-											
-											<#if category?? && categoryChild.parentId == category.id>
+											<#if category?? && (categoryChild.parentId == category.id || categoryChild.parentId == category.parentId && category.parentId != 0)>
 												<#if category?? && categoryChild.id == category.id>
-													<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a>
+													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">${categoryChild.name}</a>
 												<#else>
-													<a href="${categoryItem.fullPath!}" title="${categoryItem.slug}">${categoryItem.name}</a>
+													<a href="${categoryChild.fullPath!}" title="${categoryChild.slug}">${categoryChild.name}</a>
 												</#if>
 											</#if>
-												
 										</#list>
 									</@categoryTag>
 								</div>
