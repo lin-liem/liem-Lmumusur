@@ -175,7 +175,6 @@
 								<div class="filter-name">分类：</div>
 								<div class="filter-items">
 									<a href="${categories_url!}" class="current" title="全部">全部</a>
-									${category.children}
 									<#--
 									<#if category.children?? && category.children?size gt 0>
 										<#list category.children?sort_by('priority') as child>
