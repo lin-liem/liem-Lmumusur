@@ -55,8 +55,10 @@
 			</div>
 			<div class="tax-fliter-hot" v-show="showFliter.hot" v-cloak="">
 				<div class="tax-order-box">
-					<div class="order-items"><a href="javascript:;" class="current">最新</a><a href="javascript:;" class="">随机</a><a
-						 href="javascript:;" class="">最多浏览</a><a href="javascript:;" class="">最多喜欢</a><a href="javascript:;" class="">最多评论</a></div>
+					<div class="order-items">
+						<a href="${categories_url!}" class="current">分类列表</a>
+						<a href="${tags_url!}" class="">标签列表</a>
+					</div>
 				</div>
 			</div>
 			<div :id="showFliter.cat ? 'fliter-show' : ''" class="tax-fliter-cat" ref="filterContent">
@@ -171,8 +173,10 @@
 			</div>
 			<div class="tax-fliter-hot" v-show="showFliter.hot" v-cloak="">
 				<div class="tax-order-box">
-					<div class="order-items"><a href="javascript:;" class="current">最新</a><a href="javascript:;" class="">随机</a><a
-						 href="javascript:;" class="">最多浏览</a><a href="javascript:;" class="">最多喜欢</a><a href="javascript:;" class="">最多评论</a></div>
+					<div class="order-items">
+						<a href="${categories_url!}" class="current">分类列表</a>
+						<a href="${tags_url!}" class="">标签列表</a>
+					</div>
 				</div>
 			</div>
 			<div :id="showFliter.cat ? 'fliter-show' : ''" class="tax-fliter-cat" ref="filterContent">
