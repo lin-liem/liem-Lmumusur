@@ -305,10 +305,14 @@
 								<button class="download-zs">分享海报</button>
 							</div>
 							<div class="shop-single-action-right">
-								<#if metas.resource_price?? && metas.resource_price != '' && metas.resource_price != '0.00'>
-									<button class="download-xz" onclick="window.open('${metas.download_url}')">付${metas.resource_price}元下载</button>
+								<#if metas.resource_price?? && metas.resource_price != '' 
+									<#if (metas.resource_price?number) gt 0>
+										<button class="download-xz" onclick="window.open('${metas.download_url!}')">付${metas.resource_price}元下载</button>
+									<#else>
+										<button class="download-xz" onclick="window.open('${metas.download_url!}')">免费下载</button>
+									</#if>
 								<#else>
-									<button class="download-xz" onclick="window.open('${metas.download_url}')">免费下载</button>
+									<button class="download-xz" >暂无下载</button>
 								</#if>
 							</div>
 						</div>
@@ -321,14 +325,16 @@
 			<div class="shop-single-attr-title">资源介绍</div>
 			<div class="shop-single-attr-data">
 				<ul>
-					<#assign text>${metas.resource_desc_json!}</#assign>
-					<#assign json=text?eval />
-					<#list json as item>
-						<li>
-							<span class="shop-single-attr-k">${item.name}：</span>
-							<span class="shop-single-attr-v">${item.value}</span>
-						</li>
-					</#list>
+					<#if metas.resource_desc_json??>
+						<#assign text>${metas.resource_desc_json!}</#assign>
+						<#assign json=text?eval />
+						<#list json as item>
+							<li>
+								<span class="shop-single-attr-k">${item.name!}：</span>
+								<span class="shop-single-attr-v">${item.value!}</span>
+							</li>
+						</#list>
+					</#if>
 				</ul>
 				<div class="shop-single-data-desc">${post.summary!}</div>
 			</div>
