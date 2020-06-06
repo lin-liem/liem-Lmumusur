@@ -176,7 +176,7 @@
 								<div class="filter-items">
 									<@categoryTag method="list">
 										<#list categories as categoryChild>
-											<#if category?? && ( categoryChild.id == category.parentId || category.parentId == 0 )>
+											<#if category?? && ( categoryChild.id == category.id && category.parentId == 0  ) || ( categoryChild.id == category.parentId && categoryChild.parentId == 0 )>
 												<#if category?? && categoryChild.id == category.id>
 													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">全部</a>
 												<#else>
@@ -199,6 +199,7 @@
 									</@categoryTag>
 								</div>
 							</li>
+							<#--
 							<li>
 								<div class="filter-name">标签：</div>
 								<div class="filter-items">
@@ -214,6 +215,7 @@
 									</@tagTag>
 								</div>
 							</li>
+							-->
 						</ul>
 					</div>
 				</div>
