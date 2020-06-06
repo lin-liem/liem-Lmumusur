@@ -176,7 +176,7 @@
 								<div class="filter-items">
 									<@categoryTag method="list">
 										<#list categories as categoryChild>
-											<#if category?? && ( categoryChild.parentId == category.id && category.parentId == 0 )>
+											<#if category?? && ( categoryChild.id == category.parentId || category.parentId == 0 )>
 												<#if category?? && categoryChild.id == category.id>
 													<a href="${categoryChild.fullPath!}" class="current" title="${categoryChild.slug}">全部</a>
 												<#else>
