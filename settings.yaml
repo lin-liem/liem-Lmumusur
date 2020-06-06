@@ -279,14 +279,14 @@ views_config:
     tag_and_type_list_model:
        name: tag_and_type_list_model
        label: 分类显示模式
-       type: radio
-       data-type: bool
+       type: select
        default: ONLY_TYPE_SHOW
        options:
          - value: ALL_TYPE_SHOW
            label: 全部显示
          - value: ONLY_TYPE_SHOW
            label: 显示分类
+       description: '分类显示模式'       
     advert_enable:
        name: advert_enable
        label: 首页广告开关
