@@ -175,17 +175,19 @@
 								<div class="filter-name">分类：</div>
 								<div class="filter-items">
 									<a href="${categories_url!}" class="current" title="全部">全部</a>
-									<#--
-									<#if category.children?? && category.children?size gt 0>
-										<#list category.children?sort_by('priority') as child>
-											<#if category?? && child.id==category.id>
-												<a href="${child.fullPath!}" class="current" title="${child.slug}">${child.name}</a>
-											<#else>
-												<a href="${child.fullPath!}" title="${child.slug}">${child.name}</a>
+									<@categoryTag method="list">
+										<#list categories as categoryChild>
+											
+											<#if category?? && categoryChild.parentId == category.id>
+												<#if category?? && categoryChild.id == category.id>
+													<a href="${categoryItem.fullPath!}" class="current" title="${categoryItem.slug}">${categoryItem.name}</a>
+												<#else>
+													<a href="${categoryItem.fullPath!}" title="${categoryItem.slug}">${categoryItem.name}</a>
+												</#if>
 											</#if>
+												
 										</#list>
-									</#if>
-									-->
+									</@categoryTag>
 								</div>
 							</li>
 							<li>
