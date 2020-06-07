@@ -32,7 +32,7 @@
 
 <div class="mobile-footer-menu mobile-show footer-fixed" ref="footerMenu">
 	<div class="mobile-footer-left">
-		<a href="">
+		<a href="${blog_url!}">
 			<span>
 				<i class="b2font b2-home"></i>
 			</span>

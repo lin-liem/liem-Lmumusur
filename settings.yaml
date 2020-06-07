@@ -269,6 +269,12 @@ ad_config:
 views_config:
   label: 界面配置
   items:
+    search_box_title:
+       name: search_box_title
+       label: 搜索框标题
+       type: textarea
+       default: '搜索一下可能来得更快'
+       description: '手机端Box显示'
     header_links:
        name: header_links
        label: 头部链接
