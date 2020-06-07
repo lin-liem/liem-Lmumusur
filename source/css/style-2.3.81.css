@@ -5247,7 +5247,7 @@ a.collection-button:hover{
     display: flex;
     justify-content: center;
     border:1px dashed #2f2f2f;
-    padding: 20px;
+    padding: 10px;
     border-radius: 3px;
     position: relative;
 }
