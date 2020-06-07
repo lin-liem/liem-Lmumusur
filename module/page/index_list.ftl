@@ -1,8 +1,8 @@
 <div class="post-3 post-list post-item-6">
 	<div class="post-modules-top  ">
 		<div class="modules-title-box">
-			<h2 class="module-title">列表</h2>
-			<p class="module-desc">这是一个专题</p>
+			<h2 class="module-title">${settings.index_card_title!}</h2>
+			<p class="module-desc">${settings.index_card_title_desc!}</p>
 		</div>
 		<!-- 分类 -->
 		<#include "../fragment/index_navbar_categories.ftl">

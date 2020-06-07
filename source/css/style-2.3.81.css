@@ -3121,6 +3121,7 @@ a.collection-button:hover{
 .post-pre-next{
     display: flex;
     flex-flow: wrap;
+	margin: -5px -5px 11px!important;
 }
 .post-pre-next > div{
     width:50%;

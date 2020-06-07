@@ -31,10 +31,11 @@
 					<a class="fliter-button button" href="${tags_url!}" target="_blank">全部标签</a>
 				</div>
 				<div class="tax-info-item tag-list">
-					<a href="测试.html">测试</a>
-					<a href="wordpress.html">wordpress</a>
-					<a href="ziranzhi2.html">ziranzhi2</a>
-					<a href="wp技巧.html">WP技巧</a>
+					<#assign text>${settings.cate_recommend_tags!}</#assign>
+					<#assign json=text?eval />
+					<#list json as item>
+						<a href="${item.name}">${item.url}</a>
+					</#list>
 				</div>
 				<div class="tax-title">
 					<#if tag?? && tag.thumbnail?? && tag.thumbnail?length gt 0>

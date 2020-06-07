@@ -275,6 +275,18 @@ views_config:
        type: textarea
        default: '搜索一下可能来得更快'
        description: '手机端Box显示'
+    index_card_title:
+       name: index_card_title
+       label: 首页列表标题
+       type: text
+       default: '资源推荐'
+       description: '首页列表展示标题'
+    index_card_title_desc:
+       name: index_card_title_desc
+       label: 首页列表标题描述
+       type: textarea
+       default: '分享你想要的资源'
+       description: '首页列表展示标题的描述'
     header_links:
        name: header_links
        label: 头部链接
@@ -292,7 +304,14 @@ views_config:
            label: 全部显示
          - value: ONLY_TYPE_SHOW
            label: 显示分类
-       description: '分类显示模式'       
+       description: '分类显示模式' 
+    cate_recommend_tags:
+       name: cate_recommend_tags
+       label: 推荐标签
+       type: textarea
+       placeholder: '请参考下方JSON格式'
+       description: '在分类页展示，格式：[{"id":0,"name":"名称","url":"链接"}]'
+       default: '[{"id":0,"name":"PPT","url":"https://www.mumusur.com/tags/ppt.html"},{"id":2,"name":"电影电视","url":"https://www.mumusur.com/tags/%E7%94%B5%E5%BD%B1%E7%94%B5%E8%A7%86.html"},{"id":3,"name":"鬼吹灯","url":"https://www.mumusur.com/tags/%E9%AC%BC%E5%90%B9%E7%81%AF.html"}]'
     advert_enable:
        name: advert_enable
        label: 首页广告开关

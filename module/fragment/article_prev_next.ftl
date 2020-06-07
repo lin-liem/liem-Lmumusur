@@ -1,4 +1,4 @@
-<div class="post-pre-next mg-b box b2-radius">
+<div class="post-pre-next mg-b b2-radius">
 	<#if prevPost??>
 		<div class="post-pre">
 			<div class="post-pre-next-in b2-pd b2-radius" style="background-image:url('${prevPost.thumbnail!}')">
