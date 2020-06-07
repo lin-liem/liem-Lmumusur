@@ -62,6 +62,9 @@
 					</div>
 				</#if>
 			</div>
+			
+			<#include "../common/pagination.ftl">
+		
 		</div>
 	</div>
 
