@@ -15,7 +15,11 @@ Vue.component('poster-box', {
     },
     mounted(){
         this.isWeixin = b2isWeixin()
-        this.data = JSON.parse(this.$refs.poster.getAttribute('data-poster'))
+		var dataPoster = this.$refs.poster.getAttribute('data-poster');
+		if(dataPoster == 'undefined'){
+			return;
+		}
+        this.data = JSON.parse(dataPoster)
 		
         const qr = new QRious({
             value: encodeURI(this.data.link),
