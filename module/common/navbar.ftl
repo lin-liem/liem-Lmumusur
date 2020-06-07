@@ -5,7 +5,7 @@
 			<div class="wrapper">
 				<div class="header-logo">
 					<div class="logo">
-						<h1><a rel="home" href=""><img itemprop="logo" src="${blog_logo!}" alt="${blog_title!}"></a></h1>
+						<h1><a rel="home" href="${blog_url!}"><img itemprop="logo" src="${blog_logo!}" alt="${blog_title!}"></a></h1>
 					</div>
 				</div>
 				<div id="mobile-menu-button" :class="['menu-icon',{'active':show}]" @click="showAc(true)">
