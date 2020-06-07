@@ -2,6 +2,9 @@
 <div class="aside-container" @click.stop="" ref="asideContainer">
 	<div class="aside-bar">
 		<div class="bar-footer">
+			<div class="bar-item" onclick="b2SearchBox.show = true">
+				<i class="b2font b2-search "></i><span class="bar-item-desc">搜索吧</span>
+			</div>
 			<#if settings.tool_qr_enable!true>
 				<div class="bar-item bar-qrcode">
 					<i class="b2font b2-erweima "></i>
