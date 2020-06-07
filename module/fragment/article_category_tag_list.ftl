@@ -34,7 +34,7 @@
 					<#assign text>${settings.cate_recommend_tags!}</#assign>
 					<#assign json=text?eval />
 					<#list json as item>
-						<a href="${item.name}">${item.url}</a>
+						<a href="${item.url}">${item.name}</a>
 					</#list>
 				</div>
 				<div class="tax-title">
@@ -152,7 +152,7 @@
 					<#assign text>${settings.cate_recommend_tags!}</#assign>
 					<#assign json=text?eval />
 					<#list json as item>
-						<a href="${item.name}">${item.url}</a>
+						<a href="${item.url}">${item.name}</a>
 					</#list>
 				</div>
 				<div class="tax-title">
