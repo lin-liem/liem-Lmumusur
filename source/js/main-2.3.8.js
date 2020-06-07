@@ -2659,42 +2659,7 @@ var payCredit = new Vue({
     }
 })
 
-var B2UserWidget = new Vue({
-    el:'.b2-widget-user',
-    data:{
-        data:'',
-    },
-    mounted(){
-        if(this.$refs.userWidget){
-            this.getData()
-        }
-    },
-    methods:{
-        getData(){
-            this.$http.post(b2_rest_url+'getUserWidget').then(res=>{
-                this.data = res.data
-                b2AsideBar.userData = res.data
-                if(res.data.oauth){
-                    if(!res.data.oauth.weibo.open && !res.data.oauth.qq.open && !res.data.oauth.weixin.open){
-                        this.data.oauth = []
-                    }
-                }
-                if(this.$refs.gujia){
-                    this.$refs.gujia.style.display = 'none'
-                }
-                this.$nextTick(()=>{
-                    b2WidgetImageLoaded()
-                })
-            })
-        },
-        markHistory(type){
-            if(this.data.mp && type === 'weixin'){
-                mpCode.show = true
-            }
-            localStorage.setItem('historyUrl',JSON.stringify(window.location.href))
-        }
-    }
-})
+
 
 var b2Mission = new Vue({
     el:'.b2-widget-mission',
@@ -2931,9 +2896,6 @@ var b2AsideBar = new Vue({
                     login.show = true
                     login.type = 0
                     return
-                }
-                if(Object.keys(this.userData).length == 0){
-                    B2UserWidget.getData()
                 }
             }
             if(type === 'dmsg' && this.dmsg.count == 0){
