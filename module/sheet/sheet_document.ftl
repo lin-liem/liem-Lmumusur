@@ -1,6 +1,16 @@
 <#macro document post,layout,commentType,index>
 <link rel='stylesheet' id='b2-document-css-css' href='${theme_base!}/source/css/document-2.3.8.css' type='text/css' media='all'>
+<div class="b2-document-single mg-t- mg-b box">
+	<div class="document-single-top wrapper">
+		<div class="document-breadcrumb b2-hover">
+			<a href="${blog_url!}">首页</a><span>&gt;</span>
+			<a href="javascript:;">文档中心</a><span>&gt;</span>
+			${post.title!}
+		</div>
+	</div>
+</div>
 <div class="b2-document-content wrapper">
+	
 	<div class="document-left widget-area b2-pd-r">
 		<div class="document-left-item box b2-hover b2-radius mg-b">
 			<h2>此组别内的文章</h2>
