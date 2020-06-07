@@ -13,3 +13,6 @@
 <link rel="stylesheet" id="b2-index-css" href="${theme_base!}/source/css/index-2.3.8.css" type="text/css" media="all">
 <#-- <link rel='stylesheet' id='b2-shop-css-css' href='${theme_base!}/source/css/shop-2.3.8.css' type='text/css' media='all'> -->
 
+ 
+
+
