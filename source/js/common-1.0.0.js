@@ -213,3 +213,16 @@ function b2FileDown(){
 }
 b2FileDown()
 
+
+/**
+ * 自定义页面
+ */
+var sheetParam = {
+	headers: {
+		'Content-Type': 'application/json;charset=UTF-8',
+		'API-Authorization': b2_global.api_content
+	}
+}
+this.$http.get(b2_rest_url + 'sheets', sheetParam).then(res => {
+	console.log(res);
+});
