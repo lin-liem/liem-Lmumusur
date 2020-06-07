@@ -5277,8 +5277,22 @@ a.collection-button:hover{
 .site-footer-nav{
     display: flex
 }
+.site-footer-nav .wrapper .footer-links-memo-box{
+	display: flex;
+	margin: 40px 0px 10px;
+}
+.site-footer-nav .wrapper .footer-links-memo-box>div{
+	width: 50%;
+}
+.site-footer-nav .wrapper .footer-links-memo-box-title{
+	text-align: left;
+	
+}
+.site-footer-nav .wrapper .footer-links-memo-box-href{
+	text-align: left;
+}
 .site-footer-nav .wrapper .footer-links{
-    margin-top:40px;
+    /* margin-top:40px; */
     margin-bottom:20px
 }
 .footer-bottom-left{
