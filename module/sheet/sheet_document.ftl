@@ -13,7 +13,7 @@
 	
 	<div class="document-left widget-area b2-pd-r">
 		<div class="document-left-item box b2-hover b2-radius mg-b">
-			<h2>此组别内的文章</h2>
+			<h2>别的文章</h2>
 			<ul>
 				<li><a href="javascript:;">B2主题的适用场景及特点</a></li>
 				<li><a href="36824.html">B2主题的系统要求和环境安装</a></li>
@@ -27,8 +27,8 @@
 		</div>
 		<div class="document-left-item box b2-radius request-supper">
 			<h2>需要支持？</h2>
-			<p>如果通过文档没办法解决您的问题，请提交工单获取我们的支持！</p>
-			<div><a href="javascript:void(0)" class="button">提交工单</a></div>
+			<p>如果通过文档没办法解决您的问题，请提交留言反馈获取我们的支持！</p>
+			<div><a href="https://www.mumusur.com/s/guestbook.html" class="button">留言反馈</a></div>
 		</div>
 	</div>
 
