@@ -217,12 +217,25 @@ b2FileDown()
 /**
  * 自定义页面
  */
-var sheetParam = {
-	headers: {
-		'Content-Type': 'application/json;charset=UTF-8',
-		'API-Authorization': b2_global.api_content
+//实例化 vue 对象
+new Vue({
+	el:"#sheet-list",
+	data:{
+		sheets:[]
+	},
+	mounted() {
+		var sheetParam = {
+			headers: {
+				'Content-Type': 'application/json;charset=UTF-8',
+				'API-Authorization': b2_global.api_content
+			}
+		}
+		this.$http.get(b2_rest_url + 'sheets', sheetParam).then(res=>{ 
+			console.log(res);
+			this.sheets=res.content;
+	
+		}).catch(err => {
+			console.err(err)
+		})
 	}
-}
-this.$http.get(b2_rest_url + 'sheets', sheetParam).then(res => {
-	console.log(res);
 });
