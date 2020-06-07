@@ -364,6 +364,16 @@
     list-style: decimal;
     margin-left:16px
 }
+.document-left-item .sheet-look{
+	border-left: 1px solid #ccc;
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #ccc;
+	font-size: 12px;
+	height: 10px;
+	display: inline-block;
+	line-height: 10px;
+}
 @media screen and (max-width:768px){
     .document-top{
         height:300px
@@ -396,7 +406,7 @@
         flex-flow: column;
     }
     .document-breadcrumb{
-        margin-bottom:10px;
+        /* margin-bottom:10px; */
         width:100%
     }
     .document-content h2{

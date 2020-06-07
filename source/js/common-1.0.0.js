@@ -231,9 +231,10 @@ new Vue({
 			}
 		}
 		this.$http.get(b2_rest_url + 'sheets', sheetParam).then(res=>{ 
-			console.log(res);
-			this.sheets=res.content;
-	
+			var json_data = res.data.data;
+			if (json_data.hasContent) {
+				this.sheets=json_data.content;
+			}
 		}).catch(err => {
 			console.err(err)
 		})

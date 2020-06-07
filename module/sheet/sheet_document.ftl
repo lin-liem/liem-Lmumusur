@@ -13,9 +13,12 @@
 	
 	<div class="document-left widget-area b2-pd-r">
 		<div class="document-left-item box b2-hover b2-radius mg-b">
-			<h2>别的文章</h2>
+			<h2>相关内容</h2>
 			<ul id="sheet-list">
-				<li v-for="sheet in sheets"><a href="{{sheet.fullPath}}">{{sheet.title}}</a></li>
+				<li v-for="sheet in sheets">
+					<a :href="sheet.fullPath">{{sheet.title}}</a>
+					<span clss="sheet-look">{{sheet.visits}}人已看</span>
+				</li>
 			</ul>
 		</div>
 		<div class="document-left-item box b2-radius request-supper">
