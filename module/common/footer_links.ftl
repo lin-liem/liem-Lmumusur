@@ -1,6 +1,6 @@
 <div class="footer-links-memo-box mobile-hidden">
 	<div class="footer-links-memo-box-title">友情链接：</div>
-	<div style="footer-links-memo-box-href"><a href="${settings.footer_flinks_url}" target="_blank">${settings.footer_flinks_name!'申请友链'}</a></div>
+	<div class="footer-links-memo-box-href"><a href="${settings.footer_flinks_url}" target="_blank">${settings.footer_flinks_name!'申请友链'}</a></div>
 </div>
 <div class="footer-links mobile-hidden">
 	<ul>

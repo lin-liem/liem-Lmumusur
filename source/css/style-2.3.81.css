@@ -5245,7 +5245,7 @@ a.collection-button:hover{
     opacity: .5;
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     border:1px dashed #2f2f2f;
     padding: 10px;
     border-radius: 3px;
@@ -5290,6 +5290,9 @@ a.collection-button:hover{
 }
 .site-footer-nav .wrapper .footer-links-memo-box-href{
 	text-align: left;
+}
+.site-footer-nav .wrapper .footer-links-memo-box-href a:hover{
+	border-bottom: 1px solid #ccc;
 }
 .site-footer-nav .wrapper .footer-links{
     /* margin-top:40px; */
