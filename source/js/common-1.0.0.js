@@ -10,6 +10,22 @@ var lazyLoadInstance = new LazyLoad({
     elements_selector: ".entry-content img"
 });
 
+// 设置导航
+var url = location.href;
+var urlstatus = false;
+$("#top-menu-ul li a").each(function() {
+	if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
+		$(this).parent("li").addClass('current-menu-item');
+		urlstatus = true;
+	} else {
+		$(this).parent("li").removeClass('current-menu-item');
+	}
+});
+if (!urlstatus) {
+	$("#top-menu-ul li").eq(0).addClass('current-menu-item');
+}
+
+
 //  公告模态
 Vue.component('gg-box', {
 	props: ['show', 'ggdata'],

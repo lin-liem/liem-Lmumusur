@@ -1,4 +1,5 @@
 
+<script type="text/javascript" src="${theme_base!}/source/js/jquery-1.12.4-wp.js"></script>
 <script type="text/javascript" src="${theme_base!}/source/js/smartideo-2.7.0.js"></script>
 <#include "./js_constant.ftl">
 
