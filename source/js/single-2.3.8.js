@@ -15,18 +15,17 @@ Vue.component('poster-box', {
     },
     mounted(){
         this.isWeixin = b2isWeixin()
-		var dataPoster = this.$refs.poster.getAttribute('data-poster');
-		if(dataPoster == 'undefined'){
-			return;
+		var dataPoster = this.$refs.poster;
+        if(dataPoster != undefined){
+			this.data = JSON.parse(dataPoster.getAttribute('data-poster'));
+			
+			const qr = new QRious({
+			    value: encodeURI(this.data.link),
+			    size:100,
+			    level:'L'
+			  });
+			this.data.qrcode = qr.toDataURL('image/jpeg')
 		}
-        this.data = JSON.parse(dataPoster)
-		
-        const qr = new QRious({
-            value: encodeURI(this.data.link),
-            size:100,
-            level:'L'
-          });
-        this.data.qrcode = qr.toDataURL('image/jpeg')
     },
     methods:{
         close(val){
