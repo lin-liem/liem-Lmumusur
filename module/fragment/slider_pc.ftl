@@ -6,6 +6,9 @@
 					.slider-4-1 .slider-row-2 .slider-4-item + .slider-4-item .slider-in, .slider-4-1 .slider-row-1 .slider-4-item .slider-in{
 						margin-left:16px;
 					}
+					.module-sliders .box {
+						border: 2px solid #fff;
+					}
 				</style>
 				<#-- 首页第一屏开关 -->
 				<#if settings.slider_main_enable!false>

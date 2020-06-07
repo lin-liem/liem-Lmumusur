@@ -2470,12 +2470,13 @@ a.post-list-cat-item{
     padding:0
 }
 .post-3-cat{
-    background-color: #fd721f00;
+	background-color: #fd721f00;
     height: 10px;
-    width: 4px;
+    width: 10px;
     display: inline-block;
     margin-right: 3px;
     vertical-align: -1px;
+    border-radius: 100%;
 }
 .item-post-style-3 .post-thumb{
     position: absolute;
