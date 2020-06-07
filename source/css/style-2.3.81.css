@@ -5291,7 +5291,7 @@ a.collection-button:hover{
 .site-footer-nav .wrapper .footer-links-memo-box-href{
 	text-align: right;
 }
-.site-footer-nav .wrapper .footer-links-memo-box-href a:hover{
+.site-footer-nav .wrapper .footer-links-memo-box-href a{
 	 border-bottom: 1px solid transparent;
 }
 .site-footer-nav .wrapper .footer-links-memo-box-href a:hover{
