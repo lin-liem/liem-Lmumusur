@@ -216,18 +216,16 @@ b2FileDown()
 new Vue({
 	el:"#sheet-list",
 	data:{
-		showSheetList: false,
 		sheets:[]
 	},
 	watch:{
 		sheets: function() {
 			this.$nextTick(function(){
 				selectActive();
-				this.showSheetList = true;
 			})
 		}
     },
-	created() {
+	mounted() {
 		var sheetParam = {
 			headers: {
 				'Content-Type': 'application/json;charset=UTF-8',
