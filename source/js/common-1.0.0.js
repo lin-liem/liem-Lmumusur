@@ -23,11 +23,7 @@ if (!urlstatus) {
 	$("#top-menu-ul li").eq(0).addClass('current-menu-item');
 }
 
-$("#sheet-list li a").each(function() {
-	if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
-		$(this).replaceWith("<span>"+$(this).text()+"</span>")
-	}
-});
+
 
 //  公告模态
 Vue.component('gg-box', {
@@ -220,9 +216,18 @@ b2FileDown()
 new Vue({
 	el:"#sheet-list",
 	data:{
+		showSheetList: false,
 		sheets:[]
 	},
-	mounted() {
+	watch:{
+		sheets: function() {
+			this.$nextTick(function(){
+				selectActive();
+				this.showSheetList = true;
+			})
+		}
+    },
+	created() {
 		var sheetParam = {
 			headers: {
 				'Content-Type': 'application/json;charset=UTF-8',
@@ -234,8 +239,20 @@ new Vue({
 			if (json_data.hasContent) {
 				this.sheets=json_data.content;
 			}
+
 		}).catch(err => {
 			console.err(err)
-		})
+		});
+		
 	}
 });
+
+function selectActive(){
+	$("#sheet-list li a").each(function() {
+		if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
+			$(this).replaceWith("<span>"+$(this).text()+"</span>")
+		}
+	});
+}
+
+ 

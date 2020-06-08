@@ -15,7 +15,7 @@
 	<div class="document-left widget-area b2-pd-r">
 		<div class="document-left-item box b2-hover b2-radius mg-b">
 			<h2>相关内容</h2>
-			<ul id="sheet-list">
+			<ul id="sheet-list" v-if="showSheetList">
 				<li v-for="sheet in sheets">
 					<a :href="sheet.fullPath">{{sheet.title}}</a>
 					<span class="sheet-look">{{sheet.visits}}人已看</span>
