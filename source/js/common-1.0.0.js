@@ -4,12 +4,6 @@ Vue.prototype.$https = axios //不需要鉴权
 Vue.prototype.$b2JsonData = []
 var b2_rest_url = b2_global.rest_url + '/'
 
-var B2ClientWidth = document.body.clientWidth;
-
-var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".entry-content img"
-});
-
 // 导航选中状态
 var url = location.href;
 var urlstatus = false;

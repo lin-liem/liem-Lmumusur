@@ -18,7 +18,7 @@
 					<#assign json=text?eval />
 					<#list json as linkItem>
 						<li id="menu-item-35311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35311">
-							<a href="${linkItem.url!}">
+							<a href="${linkItem.url!}" target="_blank">
 								<#if linkItem.icon!=''>
 									<i class="${linkItem.icon!}"></i>
 								</#if>

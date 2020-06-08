@@ -9,6 +9,7 @@ Vue.use(vueDirectiveTooltip,{
     delay: 0
 })
 
+
 var b2Timeago = new timeago();
 
 var b2zoom = new Zooming({enableGrab:true,scrollThreshold:0,transitionDuration:0.2,scaleBase:0.96,scaleExtra:1,customSize:'100%'});
