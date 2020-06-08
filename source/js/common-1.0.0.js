@@ -23,6 +23,11 @@ if (!urlstatus) {
 	$("#top-menu-ul li").eq(0).addClass('current-menu-item');
 }
 
+$("#sheet-list li a").each(function() {
+	if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
+		$(this).replaceWith("<span>"+$(this).text()+"</span>")
+	}
+});
 
 //  公告模态
 Vue.component('gg-box', {
