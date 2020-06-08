@@ -1,4 +1,5 @@
 <#macro document post,layout,commentType,index>
+<#include "../comment/comment.ftl">
 <link rel='stylesheet' id='b2-document-css-css' href='${theme_base!}/source/css/document-2.3.8.css' type='text/css' media='all'>
 <div class="b2-document-single mg-t- mg-b box">
 	<div class="document-single-top wrapper">
