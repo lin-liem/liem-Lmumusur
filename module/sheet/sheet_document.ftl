@@ -29,17 +29,19 @@
 		</div>
 	</div>
 
-	<div id="primary-home" class="content-area box b2-radius b2-pd">
-		<h1>${post.title!}</h1>
-		<div class="post-meta"><time datetime="${post.editTime!}">最后更新于：${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</div>
-		<div class="entry-content">${post.formatContent!}</div>
-		<div class="single-document-footer">
-			<div class="document-tips">你愿意关注我们的公众号或QQ群吗？</div>
-			<div class="document-help">
-				<button onclick="gongzhonghaoBox.show = true">公众号</button>
-				<button class="empty"><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=c98acaeab8547d5b5be9192e192192916603daca30143e21df22c9ed6999d806">企鹅群</a></button>
+	<div class="content-area">
+		<div id="primary-home" class="box b2-radius b2-pd">
+			<h1>${post.title!}</h1>
+			<div class="post-meta"><time datetime="${post.editTime!}">最后更新于：${post.editTime?string('yyyy-MM-dd HH:mm:ss')}</div>
+			<div class="entry-content">${post.formatContent!}</div>
+			<div class="single-document-footer">
+				<div class="document-tips">你愿意关注我们的公众号或QQ群吗？</div>
+				<div class="document-help">
+					<button onclick="gongzhonghaoBox.show = true">公众号</button>
+					<button class="empty"><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=c98acaeab8547d5b5be9192e192192916603daca30143e21df22c9ed6999d806">企鹅群</a></button>
+				</div>
+				<div class="document-help-count">每<span class="useful">100</span>人中<span class="unuse">73</span>人已关注我们 </div>
 			</div>
-			<div class="document-help-count">每<span class="useful">100</span>人中<span class="unuse">73</span>人已关注我们 </div>
 		</div>
 		
 		<div class="comments-box request-submit">
