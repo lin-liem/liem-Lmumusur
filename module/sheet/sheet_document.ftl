@@ -17,7 +17,7 @@
 			<ul id="sheet-list">
 				<li v-for="sheet in sheets">
 					<a :href="sheet.fullPath">{{sheet.title}}</a>
-					<span clss="sheet-look">{{sheet.visits}}人已看</span>
+					<span class="sheet-look">{{sheet.visits}}人已看</span>
 				</li>
 			</ul>
 		</div>
@@ -36,6 +36,29 @@
 			<div class="document-tips">这篇文章对你有帮助吗？</div>
 			<div class="document-help"><button><i class="b2font b2-duigou "></i>是</button> <button><i class="b2font b2-close "></i>否</button></div>
 			<div class="document-help-count"><span class="useful">17</span>人中<span class="unuse">13</span>人觉得有帮助 </div>
+		</div>
+		
+		<div class="comments-box">
+			<div id="comments" class="comments-area box b2-radius">
+				<div class="comments-title">
+					<div class="comment-info">
+						<span>${post.commentCount}条回复</span> 
+						<span>|</span>
+						<span>若显示条数与实际不符，表明部分留言非开放</span>
+					</div>
+					<div class="comment-tips" style="">
+						<span><i class="b2font b2-write "></i>世界以痛吻我，要我报之以歌</span>
+					</div>
+				</div>
+				
+				<div class="comments-area-content respond">
+					<#if commentType =='post'>
+						<@comment post,"post" />
+					<#else>
+						<@comment post,"sheet" />
+					</#if>
+				</div>
+			</div> 
 		</div>
 	</div>
 </div>
