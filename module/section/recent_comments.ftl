@@ -11,7 +11,7 @@
 							<li>
 								<div class="widget-comment-user">
 									<div class="widget-comment-user-left">
-										<img src="${comment.gravatarMd5!}" class="b2-radius avatar"> 
+										<img src="https://api.paugram.com/gravatar/?email=${comment.email!}&replace=wavatar" class="b2-radius avatar"> 
 										<span>${comment.author!}</span>
 									</div>
 									<time datetime="${comment.createTime!}" itemprop="datePublished" data-tid="25" class="b2timeago">${comment.createTime?string('yyyy-MM-dd')}</time>
