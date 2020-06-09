@@ -157,6 +157,22 @@
 		line-height: 24px !important;
 	}
    
-
+	.social-share .icon-wechat .wechat-qrcode .qrcode {
+		margin:0px !important;
+	}
+	.social-share .icon-wechat .wechat-qrcode {
+		border: 0 !important;
+		top: -45px !important;
+		left: 35px !important;
+		width: auto !important;
+		height: auto !important;
+		padding: 10px !important;
+	}
+	.social-share .icon-wechat .wechat-qrcode:after {
+		left: -11%  !important;
+		margin-bottom: -4px  !important;
+		border-width: 6px 8px 6px 6px  !important;
+		border-color: transparent #ffffff transparent transparent !important;
+	}
 </style>           
  
