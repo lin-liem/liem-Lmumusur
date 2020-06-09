@@ -140,6 +140,8 @@
 		wechatQrcodeTitle   : '微信扫一扫分享', // 微信二维码提示文字
 	};
 	socialShare('.social-share', $config);
+	$(".share-box .wechat-qrcode h4").remove();
+	$(".share-box .wechat-qrcode .help").remove();
 </script> 
 <style>
     .social-share a {
