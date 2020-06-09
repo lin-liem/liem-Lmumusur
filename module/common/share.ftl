@@ -123,7 +123,7 @@
 -->
 <style type="text/css">
 	.share-box{
-		position: absolute; top: 0; left: 75px; height: 100%;width: 30px;
+		position: absolute; top: 0; left: -80px; height: 100%;width: 30px;
 	}
 </style>
 
@@ -142,8 +142,8 @@
 		wechatQrcodeTitle   : '微信扫一扫分享', // 微信二维码提示文字
 		wechatQrcodeHelper  : ''
 	};
-	socialShare('.social-share-cs', $config);
-</script>${post.fullPath!}&sharesource=qzone&title=&pics==&summary="
+	socialShare('.social-share', $config);
+</script> 
 <style>
     .social-share a {
         border: none !important;
