@@ -123,14 +123,19 @@
 -->
 <style type="text/css">
 	.share-box{
-		position: fixed;top: 0;height: 100%;width: 30px;
+		position: absolute; top: 0;height: 100%;width: 30px;
 	}
 </style>
 <div 
  
 
 <div class="share-box" >
-<div class="social-share" style="margin-left: 1.5em;" data-disabled="tencent,linkedin,douban,diandian,google">
+ 
+	<div class="social-share" data-initialized="true">
+    <a href="#" class="social-share-icon icon-weibo b2font b2-weibo-bg"></a>
+    <a href="#" class="social-share-icon icon-qq"></a>
+    <a href="#" class="social-share-icon icon-qzone"></a>
+</div>
 	<link rel="stylesheet" href="//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css">
 	<script src="//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js"></script>
 <style>
@@ -172,4 +177,4 @@
     }
 
 </style>           
- </div>
+ 
