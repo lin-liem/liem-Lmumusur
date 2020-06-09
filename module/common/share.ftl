@@ -1,3 +1,4 @@
+<!-- 
 <style type="text/css">
 	.site-main .box {
 		overflow: inherit !important;
@@ -118,3 +119,20 @@
 		</div>
 	</div>
 </footer>
+
+-->
+<style type="text/css">
+	.share-box{
+		position: fixed;
+		padding: 20px 5px;
+		left: 10px;
+		top:20%
+	}
+</style>
+<div class="share-box">
+	<!-- 引入依赖 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+<!-- 只要一个div的class是social-share即可，内容会自动初始化 -->
+<div class="social-share"></div>
+</div>
