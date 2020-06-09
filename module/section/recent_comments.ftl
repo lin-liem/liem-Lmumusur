@@ -7,11 +7,12 @@
 			<ul>
 				<@commentTag method="latest" top="${settings.recent_comment_count!5}">
 					<#if comments?? && comments.getTotalElements() gt 0>
+					${comments.content}
 						<#list comments.content as comment>
 							<li>
 								<div class="widget-comment-user">
 									<div class="widget-comment-user-left">
-									${comment}
+									${comments.content}
 										<img src="${comment.url!}" class="b2-radius avatar"> 
 										<span>${comment.author!}</span>
 									</div>
