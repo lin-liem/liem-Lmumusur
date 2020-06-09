@@ -32,6 +32,8 @@
 		<link rel="canonical" href="${canonical!}" />
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<#include "common/style.ftl">
+		<#include "common/style_custom.ftl">
+		<@global.head />
 	</head>
 
 	<body class="blog">
@@ -51,6 +53,8 @@
 		<#include "common/modal_box.ftl">
 		<#include "common/navbar_tool.ftl">
 		<#include "common/scripts.ftl">
+		<#include "common/scripts_custom.ftl">
+		<@global.footer />
 	</body>
 </html>
 </#macro>

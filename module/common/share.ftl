@@ -1,4 +1,4 @@
-<!-- 
+<#-- 
 <style type="text/css">
 	.site-main .box {
 		overflow: inherit !important;
@@ -121,63 +121,8 @@
 </footer>
 
 -->
-<style type="text/css">
-	.share-box{
-		position: absolute; top: 0; left: -80px; height: 100%;width: 30px;
-	}
-</style>
+
 
 <div class="share-box">
 	<div class="social-share"data-sites="qzone,qq,weibo,wechat,douban,facebook" ></div>
 </div>
-<script type="text/javascript">
-	var $config = {
-		title               : '${post.title!}', // 标题，默认读取 document.title 或者 <meta name="title" content="share.js" />
-		description         : '${post.summary!}', // 描述, 默认读取head标签：<meta name="description" content="PHP弱类型的实现原理分析" />
-		image               : '${post.thumbnail!}', // 图片, 默认取网页中第一个img标签
-		wechatQrcodeTitle   : '微信扫一扫分享', // 微信二维码提示文字
-	};
-	socialShare('.social-share', $config);
-	$(".share-box .wechat-qrcode h4").remove();
-	$(".share-box .wechat-qrcode .help").remove();
-	var a= doucment.getElementById("deleteId");
-    a.parentNode.removeChild(div);
- 
-    //或者
-    a.remove()
-</script> 
-<style>
-    .social-share a {
-        border: none !important;
-        font-size: 1em !important;
-		color: #f5f6f9 !important;
-		background-color: rgba(32, 44, 59, 0.36) !important;
-    }
-	.social-share a:hover{
-		background-color: #000 !important;
-	}
-	.social-share .social-share-icon {
-		width: 24px !important;
-		height: 24px !important;
-		line-height: 24px !important;
-	}
-   
-	.social-share .icon-wechat .wechat-qrcode .qrcode {
-		margin:0px !important;
-	}
-	.social-share .icon-wechat .wechat-qrcode {
-		border: 0 !important;
-		top: -45px !important;
-		left: 35px !important;
-		width: auto !important;
-		height: auto !important;
-		padding: 10px !important;
-	}
-	.social-share .icon-wechat .wechat-qrcode:after {
-		left: -11%  !important;
-		margin-bottom: -4px  !important;
-		border-width: 6px 8px 6px 6px  !important;
-		border-color: transparent #ffffff transparent transparent !important;
-	}
-</style>           
- 
