@@ -130,8 +130,6 @@
 <div class="share-box">
 	<div class="social-share"data-sites="qzone,qq,weibo,wechat,douban,facebook" ></div>
 </div>
-<link rel="stylesheet" href="//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css">
-<script src="//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js"></script>
 <script type="text/javascript">
 	var $config = {
 		title               : '${post.title!}', // 标题，默认读取 document.title 或者 <meta name="title" content="share.js" />
@@ -142,6 +140,11 @@
 	socialShare('.social-share', $config);
 	$(".share-box .wechat-qrcode h4").remove();
 	$(".share-box .wechat-qrcode .help").remove();
+	var a= doucment.getElementById("deleteId");
+    a.parentNode.removeChild(div);
+ 
+    //或者
+    a.remove()
 </script> 
 <style>
     .social-share a {
