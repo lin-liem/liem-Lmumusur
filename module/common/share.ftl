@@ -123,21 +123,27 @@
 -->
 <style type="text/css">
 	.share-box{
-		position: absolute; top: 0;height: 100%;width: 30px;
+		position: absolute; top: 0; left: 75px; height: 100%;width: 30px;
 	}
 </style>
-<div 
- 
 
-<div class="share-box" >
- 
-	<div class="social-share" data-initialized="true">
-    <a href="#" class="social-share-icon icon-weibo b2font b2-weibo-bg"></a>
-    <a href="#" class="social-share-icon icon-qq"></a>
-    <a href="#" class="social-share-icon icon-qzone"></a>
+<div class="share-box">
+	<div class="social-share" ></div>
 </div>
-	<link rel="stylesheet" href="//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css">
-	<script src="//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js"></script>
+<link rel="stylesheet" href="//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css">
+<script src="//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js"></script>
+<script type="text/javascript">
+	var $config = {
+		title               : '${post.title!}', // 标题，默认读取 document.title 或者 <meta name="title" content="share.js" />
+		description         : '${post.summary!}', // 描述, 默认读取head标签：<meta name="description" content="PHP弱类型的实现原理分析" />
+		image               : '${post.thumbnail!}', // 图片, 默认取网页中第一个img标签
+		sites               : ['qzone', 'qq', 'weibo','wechat', 'douban'], // 启用的站点
+		disabled            : ['google', 'facebook', 'twitter'], // 禁用的站点
+		wechatQrcodeTitle   : '微信扫一扫分享', // 微信二维码提示文字
+		wechatQrcodeHelper  : ''
+	};
+	socialShare('.social-share-cs', $config);
+</script>${post.fullPath!}&sharesource=qzone&title=&pics==&summary="
 <style>
     .social-share a {
         border: none !important;
