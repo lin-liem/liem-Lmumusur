@@ -9,21 +9,21 @@
 	<div class="pos-r clearfix">
 		<div class="share-box fs12">
 			<div class="weixin mouh" id="share-weixin">
-				<i class="iconfont zrz-icon-font-weimingming-"></i>
+				<i class="b2font b2-weixin"></i>
 				<div class="wx-t-x pos-a hide box" id="weixin-box">
 					<img class="qrcode fl bor-3" src="http://zixuephp.net/inc/qrcode_img.php?url=${post.fullPath!}">
 				</div>
 			</div>
 			<span class="dot"></span>
-			<a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics=${post.thumbnail!}&summary=${post.summary!}" class="qzone">
+			<a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics=${post.thumbnail!}&summary=${post.summary!}" target="_blank" class="qzone">
 				<i class="b2font b2-qqkongjian"></i>
 			</a>
 			<span class="dot"></span>
-			<a href="http://connect.qq.com/widget/shareqq/index.html?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics==${post.thumbnail!}&summary=${post.summary!}&desc=${meta_description!}" class="qq">
-				<i class="b2font b2-qq "></i>
+			<a href="http://connect.qq.com/widget/shareqq/index.html?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics==${post.thumbnail!}&summary=${post.summary!}" target="_blank" class="qq">
+				<i class="b2font b2-qq"></i>
 			</a>
 			<span class="dot"></span>
-			<a href="http://service.weibo.com/share/share.php?count=1&url=${post.fullPath!}&title=${post.title!}&pic=${post.thumbnail!}"  class="weibo">
+			<a href="http://service.weibo.com/share/share.php?count=1&url=${post.fullPath!}&title=${post.title!}&pic=${post.thumbnail!}" target="_blank" class="weibo">
 				<i class="b2font b2-weibo"></i>
 			</a>
 		</div>
