@@ -149,9 +149,13 @@
 		background-color: rgba(32, 44, 59, 0.36) !important;
     }
 	.social-share a:hover{
-		color: #000 !important;
+		background-color: #000 !important;
 	}
-	
+	.social-share .social-share-icon {
+		width: 24px !important;
+		height: 24px !important;
+		line-height: 24px !important;
+	}
    
 
 </style>           
