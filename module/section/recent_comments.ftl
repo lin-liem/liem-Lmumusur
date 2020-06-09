@@ -11,7 +11,7 @@
 							<li>
 								<div class="widget-comment-user">
 									<div class="widget-comment-user-left">
-									${comments.content}
+									${comment}
 										<img src="${comment.authorUrl!}" class="b2-radius avatar"> 
 										<span>${comment.author!}</span>
 									</div>
