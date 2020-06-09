@@ -9,22 +9,22 @@
 	<div class="pos-r clearfix">
 		<div class="share-box fs12">
 			<div class="weixin mouh" id="share-weixin">
-				<i class="b2font b2-weixin"></i>
+				<i class="b2font b2-weixin-bg"></i>
 				<div class="wx-t-x pos-a hide box" id="weixin-box">
 					<img class="qrcode fl bor-3" src="http://zixuephp.net/inc/qrcode_img.php?url=${post.fullPath!}">
 				</div>
 			</div>
 			<span class="dot"></span>
 			<a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics=${post.thumbnail!}&summary=${post.summary!}" target="_blank" class="qzone">
-				<i class="b2font b2-qqkongjian"></i>
+				<i class="b2font b2-qqkongjian-bg"></i>
 			</a>
 			<span class="dot"></span>
 			<a href="http://connect.qq.com/widget/shareqq/index.html?url=${post.fullPath!}&sharesource=qzone&title=${post.title!}&pics==${post.thumbnail!}&summary=${post.summary!}" target="_blank" class="qq">
-				<i class="b2font b2-qq"></i>
+				<i class="b2font b2-qq-bg"></i>
 			</a>
 			<span class="dot"></span>
 			<a href="http://service.weibo.com/share/share.php?count=1&url=${post.fullPath!}&title=${post.title!}&pic=${post.thumbnail!}" target="_blank" class="weibo">
-				<i class="b2font b2-weibo"></i>
+				<i class="b2font b2-weibo-bg"></i>
 			</a>
 		</div>
 		<div class="footer-author fs14 mar20-t">
