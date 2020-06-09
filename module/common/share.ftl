@@ -123,16 +123,53 @@
 -->
 <style type="text/css">
 	.share-box{
-		position: fixed;
-		padding: 20px 5px;
-		left: 10px;
-		top:20%
+		position: fixed;top: 0;height: 100%;width: 30px;
 	}
 </style>
-<div class="share-box">
-	<!-- 引入依赖 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-<!-- 只要一个div的class是social-share即可，内容会自动初始化 -->
-<div class="social-share"></div>
-</div>
+<div 
+ 
+
+<div class="share-box" >
+<div class="social-share" style="margin-left: 1.5em;" data-disabled="tencent,linkedin,douban,diandian,google">
+	<link rel="stylesheet" href="//s.xinac.net/static/social-share.js/v1.0.16/css/share.min.css">
+	<script src="//s.xinac.net/static/social-share.js/v1.0.16/js/social-share.min.js"></script>
+<style>
+    .social-share a {
+        border: none !important;
+        font-size: 1.4em !important;
+    }
+    .social-share a svg{
+        width: 23px;
+    }
+    .social-share .views svg {
+        color: #7b68ee;
+        padding-top: 3px;
+        margin-top: 5px;
+    }
+    .social-share .views:after{
+        content: '26';
+        position: absolute;
+        top: -11px;
+        left: -15px;
+        font-size: 0.3em;
+        background-color: #cfc8f9;
+        height: 20px;
+        border-radius: 3px;
+        padding: 0;
+        line-height: 20px !important;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .social-share .views:hover,
+    .social-share .views:hover{
+        background-color: #7b68ee;
+    }
+    .social-share .views:hover:after  {
+        background-color: #947bc0;
+    }
+    .social-share .views:hover svg {
+        color: white;
+    }
+
+</style>           
+ </div>
