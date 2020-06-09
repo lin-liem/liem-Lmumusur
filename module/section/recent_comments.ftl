@@ -11,7 +11,8 @@
 							<li>
 								<div class="widget-comment-user">
 									<div class="widget-comment-user-left">
-										<img src="https://thirdwx.qlogo.cn/mmopen/ajNVdqHZLLCN1SKoC8Xhlu4lnXLiaqC9v0eZg8ozWG2VkeicETPby1lVhmA7y0lGDGS2ba2RvXnhZ300DEJUXLYw/132" class="b2-radius avatar"> 
+									${comment}
+										<img src="${comment.url!}" class="b2-radius avatar"> 
 										<span>${comment.author!}</span>
 									</div>
 									<time datetime="${comment.createTime!}" itemprop="datePublished" data-tid="25" class="b2timeago">${comment.createTime?string('yyyy-MM-dd')}</time>
