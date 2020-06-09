@@ -144,40 +144,15 @@
 <style>
     .social-share a {
         border: none !important;
-        font-size: 1.4em !important;
+        font-size: 1em !important;
+		color: #f5f6f9 !important;
+		background-color: rgba(32, 44, 59, 0.36) !important;
     }
-    .social-share a svg{
-        width: 23px;
-    }
-    .social-share .views svg {
-        color: #7b68ee;
-        padding-top: 3px;
-        margin-top: 5px;
-    }
-    .social-share .views:after{
-        content: '26';
-        position: absolute;
-        top: -11px;
-        left: -15px;
-        font-size: 0.3em;
-        background-color: #cfc8f9;
-        height: 20px;
-        border-radius: 3px;
-        padding: 0;
-        line-height: 20px !important;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .social-share .views:hover,
-    .social-share .views:hover{
-        background-color: #7b68ee;
-    }
-    .social-share .views:hover:after  {
-        background-color: #947bc0;
-    }
-    .social-share .views:hover svg {
-        color: white;
-    }
+	.social-share a:hover{
+		color: #000 !important;
+	}
+	
+   
 
 </style>           
  
