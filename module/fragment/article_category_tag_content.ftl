@@ -14,7 +14,7 @@
 							<div class="item-in b2-radius">
 								<div class="post-module-thumb">
 									<div style="padding-top:70%;width:100%;height:0">
-										<a href="35223.html" rel="nofollow" class="thumb-link">
+										<a href="${post.fullPath!}" rel="nofollow" class="thumb-link">
 											<img class="post-thumb b2-radius lazy" data-src="${post.thumbnail!}" alt="${post.title!}" src="${theme_base!}/source/picture/default-img.jpg">
 										</a>
 									</div>
