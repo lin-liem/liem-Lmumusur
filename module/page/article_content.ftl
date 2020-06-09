@@ -49,7 +49,10 @@
 					</div>
 				</div>
 			</header>
-			<div class="entry-content">${post.formatContent!}</div>
+			<div class="entry-content">
+				${post.formatContent!}
+				<#include "../common/share.ftl">
+			</div>
 
 			<div id="content-ds" class="content-ds" >
 				<p><i class="b2font b2-shipinye-meiguihua "></i><span>${settings.donate_guide_desc!'予人玫瑰，手有余香'}</span></p>
