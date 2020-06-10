@@ -7,6 +7,7 @@
 				<div class="slider-info b2-radius">
 					<a class="link-block" href="${listJson.url}"></a>
 					<img class="slider-img b2-radius lazy" data-src="${listJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
+					<#if settings.slider_is_show_info!'false'>
 					<div class="slider-info-box">
 						<#if listJson.cate?? || listJson.cate != ""> 
 						<div class="slider-cat">
@@ -20,6 +21,7 @@
 						</div>
 						</#if>
 					</div>
+					</#if>
 				</div>
 			</div>
 		</div>

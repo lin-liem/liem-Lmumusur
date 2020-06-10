@@ -9,6 +9,7 @@
 						<div class="slider-info b2-radius">
 							<a class="link-block" href="${sliderMainJson.url}"></a>
 							<img class="slider-img b2-radius lazy" data-src="${sliderMainJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
+							<#if settings.slider_is_show_info!'false'>
 							<div class="slider-info-box">
 								<#if sliderMainJson.cate?? || sliderMainJson.cate != ""> 
 								<div class="slider-cat">
@@ -23,6 +24,7 @@
 								</div>
 								</#if>
 							</div>
+							</#if>
 						</div>
 					</div>
 				</#list>
@@ -36,6 +38,7 @@
 			<div class="slider-info b2-radius">
 				<a class="link-block" href="${sideJson.url}"></a>
 				<img class="slider-img b2-radius lazy" data-src="${sideJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
+				<#if settings.slider_is_show_info!'false'>
 				<div class="slider-info-box">
 					<#if sideJson.cate?? || sideJson.cate != ""> 
 					<div class="slider-cat">
@@ -50,6 +53,7 @@
 					</div>
 					</#if>
 				</div>
+				</#if>
 			</div>
 		</div>
 	</div>

@@ -23,6 +23,17 @@ slider_config:
          - value: tag
            label: 标签模式
        description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
+    slider_is_show_info:
+       name: slider_is_show_info
+       label: 是否显示文字描述
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
     slider_main_json_content:
        name: slider_main_json_content
        label: 轮播列表JSON内容
