@@ -34,6 +34,39 @@ slider_config:
            label: 开启
          - value: false
            label: 关闭
+    slider_is_show_cate:
+       name: slider_is_show_cate
+       label: 是否显示分类
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    slider_is_show_title:
+       name: slider_is_show_title
+       label: 是否显示标题
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    slider_is_show_author:
+       name: slider_is_show_author
+       label: 是否显示作者和日期
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
     slider_main_json_content:
        name: slider_main_json_content
        label: 轮播列表JSON内容

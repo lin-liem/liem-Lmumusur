@@ -11,18 +11,23 @@
 							<img class="slider-img b2-radius lazy" data-src="${sliderMainJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
 							<#if settings.slider_is_show_info!'false'>
 							<div class="slider-info-box">
-								<#if sliderMainJson.cate?? || sliderMainJson.cate != ""> 
+								<#if settings.slider_is_show_cate!'false'>
 								<div class="slider-cat">
 									<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sliderMainJson.cate}</span>
 								</div>
 								</#if>
+									
+								<#if settings.slider_is_show_title!'false'>
 								<h2>${sliderMainJson.title}</h2>
-								<#if sliderMainJson.authorUrl?? || sliderMainJson.author?? || sliderMainJson.createTime?? || sliderMainJson.authorUrl != "" || sliderMainJson.author != "" || sliderMainJson.createTime != "">
+								</#if>
+								
+								<#if settings.slider_is_show_author!'false'>
 								<div class="slider-user">
 									<img class="avatar b2-radius lazy" data-src="${sliderMainJson.authorUrl}" src="${theme_base!}/source/picture/default-img.jpg">
 									 <span>${sliderMainJson.author}</span><span>${sliderMainJson.createTime}</span>
 								</div>
 								</#if>
+	
 							</div>
 							</#if>
 						</div>
@@ -40,13 +45,17 @@
 				<img class="slider-img b2-radius lazy" data-src="${sideJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
 				<#if settings.slider_is_show_info!'false'>
 				<div class="slider-info-box">
-					<#if sideJson.cate?? || sideJson.cate != ""> 
+					<#if settings.slider_is_show_cate!'false'>
 					<div class="slider-cat">
 						<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sideJson.cate}</span>
 					</div>
 					</#if>
+						
+					<#if settings.slider_is_show_title!'false'>
 					<h2>${sideJson.title}</h2>
-					<#if sideJson.authorUrl?? || sideJson.author?? || sideJson.createTime?? || sideJson.authorUrl != "" || sideJson.author != "" || sideJson.createTime != "">
+					</#if>
+						
+					<#if settings.slider_is_show_author!'false'>
 					<div class="slider-user">
 						<img class="avatar b2-radius lazy" data-src="${sideJson.authorUrl}" src="${theme_base!}/source/picture/default-img.jpg">
 						<span>${sideJson.author}</span><span>${sideJson.createTime}</span>
