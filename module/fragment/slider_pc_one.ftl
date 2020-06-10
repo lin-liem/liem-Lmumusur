@@ -13,18 +13,18 @@
 							<div class="slider-info-box">
 								<#if settings.slider_is_show_cate!'false'>
 								<div class="slider-cat">
-									<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sliderMainJson.cate}</span>
+									<span class="b2-radius"><b style="border-left:4px solid #43d480"></b>${sliderMainJson.cate!}</span>
 								</div>
 								</#if>
 									
 								<#if settings.slider_is_show_title!'false'>
-								<h2>${sliderMainJson.title}</h2>
+								<h2>${sliderMainJson.title!}</h2>
 								</#if>
 								
 								<#if settings.slider_is_show_author!'false'>
 								<div class="slider-user">
-									<img class="avatar b2-radius lazy" data-src="${sliderMainJson.authorUrl}" src="${theme_base!}/source/picture/default-img.jpg">
-									 <span>${sliderMainJson.author}</span><span>${sliderMainJson.createTime}</span>
+									<img class="avatar b2-radius lazy" data-src="${sliderMainJson.authorUrl!}" src="${theme_base!}/source/picture/default-img.jpg">
+									 <span>${sliderMainJson.author!}</span><span>${sliderMainJson.createTime!}</span>
 								</div>
 								</#if>
 	
