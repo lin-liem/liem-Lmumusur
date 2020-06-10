@@ -25,7 +25,7 @@ slider_config:
        description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
     slider_is_show_info:
        name: slider_is_show_info
-       label: 是否显示文字描述
+       label: 是否显示文字描述总开关
        type: radio
        data-type: bool
        default: false
@@ -288,6 +288,23 @@ social_config:
 ad_config:
   label: 广告配置
   items:
+    ad_index_banner:
+       name: ad_index_banner
+       label: 首页banner广告
+       type: attachment
+       description: '首页banner广告'
+       default: 'https://static.mumusur.com/static/mumusur/images/beccad97c977e80b84dbd136e48c7b8c.png?image'
+    ad_index_banner_alt:
+       name: ad_index_banner_alt
+       label: 首页banner广告alt
+       type: text
+       description: '首页banner广告alt'
+    ad_index_banner_url:
+       name: ad_index_banner_url
+       label: 首页banner广告
+       type: text
+       description: '首页banner广告链接'
+       default: 'https://www.mumusur.com/www/designer-navbar/index.html'
     ad_post_top:
        name: ad_post_top
        label: 文章顶部广告

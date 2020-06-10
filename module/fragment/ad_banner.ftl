@@ -3,8 +3,8 @@
 	<div class="wrapper">
 		<div class="home-row-left content-area box b2-radius " style="width:1100px">
 			<div class="html-box">
-				<a href="#">
-					<img src="${theme_base!}/source/picture/c9bf8aba4945b31d4b2da26496b32f8b.jpg">
+				<a href="${settings.ad_index_banner_url}" target="_blank">
+					<img src="${settings.ad_index_banner!}" alt="${settings.ad_index_banner_alt}">
 				</a>
 			</div>
 		</div>
