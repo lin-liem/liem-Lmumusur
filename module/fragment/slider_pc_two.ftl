@@ -8,13 +8,17 @@
 					<a class="link-block" href="${listJson.url}"></a>
 					<img class="slider-img b2-radius lazy" data-src="${listJson.thumbnail}" src="${theme_base!}/source/picture/default-img.jpg">
 					<div class="slider-info-box">
+						<#if listJson.cate?? || listJson.cate == ""> 
 						<div class="slider-cat">
 							<span class="b2-radius"><b style="border-left:4px solid #55efc4"></b>${listJson.cate}</span>
 						</div>
+						</#if>
 						<h2>${listJson.title}</h2>
+						<#if listJson.authorUrl?? || listJson.author?? || listJson.createTime?? || listJson.authorUrl == "" || listJson.author == "" || listJson.createTime == "">
 						<div class="slider-user">
 							<img class="avatar b2-radius lazy" data-src="${listJson.authorUrl}" src="${theme_base!}/source/picture/default-img.jpg"><span>${listJson.author}</span><span>${listJson.createTime}</span>
 						</div>
+						</#if>
 					</div>
 				</div>
 			</div>
