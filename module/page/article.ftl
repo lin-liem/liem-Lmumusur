@@ -13,4 +13,9 @@
 	<#if pageType == 'category'>
 		<#include "./article_category.ftl">
 	</#if>
+	
+	<#-- 公告页模板 -->
+	<#if pageType == 'notice'>
+		<#include "./article_notice_content.ftl">
+	</#if>
 </#macro>
