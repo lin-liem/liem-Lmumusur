@@ -280,6 +280,12 @@
 		left: 32px;
 		border-left: 1px dashed #dadada;
 	}
+	.news-item-date span {
+		margin-left: 5px;
+	}
+	.news-list-box .news-item+.news-item .news-item-date {
+		margin-top: 10px;
+	}
 </style>
 
 <div id="primary-home" class="wrapper content-area">
