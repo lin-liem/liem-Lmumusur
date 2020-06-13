@@ -47,13 +47,13 @@
 				</div>
 				<style type="text/css">
 					.content-area {
-						width: 804px;
+						width: 804px !important;
 					}
 					.announcement-show-more {
-						display: flex;
-						justify-content: space-between;
-						background: #f7f8fa;
-						font-size: 12px;
+						display: flex !important;
+						justify-content: space-between !important;
+						background: #f7f8fa !important;
+						font-size: 12px !important;
 					}
 					.halo-comment .comment-form input,
 					.halo-comment .comment-form textarea {
