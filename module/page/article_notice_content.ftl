@@ -45,37 +45,37 @@
 							<@comment post,"sheet" />
 					</#if>
 				</div>
-				<style type="text/css">
-					.content-area {
-						width: 804px !important;
-					}
-					.announcement-show-more {
-						display: flex !important;
-						justify-content: space-between !important;
-						background: #f7f8fa !important;
-						font-size: 12px !important;
-					}
-					.halo-comment .comment-form input,
-					.halo-comment .comment-form textarea {
-						border-radius: 0px !important;
-					}
-
-					.halo-comment .comment-buttons .button-preview-edit,
-					.halo-comment .comment-buttons .button-submit {
-						border-radius: 0px !important;
-					}
-
-					.halo-comment .comment-form {
-						margin-left: 45px !important;
-					}
-
-					.halo-comment .avatar {
-						border-radius: 3px !important;
-						width: 34px !important;
-						height: 34px !important;
-					}
-				</style>
 			</div>
 		</div>
+		<style type="text/css">
+			.content-area {
+				width: 804px !important;
+			}
+			.announcement-show-more {
+				display: flex !important;
+				justify-content: space-between !important;
+				background: #f7f8fa !important;
+				font-size: 12px !important;
+			}
+			.halo-comment .comment-form input,
+			.halo-comment .comment-form textarea {
+				border-radius: 0px !important;
+			}
+		
+			.halo-comment .comment-buttons .button-preview-edit,
+			.halo-comment .comment-buttons .button-submit {
+				border-radius: 0px !important;
+			}
+		
+			.halo-comment .comment-form {
+				margin-left: 45px !important;
+			}
+		
+			.halo-comment .avatar {
+				border-radius: 3px !important;
+				width: 34px !important;
+				height: 34px !important;
+			}
+		</style>
 	</div>
 </div>
