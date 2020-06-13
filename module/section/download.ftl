@@ -95,7 +95,7 @@
 		background: #fafaff;
 		font-size: 14px;
 		color: #999;
-		text-align: justify;
+		text-align: left;
 	}
 
 	.shop-single-data li {

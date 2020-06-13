@@ -22,3 +22,25 @@
 		</@postTag>
 	</#list>	
 </#macro> 
+
+<#-- 相关推荐 
+<#macro tagsRelatedMacro  >
+	<#assign numberId="" />
+	<#list tags as tag>
+		<@postTag method="listByTagId" tagId="${tag.id}">
+			<#list posts as post>
+				<#if (post_index+1) lte 6>
+					<#list numberId?split(",") as postId>
+						<#if postId?? && postId == (post.id?c)>
+							 <br>${tag_index}次查出${postId}相等<br>
+							 <#assign thisPostIs = (numberId?replace(postId, "") + postId) />	
+						</#if>
+					</#list>
+					<#assign numberId = numberId+post.id+"," />	
+				</#if>
+			</#list>
+		</@postTag>
+	</#list>	
+	
+</#macro> 
+-->

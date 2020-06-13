@@ -4699,12 +4699,46 @@ a.collection-button:hover{
     color:#bcbcbc
 }
 .user-w-login-tips{
-    padding: 10px 14px;
+/*    padding: 10px 14px;
     font-size: 12px;
     background-color: #f7f8fa;
     text-shadow: #fff 0px 1px 0px;
     border-top: 1px solid #ebeef5;
-    border-bottom: 1px solid #ebeef5;
+    border-bottom: 1px solid #ebeef5; */
+	padding: 12px 14px;
+    font-size: 12px;
+    background-color: #f7f8fa;
+    text-shadow: #fff 0px 1px 0px;
+    border-top: 1px solid #ebeef5;
+    color: #b2b2b2;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-w-announcement li a::before {
+    background-color: #0084ff;
+}
+.user-w-announcement li a:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 2px;
+}
+.widget .user-w-announcement li {
+    padding: 11px 14px;
+}
+.user-w-announcement li a {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    position: relative;
+    padding-left: 17px;
 }
 .user-w-lv{
     display: flex;
