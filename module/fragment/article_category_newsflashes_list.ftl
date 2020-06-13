@@ -317,7 +317,7 @@
 												<p class="b2-hover">
 													<span>${post.summary!}</span>
 												</p>
-												<#if post.thumbnail??>
+												<#if post.thumbnail?? && post.thumbnail != ''>
 													<img src="${post.thumbnail!}" class="news-item-img b2-radius">
 												</#if>
 											</div>
@@ -355,7 +355,6 @@
 									<h2 class="anhover"><a href="https://www.dachaoka.com/newsflashes/36757.html">斗鱼上线云游戏平台，用户可web端登陆不需再下载游戏</a></h2>
 									<div>
 										<p class="b2-hover"><span>近日，斗鱼透露已在云端部署了近20款端游和30多款手游，囊括了最受玩家喜爱的DOTA2、绝地求生、魔兽世界、星际争霸、王者荣耀、跑跑卡丁车、消消乐等等。据了解，云游戏对显卡、内存要求很低。依托斗鱼已有的联运账号体系，玩家在web端一次性登陆，也不用下载安装游戏。</span>
-											<!---->
 										</p> <img src="https://static.7b2.com/wp-content/uploads/2020/03/152f61957180fe.jpg?x-oss-process=image/resize,m_fill,h_84,w_144"
 										 class="news-item-img b2-radius">
 									</div>
@@ -378,7 +377,6 @@
 										<p class="b2-hover"><span>【环球网综合报道】对本土肺炎疫情的判断，美国疾控中心专家和白宫官员表态不一。前者曾暗示疫情向上拐点，后者则坚称疫情已得到控制。对此，美国副总统彭斯上周召集美国卫生部门官员学者开会，明确大家要“口径一致”，声明发布前需向彭斯汇总。</span><a
 											 href="https://news.163.com/20/0306/17/F728AHFE000189FH.html" target="_blank" rel="nofollow" class="item-from"><i
 												 class="b2font b2-link "></i>原文连接</a></p>
-										<!---->
 									</div>
 									<div class="new-meta">
 										<div class="new-meta-left">
