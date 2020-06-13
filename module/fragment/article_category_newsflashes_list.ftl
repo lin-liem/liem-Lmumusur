@@ -294,32 +294,57 @@
 		<div class="box b2-radius">
 			<div class="news-list-box">
 				<div>
-					<div class="news-item">
-						<div class="news-item-date b2-color"><span>03月07日</span><span>星期六</span></div>
-						<ul>
-							<li id="news-item-36783">
-								<div class="news-item-header"><span><a href="https://www.dachaoka.com/u/auuAwtzuk"><img src="https://static.7b2.com/wp-content/uploads/2020/06/1b1d521b44e8ed_1_avatar.jpg?x-oss-process=image/resize,m_fill,h_120,w_120">春哥</a></span>
-									<b>08:02</b> <span class="new-tag anhover"><a target="_blank" href="https://www.dachaoka.com/newsflashes/%e6%96%b0%e5%86%a0%e7%96%ab%e6%83%85">新冠疫情</a></span></div>
-								<div class="news-item-content">
-									<h2 class="anhover"><a href="https://www.dachaoka.com/newsflashes/36783.html">阿里本地生活架构调整：成立三大事业群和三大事业部</a></h2>
-									<div>
-										<p class="b2-hover"><span>3 月 6 日晚，界面新闻获悉，阿里本地生活服务公司宣布了一轮组织架构调整，具体来说会调整为三大事业群和三大事业部。</span>
-											<!---->
-										</p> <img src="https://static.7b2.com/wp-content/uploads/2020/02/2913248769c059e55.jpeg?x-oss-process=image/resize,m_fill,h_84,w_144"
-										 class="news-item-img b2-radius">
-									</div>
-									<div class="new-meta">
-										<div class="new-meta-left">
-											<p class="news-vote-up"><span class=""><i class="b2font b2-qushi-shangzhang "></i><b>利好</b><b>22</b></span></p>
-											<p class="news-vote-down"><span class=""><i class="b2font b2-qushi-xiadie "></i><b>利空</b><b>9</b></span></p>
+					<#if posts.content?? && posts.content?size gt 0>
+						<#list posts.content as post>
+							<div class="news-item">
+								<div class="news-item-date b2-color"><span>${post.editTime?string('MM月dd日')}</span><span>星期六</span></div>
+								<ul>
+									<li id="news-item-36783">
+										<div class="news-item-header">
+											<span>
+												<a href="${blog_url!}">
+													<img src="${user.avatar!}">${user.nickname!}
+												</a>
+											</span>
+											<b>${post.editTime?string('HH:mm')}</b> 
+											<span class="new-tag anhover">
+												<a target="_blank" href="">${category.name!}</a>
+											</span>
 										</div>
-										<div class="new-meta-right">分享到<span class="new-weibo">微博</span><span class="new-weixin">微信</span><span
-											 class="new-qq">QQ好友</span></div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+										<div class="news-item-content">
+											<h2 class="anhover"><a href="${post.fullPath!}">${post.title!}</a></h2>
+											<div>
+												<p class="b2-hover">
+													<span>${post.summary!}</span>
+												</p>
+												<#if post.thumbnail??>
+													<img src="${post.thumbnail!}" class="news-item-img b2-radius">
+												</#if>
+											</div>
+											<div class="new-meta">
+												<div class="new-meta-left">
+													<p class="news-vote-up">
+														<span class="">
+															<i class="b2font b2-pinglun"></i><b>${post.commentCount}</b>
+														</span>
+													</p>
+													<p class="news-vote-down">
+														<span class="">
+															<i class="b2font b2-eye"></i><b>${post.visits!}</b>
+														</span>
+													</p>
+												</div>
+												<div class="new-meta-right">分享到<span class="new-weibo">微博</span><span class="new-weixin">微信</span><span
+													 class="new-qq">QQ好友</span></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</#list>
+					</#if>
+					
+					<#--
 					<div class="news-item">
 						<div class="news-item-date b2-color"><span>03月06日</span><span>星期五</span></div>
 						<ul>
@@ -367,32 +392,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="news-item">
-						<div class="news-item-date b2-color"><span>03月03日</span><span>星期二</span></div>
-						<ul>
-							<li id="news-item-36729">
-								<div class="news-item-header"><span><a href="https://www.dachaoka.com/u/duuAyllnm"><img src="https://thirdwx.qlogo.cn/mmopen/jLL0Tq6XDvNgq85rM7gKVVVrSdDocXmaAx0dicyNBsicd9kR347owpEfIH2HHWxaoT1CNnzsWgpvLuBwibDiccHpWs9NvQLE70gZ/132">蹦波尔吧</a></span>
-									<b>16:39</b> <span class="new-tag anhover"><a target="_blank" href="https://www.dachaoka.com/newsflashes/%e5%bf%ab%e8%ae%af%e6%a0%87%e7%ad%be">快讯标签</a></span></div>
-								<div class="news-item-content">
-									<h2 class="anhover"><a href="https://www.dachaoka.com/newsflashes/36729.html">热烈祝贺B2主题手机客户端隆重发布</a></h2>
-									<div>
-										<p class="b2-hover"><span>近日春哥加班加点研发出第一代B2主题手机客户端，可喜可贺~可喜可贺啊~</span>
-											<!---->
-										</p>
-										<!---->
-									</div>
-									<div class="new-meta">
-										<div class="new-meta-left">
-											<p class="news-vote-up"><span class=""><i class="b2font b2-qushi-shangzhang "></i><b>利好</b><b>8</b></span></p>
-											<p class="news-vote-down"><span class=""><i class="b2font b2-qushi-xiadie "></i><b>利空</b><b>3</b></span></p>
-										</div>
-										<div class="new-meta-right">分享到<span class="new-weibo">微博</span><span class="new-weixin">微信</span><span
-											 class="new-qq">QQ好友</span></div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+					
+					-->
 				</div>
 			</div>
 		</div>
