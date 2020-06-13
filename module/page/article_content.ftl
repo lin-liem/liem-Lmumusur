@@ -51,7 +51,7 @@
 			</header>
 			<div class="entry-content">
 				${post.formatContent!}
-				<#include "../common/share.ftl">
+				<#include "../common/social_share.ftl">
 			</div>
 
 			<div id="content-ds" class="content-ds" >

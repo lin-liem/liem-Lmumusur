@@ -124,5 +124,5 @@
 
 
 <div class="share-box">
-	<div class="social-share"data-sites="qzone,qq,weibo,wechat,douban,facebook" ></div>
+	<div class="social-share-box" data-sites="qzone,qq,weibo,wechat,douban,facebook" ></div>
 </div>

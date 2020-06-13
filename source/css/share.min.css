@@ -4,7 +4,7 @@
 	src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg")
 }
 
-.social-share {
+.social-share-box {
 	font-family: "socialshare" !important;
 	font-size: 16px;
 	font-style: normal;
@@ -13,63 +13,63 @@
 	-moz-osx-font-smoothing: grayscale
 }
 
-.social-share * {
+.social-share-box * {
 	font-family: "socialshare" !important
 }
 
-.social-share .icon-tencent:before {
+.social-share-box .icon-tencent:before {
 	content: "\f07a"
 }
 
-.social-share .icon-qq:before {
+.social-share-box .icon-qq:before {
 	content: "\f11a"
 }
 
-.social-share .icon-weibo:before {
+.social-share-box .icon-weibo:before {
 	content: "\f12a"
 }
 
-.social-share .icon-wechat:before {
+.social-share-box .icon-wechat:before {
 	content: "\f09a"
 }
 
-.social-share .icon-douban:before {
+.social-share-box .icon-douban:before {
 	content: "\f10a"
 }
 
-.social-share .icon-heart:before {
+.social-share-box .icon-heart:before {
 	content: "\f20a"
 }
 
-.social-share .icon-like:before {
+.social-share-box .icon-like:before {
 	content: "\f00a"
 }
 
-.social-share .icon-qzone:before {
+.social-share-box .icon-qzone:before {
 	content: "\f08a"
 }
 
-.social-share .icon-linkedin:before {
+.social-share-box .icon-linkedin:before {
 	content: "\f01a"
 }
 
-.social-share .icon-diandian:before {
+.social-share-box .icon-diandian:before {
 	content: "\f05a"
 }
 
-.social-share .icon-facebook:before {
+.social-share-box .icon-facebook:before {
 	content: "\f03a"
 }
 
-.social-share .icon-google:before {
+.social-share-box .icon-google:before {
 	content: "\f04a"
 }
 
-.social-share .icon-twitter:before {
+.social-share-box .icon-twitter:before {
 	content: "\f06a"
 }
 
-.social-share a {
+.social-share-box a {
 	position: relative;
 	text-decoration: none;
 	margin: 4px;
@@ -77,7 +77,7 @@
 	outline: none
 }
 
-.social-share .social-share-icon {
+.social-share-box .social-share-box-icon {
 	position: relative;
 	display: inline-block;
 	width: 32px;
@@ -92,112 +92,112 @@
 	transition: background 0.6s ease-out 0s
 }
 
-.social-share .social-share-icon:hover {
+.social-share-box .social-share-box-icon:hover {
 	background: #666;
 	color: #fff
 }
 
-.social-share .icon-weibo {
+.social-share-box .icon-weibo {
 	color: #ff763b;
 	border-color: #ff763b
 }
 
-.social-share .icon-weibo:hover {
+.social-share-box .icon-weibo:hover {
 	background: #ff763b
 }
 
-.social-share .icon-tencent {
+.social-share-box .icon-tencent {
 	color: #56b6e7;
 	border-color: #56b6e7
 }
 
-.social-share .icon-tencent:hover {
+.social-share-box .icon-tencent:hover {
 	background: #56b6e7
 }
 
-.social-share .icon-qq {
+.social-share-box .icon-qq {
 	color: #56b6e7;
 	border-color: #56b6e7
 }
 
-.social-share .icon-qq:hover {
+.social-share-box .icon-qq:hover {
 	background: #56b6e7
 }
 
-.social-share .icon-qzone {
+.social-share-box .icon-qzone {
 	color: #FDBE3D;
 	border-color: #FDBE3D
 }
 
-.social-share .icon-qzone:hover {
+.social-share-box .icon-qzone:hover {
 	background: #FDBE3D
 }
 
-.social-share .icon-douban {
+.social-share-box .icon-douban {
 	color: #33b045;
 	border-color: #33b045
 }
 
-.social-share .icon-douban:hover {
+.social-share-box .icon-douban:hover {
 	background: #33b045
 }
 
-.social-share .icon-linkedin {
+.social-share-box .icon-linkedin {
 	color: #0077B5;
 	border-color: #0077B5
 }
 
-.social-share .icon-linkedin:hover {
+.social-share-box .icon-linkedin:hover {
 	background: #0077B5
 }
 
-.social-share .icon-facebook {
+.social-share-box .icon-facebook {
 	color: #44619D;
 	border-color: #44619D
 }
 
-.social-share .icon-facebook:hover {
+.social-share-box .icon-facebook:hover {
 	background: #44619D
 }
 
-.social-share .icon-google {
+.social-share-box .icon-google {
 	color: #db4437;
 	border-color: #db4437
 }
 
-.social-share .icon-google:hover {
+.social-share-box .icon-google:hover {
 	background: #db4437
 }
 
-.social-share .icon-twitter {
+.social-share-box .icon-twitter {
 	color: #55acee;
 	border-color: #55acee
 }
 
-.social-share .icon-twitter:hover {
+.social-share-box .icon-twitter:hover {
 	background: #55acee
 }
 
-.social-share .icon-diandian {
+.social-share-box .icon-diandian {
 	color: #307DCA;
 	border-color: #307DCA
 }
 
-.social-share .icon-diandian:hover {
+.social-share-box .icon-diandian:hover {
 	background: #307DCA
 }
 
-.social-share .icon-wechat {
+.social-share-box .icon-wechat {
 	position: relative;
 	color: #7bc549;
 	border-color: #7bc549
 }
 
-.social-share .icon-wechat:hover {
+.social-share-box .icon-wechat:hover {
 	background: #7bc549
 }
 
-.social-share .icon-wechat .wechat-qrcode {
+.social-share-box .icon-wechat .wechat-qrcode {
 	display: none;
 	border: 1px solid #eee;
 	position: absolute;
@@ -216,16 +216,16 @@
 	-moz-transition: all 350ms
 }
 
-.social-share .icon-wechat .wechat-qrcode.bottom {
+.social-share-box .icon-wechat .wechat-qrcode.bottom {
 	top: 40px;
 	left: -84px
 }
 
-.social-share .icon-wechat .wechat-qrcode.bottom:after {
+.social-share-box .icon-wechat .wechat-qrcode.bottom:after {
 	display: none
 }
 
-.social-share .icon-wechat .wechat-qrcode h4 {
+.social-share-box .icon-wechat .wechat-qrcode h4 {
 	font-weight: normal;
 	height: 26px;
 	line-height: 26px;
@@ -236,23 +236,23 @@
 	color: #777
 }
 
-.social-share .icon-wechat .wechat-qrcode .qrcode {
+.social-share-box .icon-wechat .wechat-qrcode .qrcode {
 	width: 105px;
 	margin: 10px auto
 }
 
-.social-share .icon-wechat .wechat-qrcode .qrcode table {
+.social-share-box .icon-wechat .wechat-qrcode .qrcode table {
 	margin: 0 !important
 }
 
-.social-share .icon-wechat .wechat-qrcode .help p {
+.social-share-box .icon-wechat .wechat-qrcode .help p {
 	font-weight: normal;
 	line-height: 16px;
 	padding: 0;
 	margin: 0
 }
 
-.social-share .icon-wechat .wechat-qrcode:after {
+.social-share-box .icon-wechat .wechat-qrcode:after {
 	content: '';
 	position: absolute;
 	left: 50%;
@@ -265,6 +265,6 @@
 	border-color: #fff transparent transparent transparent
 }
 
-.social-share .icon-wechat:hover .wechat-qrcode {
+.social-share-box .icon-wechat:hover .wechat-qrcode {
 	display: block
 }
