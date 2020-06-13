@@ -18,4 +18,9 @@
 	<#if pageType == 'notice'>
 		<#include "./article_notice_content.ftl">
 	</#if>
+	
+	<#-- 快讯模板 -->
+	<#if pageType == 'newsflashes'>
+		<#include "./article_newsflashes.ftl">
+	</#if>newsflashes
 </#macro>

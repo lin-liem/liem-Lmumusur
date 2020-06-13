@@ -1,7 +1,7 @@
 <#include "../comment/comment.ftl">
 <div class="b2-single-content wrapper">
 	<div id="primary-home" class="content-area">
-		<div class="announcement-show-more b2-pd box"> <span>公告</span> <span><a href="https://www.dachaoka.com/announcements">所有公告</a></span></div>
+		<div class="announcement-show-more b2-pd box"> <span>公告</span> <span><a href="#">所有公告</a></span></div>
 		<article class="single-article b2-radius box">
 			<header class="entry-header">
 				<div class="">
