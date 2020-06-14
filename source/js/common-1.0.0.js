@@ -245,6 +245,7 @@ new Vue({
 	}
 });
 
+
 function selectActive(){
 	$("#sheet-list li a").each(function() {
 		if ((url + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '/') {
@@ -253,4 +254,41 @@ function selectActive(){
 	});
 }
 
+
+/**
+ * 快讯页面
+ */
+new Vue({
+	el:"#sheet-list",
+	data:{
+		sheets:[]
+	},
+	watch:{
+		sheets: function() {
+			this.$nextTick(function(){
+				selectActive();
+			})
+		}
+    },
+	mounted() {
+		var sheetParam = {
+			headers: {
+				'Content-Type': 'application/json;charset=UTF-8',
+				'API-Authorization': b2_global.api_content
+			}
+		}
+		this.$http.get(b2_rest_url + 'categories/newsflashes/posts', sheetParam).then(res=>{ 
+			var json_data = res.data.data;
+			console.log(red);
+			console.log(json_data);
+			// if (json_data.hasContent) {
+			// 	this.sheets=json_data.content;
+			// }
+
+		}).catch(err => {
+			console.err(err)
+		});
+		
+	}
+});
  
