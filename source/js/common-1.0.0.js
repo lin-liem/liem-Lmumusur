@@ -212,7 +212,6 @@ b2FileDown()
 /**
  * 自定义页面
  */
-//实例化 vue 对象
 new Vue({
 	el:"#sheet-list",
 	data:{
@@ -259,7 +258,7 @@ function selectActive(){
  * 快讯页面
  */
 new Vue({
-	el:"#sheet-list",
+	el:"#newsflashes-item",
 	data:{
 		sheets:[]
 	},
@@ -281,6 +280,7 @@ new Vue({
 			var json_data = res.data.data;
 			console.log(red);
 			console.log(json_data);
+			// 按时间组装json
 			// if (json_data.hasContent) {
 			// 	this.sheets=json_data.content;
 			// }

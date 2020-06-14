@@ -294,6 +294,7 @@
 		<div class="box b2-radius">
 			<div class="news-list-box">
 				<div>
+					<#--
 					<#if posts.content?? && posts.content?size gt 0>
 						<#list posts.content as post>
 							<div class="news-item">
@@ -343,9 +344,9 @@
 							</div>
 						</#list>
 					</#if>
+					-->
 					
-					<#--
-					<div class="news-item">
+					<div class="news-item" id="newsflashes-item">
 						<div class="news-item-date b2-color"><span>03月06日</span><span>星期五</span></div>
 						<ul>
 							<li id="news-item-36757">
@@ -391,7 +392,6 @@
 						</ul>
 					</div>
 					
-					-->
 				</div>
 			</div>
 		</div>
