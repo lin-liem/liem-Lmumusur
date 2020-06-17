@@ -22,5 +22,5 @@
 	<#-- 快讯模板 -->
 	<#if pageType == 'newsflashes'>
 		<#include "./article_newsflashes.ftl">
-	</#if>newsflashes
+	</#if>
 </#macro>
