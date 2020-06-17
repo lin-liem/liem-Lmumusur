@@ -159,6 +159,18 @@ enable_config:
          - value: false
            label: 关闭
        description: '分类名自定义，别名必须为：newsflashes'
+    recent_newsflashes_enable:
+       name: recent_newsflashes_enable
+       label: 开启侧边快讯
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+       description: '分类名自定义，别名必须为：newsflashes'
     hello_info_enable:
        name: hello_info_enable
        label: 问候模块

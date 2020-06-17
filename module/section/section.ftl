@@ -18,6 +18,11 @@
 	<#include "./recent_posts.ftl">
 </#if>
 
+<!-- 导入最新快讯文章 -->
+<#if settings.recent_newsflashes_enable!true>
+	<#include "./recent_newsflashes">
+</#if>
+
 <!-- 导入标签云 -->
 <#if settings.tag_cloud_enable!true>
 	<#include "./tag_cloud.ftl">
