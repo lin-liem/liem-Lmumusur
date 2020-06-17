@@ -20,7 +20,7 @@
 
 <!-- 导入最新快讯文章 -->
 <#if settings.recent_newsflashes_enable!true>
-	<#include "./recent_newsflashes">
+	<#include "./recent_newsflashes.ftl">
 </#if>
 
 <!-- 导入标签云 -->
