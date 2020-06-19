@@ -23,4 +23,5 @@
 	<#if pageType == 'newsflashes'>
 		<#include "./article_newsflashes.ftl">
 	</#if>
+	
 </#macro>
