@@ -4,7 +4,7 @@
 		<#assign slugName>
           	<@categoryTag method="list">
           	<#list categories as category>
-				<#if category.sulg != 'noticelist' && category.sulg != 'newsflashes'>
+				<#if category.slug != 'noticelist' && category.slug != 'newsflashes'>
 					<#if category.parentId == 0 >
 					"${category.slug}",
 					</#if>
@@ -17,7 +17,7 @@
 		</a>
 		<@categoryTag method="list">
 			<#list categories as category>
-				<#if category.sulg != 'noticelist' && category.sulg != 'newsflashes'>
+				<#if category.slug != 'noticelist' && category.slug != 'newsflashes'>
 					<#if category.parentId == 0>
 					<a class="cat-list post-load-button" data-cats='["${category.slug}"]' href="${category.fullPath!}" data-type="cat" data-i="6">
 						<span data-type="cat">${category.name}</span>
