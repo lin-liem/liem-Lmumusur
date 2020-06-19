@@ -15,7 +15,7 @@
 				<div class="entry-content">
 					<blockquote>${post.summary!}</blockquote>
 					<div class="announcement-read-more mg-t">
-						<a href="h${post.fullPath!}" class="">详情</a>
+						<a href="${post.fullPath!}" class="">详情</a>
 					</div>
 				</div>
 			</article>
