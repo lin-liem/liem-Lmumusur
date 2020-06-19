@@ -12,20 +12,22 @@
 							<#if category.slug == 'newsflashes'>
 								<@postTag method="listByCategoryId" categoryId="${category.id}">
 									<#list posts?sort_by(["createTime"])?reverse as post>
-										<li>
-											<div class="widget-new-header">
-												<span class="widget-news-user">
-													<img src="${user.avatar!}" alt="${user.nickname!}">
-													<b>${user.nickname!}</b>
-												</span> 
-												<span class="ps1">${post.createTime?string('MM-dd HH:mm')}</span> 
-												<span class="ps"><a href="javascript:;"><b>每日快讯</b></a></span>
-											</div>
-											<div class="widget-new-content">
-												<h2 class="anhover"><a href="${post.fullPath!}" target="_blank"><b>${post.title!}</b></a></h2>
-												<p><a href="${post.fullPath!}" target="_blank">${post.summary!}</a></p>
-											</div>
-										</li>
+										<#if post_index lte 5>
+											<li>
+												<div class="widget-new-header">
+													<span class="widget-news-user">
+														<img src="${user.avatar!}" alt="${user.nickname!}">
+														<b>${user.nickname!}</b>
+													</span> 
+													<span class="ps1">${post.createTime?string('MM-dd HH:mm')}</span> 
+													<span class="ps"><a href="javascript:;"><b>每日快讯</b></a></span>
+												</div>
+												<div class="widget-new-content">
+													<h2 class="anhover"><a href="${post.fullPath!}" target="_blank"><b>${post.title!}</b></a></h2>
+													<p><a href="${post.fullPath!}" target="_blank">${post.summary!}</a></p>
+												</div>
+											</li>
+										</#if>
 									</#list>
 								</@postTag>
 							</#if>
