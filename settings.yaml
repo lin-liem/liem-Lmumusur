@@ -12,16 +12,6 @@ slider_config:
            label: 开启
          - value: false
            label: 关闭
-    slider_main_model:
-       name: slider_main_model
-       label: 轮播模式
-       type: select
-       default: json
-       options:
-         - value: json
-           label: JSON模式
-         - value: tag
-           label: 标签模式
        description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
     slider_is_show_info:
        name: slider_is_show_info
@@ -81,18 +71,6 @@ slider_config:
        placeholder: '请参考下方JSON格式'
        description: '格式：{"id":0,"cate":"类型","title":"标题","thumbnail":"图片链接","url":"跳转连接","author":"作者","authorUrl":"作者头像","createTime":"日期"}'
        default: '{"id":0,"cate":"测试轮播","title":"JSON测试轮播附图效果","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/159aa39ad7fbd7-imageresizem_fill1.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"}'
-    slider_main_tag_content:
-       name: slider_main_tag_content
-       label: 轮播列表标签别名
-       type: text
-       placeholder: '默认为lunboliebiao'
-       description: '自定义轮播图显示内容，对应文章标签别名,建议是英文字母'
-    slider_side_tag_content:
-       name: slider_side_tag_content
-       label: 轮播附图标签别名
-       type: text
-       placeholder: '默认为lunbofutu'
-       description: '自定义右侧图显示内容，对应文章标签别名,建议是英文字母'
     slider_list_enable:
        name: slider_list_enable
        label: 列表开关
@@ -104,17 +82,6 @@ slider_config:
            label: 开启
          - value: false
            label: 关闭
-    slider_list_model:
-       name: slider_list_model
-       label: 显示模式
-       type: select
-       default: json
-       options:
-         - value: json
-           label: JSON模式
-         - value: tag
-           label: 标签模式
-       description: 'JSON操作可用<a href="http://www.bejson.com/" target="_blank">JSON工具</a><br/>'
     slider_list_json_content:
        name: slider_list_json_content
        label: 轮播列表JSON内容
@@ -122,12 +89,6 @@ slider_config:
        placeholder: '请参考下方JSON格式'
        description: '格式：[{"id":0,"cate":"类型","title":"标题","thumbnail":"图片链接","url":"跳转连接","author":"作者","authorUrl":"作者头像","createTime":"日期"}]'
        default: '[{"id":0,"cate":"测试轮播","title":"JSON测试轮播效果0","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/41475962a1e20195a_1_cover-imager2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-12-11"},{"id":1,"cate":"测试轮播","title":"JSON测试轮播效果1","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/140bd62c252b83-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2020-12-11"},{"id":2,"cate":"测试轮播","title":"JSON测试轮播效果2","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/130cd5cd602253-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2019-12-11"},{"id":3,"cate":"测试轮播","title":"JSON测试轮播效果3","thumbnail":"https://www.mumusur.com/themes/liem_lmumusur/source/picture/159aa39ad7fbd7-imageresizem_fill2.jpg","url":"http://baidu.com","author":"里哥","authorUrl":"https://www.mumusur.com/avatar","createTime":"2018-02-11"}]'
-    slider_list_tag_content:
-       name: slider_list_tag_content
-       label: 列表标签别名
-       type: text
-       placeholder: '默认为liebiao'
-       description: '自定义显示内容，对应文章标签别名,建议是英文字母'
 enable_config:
   label: 启停配置
   items: 
@@ -403,38 +364,6 @@ views_config:
        placeholder: '请参考下方JSON格式'
        description: '在分类页展示，格式：[{"id":0,"name":"名称","url":"链接"}]'
        default: '[{"id":0,"name":"PPT","url":"https://www.mumusur.com/tags/ppt.html"},{"id":2,"name":"电影电视","url":"https://www.mumusur.com/tags/%E7%94%B5%E5%BD%B1%E7%94%B5%E8%A7%86.html"},{"id":3,"name":"鬼吹灯","url":"https://www.mumusur.com/tags/%E9%AC%BC%E5%90%B9%E7%81%AF.html"}]'
-    advert_enable:
-       name: advert_enable
-       label: 首页广告开关
-       type: radio
-       data-type: bool
-       default: false
-       options:
-         - value: true
-           label: 开启
-         - value: false
-           label: 关闭
-    advert_title:
-       name: advert_title
-       label: Banner广告标题
-       type: text
-       placeholder: '广告标题'
-    advert_pc_img:
-       name: advert_pc_img
-       label: BannerPC端广告图
-       type: attachment
-       placeholder: '广告图'
-    advert_mobile_img:
-       name: advert_mobile_img
-       label: Banner移动端广告图
-       type: attachment
-       placeholder: '广告图'
-    advert_href:
-       name: advert_href
-       label: Banner广告链接
-       type: text
-       placeholder: '广告链接'
-       default: '#none'
     notice_enable:
        name: notice_enable
        label: 公告开关
@@ -446,43 +375,6 @@ views_config:
            label: 开启
          - value: false
            label: 关闭
-    notice_tag:
-       name: notice_tag
-       label: 公告标签别名
-       type: text
-       placeholder: '默认为notice'
-       description: '定义公告显示内容，对应文章标签别名,建议是英文字母'
-    notice_navbar_enable:
-       name: notice_navbar_enable
-       label: 公告栏导航开关
-       type: radio
-       data-type: bool
-       default: true
-       options:
-         - value: true
-           label: 开启
-         - value: false
-           label: 关闭
-    notice_navbar:
-       name: notice_navbar
-       label: 公告栏导航代码
-       type: textarea
-       placeholder: '请输入代码'
-       default: '<a href="https://www.mumusur.com/www/designer-navbar/index.html" target="_blank">
-				     <i class="fas fa-paint-brush"></i>&nbsp;&nbsp;设计师导航网站
-			     </a>
-                 <a href="https://www.mumusur.com/journals" target="_blank">
-				     <i class="fas fa-circle-o-notch fa-spin"></i>&nbsp;&nbsp;心情
-			     </a>
-                 <a href="https://www.mumusur.com/photos" target="_blank">
-				     <i class="fas fa-photo"></i>&nbsp;&nbsp;图库
-			     </a>
-			     <a href="https://www.mumusur.com/s/about.html" target="_blank">
-				     <i class="fas fa-coffee"></i>&nbsp;&nbsp;关于
-			     </a>
-          	     <a href="https://www.mumusur.com/s/guestbook.html" target="_blank">
-				     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
-			     </a>'
 article_config:
   label: 文章配置
   items:

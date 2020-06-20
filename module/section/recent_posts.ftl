@@ -5,7 +5,7 @@
 	</div>
 	<div class="b2-widget-box">
 		<ul class="b2-widget-list-ul">
-			 <@postTag method="latest" top="${settings.recent_post_count!10}">
+			 <@postTag method="latest" top="${settings.recent_post_count!5}">
 				<#list posts?sort_by(["createTime"])?reverse as post>
 					<#if post.categories?? && post.categories?size gt 0>
 						<#list post.categories as category>
