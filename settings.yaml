@@ -230,7 +230,20 @@ enable_config:
        name: footer_links_alias
        label: 友链别名
        type: text
+       default: '友情链接'
        placeholder: '规则为匹配分组名，默认：友情链接'
+    footer_links_name:
+       name: footer_flinks_name
+       label: 友链申请名
+       type: text
+       placeholder: '点击申请友链'
+       default: '点击申请友链'
+    footer_links_url:
+       name: footer_flinks_url
+       label: 友链申请地址
+       type: text
+       placeholder: '友链申请地址'
+       default: 'https://www.mumusur.com/s/flinks.html'
 social_config:
   label: 社交配置
   items:
@@ -505,34 +518,6 @@ footer_config:
        label: 二维码03描述
        type: text
        placeholder: '二维码03描述'
-    footer_flinks_enable:
-       name: footer_flinks_enable
-       label: 页脚友情链接开关
-       type: radio
-       data-type: bool
-       default: true
-       options:
-         - value: true
-           label: 开启
-         - value: false
-           label: 关闭
-    footer_flinks_alias:
-       name: footer_flinks_alias
-       label: 匹配分组名
-       type: text
-       placeholder: '匹配分组名，默认友情链接'
-    footer_flinks_name:
-       name: footer_flinks_name
-       label: 友链申请名
-       type: text
-       placeholder: '点击申请友链'
-       default: '点击申请友链'
-    footer_flinks_url:
-       name: footer_flinks_url
-       label: 友链申请地址
-       type: text
-       placeholder: '友链申请地址'
-       default: 'https://www.mumusur.com/s/flinks.html'
     footer_desc_enable:
        name: footer_desc_enable
        label: 页脚描述开关
