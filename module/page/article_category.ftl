@@ -1,4 +1,4 @@
-<#if settings.newsflashes_enable && category.slug?? && category.slug == 'newsflashes'>
+<#if category.slug?? && category.slug == 'newsflashes'>
 	<#include "../fragment/article_category_newsflashes_list.ftl">
 <#elseif category.slug?? && category.slug == 'noticelist'>
 	<#include "../fragment/article_category_notice_list.ftl">
