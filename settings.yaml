@@ -354,6 +354,12 @@ ad_config:
 views_config:
   label: 界面配置
   items:
+    filter_category_json:
+       name: filter_category_json
+       label: 过滤分类
+       type: textarea
+       default: '[{"id":1,"slug":"noticelist","name":"公告列表"},{"id":2,"slug":"newsflashes","name":"快讯"}]'
+       description: '被过滤的分类在页面上不显示'
     search_box_title:
        name: search_box_title
        label: 搜索框标题

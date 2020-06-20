@@ -296,9 +296,9 @@
 				<div>
 					
 					<#if posts.content?? && posts.content?size gt 0>
-						<#list posts.content as post>
+						<#list posts.content?sort_by(["createTime"])?reverse as post>
 							<div class="news-item">
-								<div class="news-item-date b2-color"><span>${post.editTime?string('MM月dd日')}</span><span>星期六</span></div>
+								<div class="news-item-date b2-color"><span>${post.createTime?string('MM月dd日 w')}</span><span>星期六</span></div>
 								<ul>
 									<li id="news-item-36783">
 										<div class="news-item-header">
@@ -307,7 +307,7 @@
 													<img src="${user.avatar!}">${user.nickname!}
 												</a>
 											</span>
-											<b>${post.editTime?string('HH:mm')}</b> 
+											<b>${post.createTime?string('HH:mm')}</b> 
 											<span class="new-tag anhover">
 												<a target="_blank" href="">${category.name!}</a>
 											</span>

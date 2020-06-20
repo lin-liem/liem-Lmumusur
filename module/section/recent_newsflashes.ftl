@@ -1,7 +1,7 @@
 <section id="b2-widget-newsflashes-2" class="mobile-hidden widget b2-widget-newsflashes mg-b box b2-radius">
 	<div class="b2-widget-title">
 		<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>最新快讯</h2>
-		<a target="_blank" href="javascript:;">全部</a>
+		<a target="_blank" href="https://www.mumusur.com/categories/newsflashes.html">全部</a>
 	</div>
 	<div class="b2-widget-box">
 		<div class="widget-newsflashes-box">
