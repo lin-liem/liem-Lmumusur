@@ -298,7 +298,7 @@
 					<#if posts.content?? && posts.content?size gt 0>
 						<#list posts.content?sort_by(["createTime"])?reverse as post>
 							<div class="news-item">
-								<div class="news-item-date b2-color"><span>${post.createTime?string('MM月dd日 w')}</span><span>星期六</span></div>
+								<div class="news-item-date b2-color"><span>${post.createTime?string('MM月dd日  E')}</span></div>
 								<ul>
 									<li id="news-item-36783">
 										<div class="news-item-header">
