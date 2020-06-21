@@ -84,14 +84,26 @@
 					</div>
 					<div class="b2-widget-box">
 						<ul class="b2-widget-list-ul">
-							<li class="b2-widget-box widget-post widget-post-none">
-								<div class="b2-widget-post-order widget-order-1"><span class="b2-radius">1</span></div>
-								<div class="b2-widget-post-title">
-									<h2>大公司头条：阿里宣布 20 亿美元收购网易考拉</h2>
-									<time datetime="2019-09-06T10:39:03+08:00">2019/09/06</time>
-								</div>
-								<a class="link-overlay" href="35223.html"></a>
-							</li>
+							<@categoryTag method="list">
+								<#list categories as category>
+									<#if category.slug == 'newsflashes'>
+										<@postTag method="listByCategoryId" categoryId="${category.id}">
+											<#list posts?sort_by(["createTime"])?reverse as post>
+												<#if post_index lte 5>
+												<li class="b2-widget-box widget-post widget-post-none">
+													<div class="b2-widget-post-order widget-order-1"><span class="b2-radius">${post_index+1}</span></div>
+													<div class="b2-widget-post-title">
+														<h2>${post.title!}</h2>
+														<time datetime="${post.createTime?string('yyyy/MM/dd')}">${post.createTime?string('yyyy/MM/dd')}</time>
+													</div>
+													<a class="link-overlay" href="${post.fullPath!}"></a>
+												</li>
+												</#if>
+											</#list>
+										</@postTag>
+									</#if>
+								</#list>
+							</@categoryTag>
 						</ul>
 					</div>
 				</section>
