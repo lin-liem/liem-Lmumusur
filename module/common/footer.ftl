@@ -80,7 +80,7 @@
 				</section>
 				<section id="b2-widget-hot-21" class="mobile-hidden widget b2-widget-hot mg-b b2-radius">
 					<div class="b2-widget-title">
-						<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>文章聚合</h2>
+						<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>最近快讯</h2>
 					</div>
 					<div class="b2-widget-box">
 						<ul class="b2-widget-list-ul">
@@ -109,68 +109,40 @@
 				</section>
 				<section id="b2-widget-team-3" class="mobile-hidden widget b2-widget-team mg-b b2-radius">
 					<div class="b2-widget-title">
-						<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>我们的团队</h2>
+						<h2 class="widget-title"><i class="b2font b2-yuancircle94 "></i>合作伙伴</h2>
 					</div>
 					<div class="b2-widget-box">
 						<ul class="team-widget">
 							<li>
-								<a href="auuAwtzuk.html">
-									<img src="${theme_base!}/source/picture/119ba8f8ed6d95_1_avatar-imageres2.jpg" class="avatar b2-radius" title="春哥" alt="春哥">
+								<a href="https://www.aliyun.com/">
+									<img src="${theme_base!}/source/picture/footer_ali.png" class="avatar b2-radius" title="阿里云" alt="阿里云">
 								</a>
 							</li>
 
 							<li>
-								<a href="avwxzuvvl.html">
-									<img src="${theme_base!}/source/picture/27c0b852de3a49-imageresizem_fill.jpg" class="avatar b2-radius" title="chunge" alt="chunge">
+								<a href="https://cloud.tencent.com/">
+									<img src="${theme_base!}/source/picture/footer_tengxun.png" class="avatar b2-radius" title="腾讯云" alt="腾讯云">
 								</a>
 							</li>
 
 							<li>
-								<a href="axxzCvvxn.html">
-									<img src="${theme_base!}/source/picture/17bdf95cea5b2d-imageresizem_fill.jpg" class="avatar b2-radius" title="春哥2号" alt="春哥2号">
+								<a href="https://pan.baidu.com/">
+									<img src="${theme_base!}/source/picture/footer_baiduyun.png" class="avatar b2-radius" title="百度网盘" alt="百度网盘">
 								</a>
 							</li>
 
 							<li>
-								<a href="awtyBzywo.html">
-									<img src="${theme_base!}/source/picture/5506ffe00b4f0b_avatar-imageresiz.jpg" class="avatar b2-radius" title="武汉极点出版" alt="武汉极点出版">
+								<a href="https://www.upyun.com/">
+									<img src="${theme_base!}/source/picture/footer_youpai.png" class="avatar b2-radius" title="又拍云" alt="又拍云">
+								</a>
+							</li>
+							
+							<li>
+								<a href="https://www.lanzou.com/">
+									<img src="${theme_base!}/source/picture/footer_lanzou.png" class="avatar b2-radius" title="蓝奏云" alt="蓝奏云">
 								</a>
 							</li>
 
-							<li>
-								<a href="azAtwBwzp.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xinxin" alt="xinxin">
-								</a>
-							</li>
-
-							<li>
-								<a href="avBvuuxwq.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xiaoai" alt="xiaoai">
-								</a>
-							</li>
-							<li>
-								<a href="aBCwBxxCr.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="laohu" alt="laohu">
-								</a>
-							</li>
-
-							<li>
-								<a href="aytyyAyys.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="chun520" alt="chun520">
-								</a>
-							</li>
-
-							<li>
-								<a href="buAwtzukj.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="xiaoyu" alt="xiaoyu">
-								</a>
-							</li>
-
-							<li>
-								<a href="bvCtwzAkk.html">
-									<img src="${theme_base!}/source/picture/default-avatar.png" class="avatar b2-radius" title="dreamin" alt="dreamin">
-								</a>
-							</li>
 						</ul>
 					</div>
 				</section>
