@@ -33,46 +33,46 @@
 					<div class="b2-widget-box">
 						<ul class="links-widget">
 							<li>
-								<a class="link-block" href="#"></a>
+								<a class="link-block" href="https://www.8848faka.com/details/ACFEFC36"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/youhui.png"></div>
 								<div>
-									<h2>优惠活动</h2>
-									<p>查看本站的最新优惠</p>
+									<h2>成为会员</h2>
+									<p>入驻本站会员资源任意用</p>
 								</div>
 							</li>
 							<li>
-								<a class="link-block" href="#"></a>
+								<a class="link-block" href="https://www.mumusur.com/s/about.html"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/kuozhan.png"></div>
 								<div>
-									<h2>配件商城</h2>
-									<p>在线购买XX配件</p>
+									<h2>关于本站</h2>
+									<p>从这儿可以了解本站</p>
 								</div>
 							</li>
 
 							<li>
-								<a class="link-block" href="#"></a>
+								<a class="link-block" href="https://www.mumusur.com/s/disclaimer.html"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/wendang.png"></div>
 								<div>
-									<h2>法律声明</h2>
-									<p>本站的法律声明</p>
+									<h2>免责声明</h2>
+									<p>资源免责声明或侵删联系</p>
 								</div>
 							</li>
 
 							<li>
-								<a target="__blank" class="link-block" href="requests.html"></a>
+								<a target="__blank" class="link-block" href="https://www.mumusur.com/s/guestbook.html"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/gongdan.png"></div>
 								<div>
-									<h2>在线工单</h2>
-									<p>提交在线工单</p>
+									<h2>留言反馈</h2>
+									<p>反馈资源或资源需求等</p>
 								</div>
 							</li>
 
 							<li>
-								<a class="link-block" href="#"></a>
+								<a class="link-block" href="https://www.mumusur.com/s/cooperation.html"></a>
 								<div class="links-icon"><img src="${theme_base!}/source/picture/jianyi.png"></div>
 								<div>
-									<h2>建议提交</h2>
-									<p>查看本主题的文档</p>
+									<h2>商务合作</h2>
+									<p>了解广告推广服务</p>
 								</div>
 							</li>
 						</ul>
