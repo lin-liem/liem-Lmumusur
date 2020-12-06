@@ -46,26 +46,26 @@
 							<@menuTag method="tree">
 								<#if menus?? && menus?size gt 0>
 								<#list menus?sort_by('priority') as menu>
-								<#if !menu.children??>
-									<li class="depth-0">
-										<a href="${menu.url}" target="${menu.target!}">
-											<span class="hob" style="background-color:#fc3c2d"></span>
-											<span>${menu.name}</span>
-										</a>
-									</li>
-								</#if>
-								<#if menu.children?? && menu.children?size gt 0>
-									<li class="depth-0  has_children b2-menu-3">
-										<a href="${menu.url}" target="${menu.target!}">
-											<span class="hob" style="background-color:#fc3c2d"></span>${menu.name}<i class="b2font b2-jt-down "></i>
-										</a>
-										<ul class="sub-menu-0 sub-menu box b2-radius">
-											<#list menu.children?sort_by('priority') as child>
-											<li><a href="${child.url!}" target="${child.target!}">${child.name!}</a></li>
-											</#list>
-										</ul>
-									</li>
-								</#if>
+                                    <#if (menu.children)?? && menu.children?size == 0>
+                                        <li class="depth-0">
+                                           <a href="${menu.url}" target="${menu.target!}">
+                                             <span class="hob" style="background-color:#fc3c2d"></span>
+                                             <span>${menu.name}</span>
+                                           </a>
+                                        </li>
+                                    </#if>
+                                    <#if (menu.children)?? && menu.children?size gt 0>
+                                        <li class="depth-0  has_children b2-menu-3">
+                                            <a href="${menu.url}" target="${menu.target!}">
+                                                <span class="hob" style="background-color:#fc3c2d"></span>${menu.name}<i class="b2font b2-jt-down "></i>
+                                            </a>
+                                            <ul class="sub-menu-0 sub-menu box b2-radius">
+                                                <#list menu.children?sort_by('priority') as child>
+                                                <li><a href="${child.url!}" target="${child.target!}">${child.name!}</a></li>
+                                                </#list>
+                                            </ul>
+                                        </li>
+                                    </#if>
 								</#list>
 								</#if>
 							</@menuTag>

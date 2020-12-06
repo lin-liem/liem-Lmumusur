@@ -455,6 +455,11 @@ article_config:
 footer_config:
   label: 页脚配置
   items:
+    footer_icp:
+       name: ipc_number
+       label: 备案号
+       type: text
+       placeholder: '请填写你的备案信息'
     footer_logo:
       name: footer_logo
       label: 页脚LOGO
@@ -469,7 +474,7 @@ footer_config:
       default: '<p>一个热衷于分享各类资源的平台，本平台支持代劳代查寻资源服务，目前本平台均为人工回复，若有怠慢，望体谅！</p>
                 <p>在线时间：10:00-17:00 22:00-24:00</p>
                 <p>电子邮箱：996052600@qq.com</p>
-                <p>私人微信：mumukerf</p>'
+                <p>私人微信：mumukerf</p><p>唯一网址：www.uchaoting.com</p>'
     footer_more_links:
       name: footer_more_links
       label: 链接集
