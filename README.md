@@ -2,7 +2,7 @@
 #### 1.1 预览
 https://www.uchaoting.com
 #### 1.2 GitHub
-https://github.com/lin-liem/Lmumusur
+https://github.com/lin-liem/liem-Lmumusur
 
 ### 2 说明
 #### 2.1 一些问题
