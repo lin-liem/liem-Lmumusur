@@ -6,11 +6,13 @@ https://github.com/lin-liem/liem-Lmumusur
 
 ### 2 说明
 #### 2.1 一些问题
-1）经过时间的推移，预览地址 （www.uchaoting.com） 展示的界面和实际主题有区别，实际主题以下面的预览图为准。
+1）经过时间的推移，预览地址（www.uchaoting.com） 展示的界面和实际主题有区别，实际主题以下面的预览图为准。
 
 2）因这个主题我修改的比较早，大概是halo-1.3.2时改的，很久没用了，如果和新版本有不适配的地方可能需要自己修改一下。
 
-3）如果有问题，请先下载安装调试
+3) 下面的预览图是我基于halo-1.4.2环境截的图，也就是说应该不会有太大的适配问题（当然也不排除有我忽略掉的）。
+
+4）最后，如果遇到问题，请先自行调试解决，实在解决不了可以在此贴留言或添加QQ群：932154986。
 
 ### 3 功能
 #### 3.1 支持首页无刷新加载
@@ -26,15 +28,15 @@ https://github.com/lin-liem/liem-Lmumusur
 #### 4.1 综合展示
 [![预览图01](https://s3.ax1x.com/2020/12/06/DjCggS.png)](https://imgchr.com/i/DjCggS)
 
+[![Dji7XF.md.png](https://s3.ax1x.com/2020/12/06/Dji7XF.md.png)](https://imgchr.com/i/Dji7XF)
+
+[![DjiolT.md.png](https://s3.ax1x.com/2020/12/06/DjiolT.md.png)](https://imgchr.com/i/DjiolT)
+
 [![DjkivT.md.png](https://s3.ax1x.com/2020/12/06/DjkivT.md.png)](https://imgchr.com/i/DjkivT)
 
 [![DjiIpV.md.png](https://s3.ax1x.com/2020/12/06/DjiIpV.md.png)](https://imgchr.com/i/DjiIpV)
 
 [![DjihYq.md.png](https://s3.ax1x.com/2020/12/06/DjihYq.md.png)](https://imgchr.com/i/DjihYq)
-
-[![DjiolT.md.png](https://s3.ax1x.com/2020/12/06/DjiolT.md.png)](https://imgchr.com/i/DjiolT)
-
-[![Dji7XF.md.png](https://s3.ax1x.com/2020/12/06/Dji7XF.md.png)](https://imgchr.com/i/Dji7XF)
 
 [![DjiT6U.md.png](https://s3.ax1x.com/2020/12/06/DjiT6U.md.png)](https://imgchr.com/i/DjiT6U)
 
@@ -55,4 +57,3 @@ https://github.com/lin-liem/liem-Lmumusur
 [![DjFS1K.png](https://s3.ax1x.com/2020/12/06/DjFS1K.png)](https://imgchr.com/i/DjFS1K)
 
 [![Dji4f0.png](https://s3.ax1x.com/2020/12/06/Dji4f0.png)](https://imgchr.com/i/Dji4f0)
-
