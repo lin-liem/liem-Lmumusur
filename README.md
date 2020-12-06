@@ -6,8 +6,10 @@ https://github.com/lin-liem/Lmumusur
 
 ### 2 说明
 #### 2.1 一些问题
-1）经过时间的推移，预览地址（www.uchaoting.com）展示的界面和实际主题有区别，实际主题以下面的预览图为准。
+1）经过时间的推移，预览地址 （www.uchaoting.com） 展示的界面和实际主题有区别，实际主题以下面的预览图为准。
+
 2）因这个主题我修改的比较早，大概是halo-1.3.2时改的，很久没用了，如果和新版本有不适配的地方可能需要自己修改一下。
+
 3）如果有问题，请先下载安装调试
 
 ### 3 功能
@@ -24,7 +26,7 @@ https://github.com/lin-liem/Lmumusur
 #### 4.1 综合展示
 [![预览图01](https://s3.ax1x.com/2020/12/06/DjCggS.png)](https://imgchr.com/i/DjCggS)
 
-[![Dji4f0.png](https://s3.ax1x.com/2020/12/06/Dji4f0.png)](https://imgchr.com/i/Dji4f0)
+[![DjkivT.md.png](https://s3.ax1x.com/2020/12/06/DjkivT.md.png)](https://imgchr.com/i/DjkivT)
 
 [![DjiIpV.md.png](https://s3.ax1x.com/2020/12/06/DjiIpV.md.png)](https://imgchr.com/i/DjiIpV)
 
@@ -52,4 +54,5 @@ https://github.com/lin-liem/Lmumusur
 
 [![DjFS1K.png](https://s3.ax1x.com/2020/12/06/DjFS1K.png)](https://imgchr.com/i/DjFS1K)
 
-[![DjkivT.md.png](https://s3.ax1x.com/2020/12/06/DjkivT.md.png)](https://imgchr.com/i/DjkivT)
+[![Dji4f0.png](https://s3.ax1x.com/2020/12/06/Dji4f0.png)](https://imgchr.com/i/Dji4f0)
+
